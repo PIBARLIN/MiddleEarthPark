@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="imgs/fav_ME.svg">
-    <!-- bootstrap connection -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="imgs/fav_ME.svg">
+	<!-- bootstrap connection -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Middle Earth Park</title>
+	<link rel="stylesheet" href="css/main.css">
+	<title>Middle Earth Park</title>
 </head>
 
 
 <body>
-  
-  <!--===== HEADER SECTION ==========================================================================================================-->
-  <header class="header">
 
-    <!-- - - HEADER__navbar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <div id="arriba" class="container-fluid" style="background-image: url('./imgs/img_homeHero_C.png');">
-			<nav class="navbar navbar-expand-lg navbar-light">
+	<!--===== HEADER SECTION ==========================================================================================================-->
+	<header class="header">
+
+		<!-- - - HEADER__navbar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<div id="arriba" class="container-fluid" style="background-image: url('./imgs/img_homeHero_C.png');">
+			<nav class="navbar navbar-expand-lg navbar-dark">
 				<div class="container-fluid mw-100">
-          
-          <!-- logo -->
+
+					<!-- logo -->
 					<a class="navbar-brand" href="index.html">
 						<img src="./imgs/logo.svg" alt="Logo Middle Earth Park" class="logoME">
 					</a>
 
-          <!-- togglerMenu -->
-					<button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse"
+					<!-- togglerMenu -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-          
-          <!-- nav-items -->
+
+					<!-- nav-items -->
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ms-auto">
 							<li class="nav-item ms-auto">
@@ -56,37 +57,43 @@
 							</li>
 						</ul>
 					</div>
-          
+
 				</div>
 			</nav>
 
-      <!-- - - HEADER__hero - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-      <hero class="hero">
+			<!-- - - HEADER__hero - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<hero class="hero">
 				<h1>Sumérgete en la magia de la Tierra Media</h1>
 				<p class="p1">Adentrate en un universo fantástico en el parque temático de Middle Earth.</p>
-        <p class="p2">Explora lugares mágicos y vive emocionantes aventuras.</p>
-				<button class="btn_primary">Comprá tus boletos ahora</button>
+				<p class="p2">Explora lugares mágicos y vive emocionantes aventuras.</p>
+				<div class="btn_primary">
+					<button class="btn">Comprá tus boletos ahora</button>
+					<img class="firuletes" src="./imgs/firuletes.svg" alt="firuletes">
+				</div>
+
 			</hero>
 
-    </div>
-  </header>
+		</div>
+	</header>
 
 
 
 
-  <!--===== MAIN SECTION ==========================================================================================================-->
-  <main>
+	<!--===== MAIN SECTION ==========================================================================================================-->
+	<main>
 
 		<!-- - - Section A: Intro - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="section_a">
-			<h2>¡Bienvenidos a la Edad Media en todo su esplendor!</h2>
+		<section class="sectionA container-fluid">
+			<h2 class="sectionA__h2">¡Bienvenidos a la Edad Media en todo su esplendor!</h2>
 			<div>
-				<p class="subhead">En Middle Earth transportarás tus sentidos a una época de caballeros y damiselas,
+				<p class="sectionA__p1">En Middle Earth transportarás tus sentidos a una época de caballeros y
+					damiselas,
 					justas y torneos, y aventuras emocionantes en cada rincón. <br><br> Descubre nuestro castillo
 					imponente y sus murallas, explora nuestras atracciones, con una amplia variedad de comidas y bebidas
 					para todos los gustos y presupuestos, así como tiendas de souvenirs.
 				</p>
-				<p class="subhead">En el parque temático de Middle Earth, siempre hay algo nuevo por descubrir, ya sea
+				<p class="sectionA__p2">En el parque temático de Middle Earth, siempre hay algo nuevo por descubrir, ya
+					sea
 					que estés explorando lugares icónicos de las historias de Tolkien, conociendo personajes icónicos de
 					la Tierra Media, o aprovechando nuestras promociones especiales, siempre tendrás una experiencia
 					única e inolvidable. <br><br> ¿Estás listo para una aventura inolvidable en nuestra época favorita?
@@ -96,10 +103,10 @@
 
 
 		<!-- - - Section B: Benefits in the park - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="section_b">
+		<section class="sectionB container-fluid">
 			<h3>Middle Earth</h3>
 			<h4>- Adventure -</h4>
-			<div class="icons">
+			<div class="sectionB__icons">
 				<div class="icon_1a"><img src="imgs/iconWalks.svg" alt="icono de persona caminando"></div>
 				<div class="icon_1b">Excursiones salvajes</div>
 				<div class="icon_2a"><img src="imgs/iconFood.svg" alt="icono de comida"></div>
@@ -117,77 +124,84 @@
 
 
 
-    <!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<div class="stroke"></div>
+
+		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<div class="carrousel__UpperStroke"></div>
+
 
 
 
 		<!-- - - Section C: Image's slider - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="section_c">
-      <!-- bootstrap carousel -->
+		<section class="sectionC">
+			<!-- bootstrap carousel -->
 			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- imgs -->
+				<!-- imgs -->
 				<div class="carousel-inner">
 					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="./imgs/carrousel_1Tablets.jpg" class="d-block w-100" alt="Personas haciendo trekking">
+						<img src="./imgs/carrousel_1Tablets.jpg" class="d-block w-100"
+							alt="Aves volando sobre montañas">
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="./imgs/carrousel_2Tablets.jpg" class="d-block w-100" alt="...">
+						<img src="./imgs/carrousel_2Tablets.jpg" class="d-block w-100" alt="Salida de expedición">
 					</div>
 					<div class="carousel-item">
-						<img src="./imgs/carrousel_3Tablets.jpg" class="d-block w-100" alt="...">
+						<img src="./imgs/carrousel_3Tablets.jpg" class="d-block w-100"
+							alt="Personas cruzando un puente en un bosque">
 					</div>
 				</div>
 
-        <!-- controls previous-next -->
+				<!-- controls previous-next -->
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
 					data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
+
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
 					data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
+		</section>
 
 
-			<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<div class="stroke"></div>
+
+
+		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<div class="carrousel__DownStroke"></div>
+
+
 
 
 			<!-- - - Section D: Testimonies - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<section class="section_d">
+			<section class="sectionD">
 				<div class="testimonies">
 
-          <!-- imgs -->
-					<div class="testimonyImg_1"><img src="imgs/testimony_1.png" width="82%" alt="Fili" class="fili">
+					<!-- imgs -->
+					<div class="testimonyImg_1">
+						<img src="imgs/testimony_1.png" alt="Fili" class="fili">
 					</div>
-					<div class="testimonyImg_2"><img src="imgs/testimony_2.png" width="100%" alt="Gandalf"
-							class="gandalf">
+					<div class="testimonyImg_2">
+						<img src="imgs/testimony_2.png" alt="Gandalf" class="gandalf">
 					</div>
-					<div class="testimonyImg_3"><img src="imgs/testimony_3.png" width="82%" alt="Bilbo" class="bilbo">
+					<div class="testimonyImg_3">
+						<img src="imgs/testimony_3.png" alt="Bilbo" class="bilbo">
 					</div>
 
-          <!-- opinions -->
+					<!-- opinions -->
 					<div class="testimonyTxt_1">
-						<p>Middle Earth Adventura es una maravilla de la Tierra Media. Impresionantes atracciones y
-							deliciosa comida élfica.</p>
+						<p>Una maravilla de la Tierra Media. Impresionantes atracciones y deliciosa comida élfica.</p>
 					</div>
 					<div class="testimonyTxt_2">
-						<p>El mejor lugar para experimentar la auténtica atmósfera de la Tierra Media. Impresionantes
-							vistas
-							panorámicas.</p>
+						<p>El mejor lugar para experimentar la auténtica atmósfera de la Tierra Media. Impresionantes vistas panorámicas.</p>
 					</div>
 					<div class="testimonyTxt_3">
-						<p>Un lugar verdaderamente mágico. El juego de rol en la Comarca fue una experiencia
-							inolvidable.
-						</p>
+						<p>Un lugar verdaderamente mágico. El juego de rol en la Comarca fue una experiencia inolvidable.</p>
 					</div>
 
-          <!-- signs -->
+					<!-- signs -->
 					<div class="testimonySign_1">
 						<p>Fili</p>
 					</div>
@@ -205,7 +219,7 @@
 
 
 	<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-	<div class="stroke"></div>
+	<div class="carrousel__UpperStroke"></div>
 
 
 
@@ -214,10 +228,10 @@
 	<footer class="footer">
 
 		<!-- - - Section Maps - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="map">
+		<section class="footer__map">
 
 			<!-- - - Icons with activities - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<div id="icons_a">
+			<div class="footer__map__icons_a">
 				<img src="imgs/iconPerson.svg" alt="Ir caminando" />
 				<img src="imgs/iconEagle.svg" alt="Volar en aguila" />
 				<img src="imgs/iconDragon.svg" alt="Volar en dragón" />
@@ -225,14 +239,14 @@
 			</div>
 
 			<!-- - - Adress - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<div id="icons_b">
+			<div class="footer__map__icons_b">
 				<img src="imgs/iconHereBig.svg" alt="Ubicación" id="here" />
-				<p id="map_p1">064 Hobbits Village 198</p>
+				<p>064 Hobbits Village 198</p>
 				<p id="map_p2">+5 564-654-9456</p>
 			</div>
 
 			<!-- - - Zoom - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<div id="icons_c">
+			<div class="footer__map__icons_c">
 				<img src="imgs/icon+.svg" alt="Acercar mapa" />
 				<img src="imgs/icon-.svg" alt="Alejar mapa" />
 			</div>
@@ -240,10 +254,10 @@
 
 
 
-    <!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<div class="stroke"></div>
+		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<div class="carrousel__centeredYStroke"></div>
 
-    
+
 
 		<!-- - - Up Arrow - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<div id="arrowUp"><a href="#arriba"><img src="imgs/iconArrowUp.svg" alt="Ir arriba" /></a></div>
@@ -252,22 +266,42 @@
 
 
 		<!-- - - Section Info and others links - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="info">
+		<section class="footer__info">
 			<div class="logo"><img src="imgs/logoBig.svg" alt="Logo Middle Earth Park" /></div>
 			<div class="iconHere"><img src="imgs/iconHere.svg" alt="Ubicación" /></div>
 			<div class="iconTime"><img src="imgs/iconTime.svg" alt="Horarios" /></div>
 			<div class="iconMail"><img src="imgs/iconMail.svg" alt="Correo electónico" /></div>
 			<div class="iconPhone"><img src="imgs/iconPhone.svg" alt="Teléfono"></div>
-			<div class="adress"><p>064 Hobbits Village 198</p></div>
-			<div class="time"><p>Martes a domingo: 8 a 19 horas</p></div>
-			<div class="mail"><p>info@middleearthparque.com</p></div>
-			<div class="phone"><p>+5 564-654-9456</p></div>
-			<div class="linkServicios"><p>Servicios</p></div>
-			<div class="linkSeguridad"><p>Seguridad</p></div>
-			<div class="linkLegales"><p>Legales</p></div>
-			<div class="linkFAQs"><p>FAQs</p></div>
-			<div class="linkBlog"><p>Blog</p></div>
-			<div class="linkTrabajo"><p>Trabaja en ME</p></div>
+			<div class="adress">
+				<p>064 Hobbits Village 198</p>
+			</div>
+			<div class="time">
+				<p>Martes a domingo: 8 a 19 horas</p>
+			</div>
+			<div class="mail">
+				<p>info@middleearthparque.com</p>
+			</div>
+			<div class="phone">
+				<p>+5 564-654-9456</p>
+			</div>
+			<div class="linkServicios">
+				<p>Servicios</p>
+			</div>
+			<div class="linkSeguridad">
+				<p>Seguridad</p>
+			</div>
+			<div class="linkLegales">
+				<p>Legales</p>
+			</div>
+			<div class="linkFAQs">
+				<p>FAQs</p>
+			</div>
+			<div class="linkBlog">
+				<p>Blog</p>
+			</div>
+			<div class="linkTrabajo">
+				<p>Trabaja en ME</p>
+			</div>
 			<div class="socialMedia">
 				<a href="http://www.facebook.com"><img src="imgs/iconFacebook.svg" alt="Ir a Facebook" /></a>
 				<a href="http://www.instagram.com"><img src="imgs/iconInstagram.svg" alt="Ir a Instagram" /></a>
@@ -285,9 +319,10 @@
 	</footer>
 
 
-    <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-		crossorigin="anonymous"></script>
+	<!-- bootstrap script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+	</script>
 </body>
+
 </html>
