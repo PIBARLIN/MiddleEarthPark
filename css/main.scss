@@ -1,9 +1,11 @@
 @import './utilities/_00_reset';
 @import './utilities/_01_allStyles';
 @import './utilities/02_fonts';
-@import './sections/_20_header';
-@import './sections/_30_mainContainer';
-@import './sections/_40_footer';
+@import './sections/_10_header';
+@import './sections/_20_mainContainer';
+@import './sections/_30_footer';
+@import './mediaQueries/_438-767';
+@import './mediaQueries/_768-991';
 
 
 body {
