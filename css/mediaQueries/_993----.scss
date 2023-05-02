@@ -1,0 +1,250 @@
+@media only screen and (min-width: 993px) {
+
+    // ------------ HEADER ---------------
+    // --- HEADER - Global values ---
+    .header {
+        background-image: url('../imgs/img_homeHero.png');
+    }
+
+
+
+
+    // --- HEADER - navbar ---
+    .logoME {
+        width: 180%;
+    }
+
+    .navbar {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+
+
+
+    // --- HEADER - Hero ---
+    .hero h1 {
+        font-size: 60px;
+        line-height: 72px;
+        max-width: 790px;
+        margin-top: 219px;
+    }
+
+    .hero__p1,
+    .hero__p2 {
+        font-size: 24px;
+        line-height: 18px;
+        margin-top: 25px;
+        max-width: 100%;
+    }
+
+    .hero__p2 {
+        display: block;
+        margin-top: 0;
+    }
+
+    // --- HEADER - btn_primary ---
+    .hero__btn--primary {
+        margin-top: 67px;
+    }
+
+
+
+
+    // ------------ MAIN ---------------
+    // --- MAIN - SectionA ---
+    .sectionA div {
+        columns: 2;
+        max-width: 1024px;
+    }
+
+    .sectionA__h2 {
+        padding-top: 68px;
+        max-width: 100%;
+        font-size: 36px;
+        line-height: 43px;
+        max-width: 650px;
+    }
+
+    .sectionA__p1,
+    .sectionA__p2 {
+        font-size: 17px;
+    }
+
+
+
+    // --- MAIN - SectionB ---
+    .sectionB p {
+        max-width: 340px;
+    }
+
+    .sectionB h3 {
+        font-size: 32px;
+    }
+
+    .sectionB h4 {
+        font-size: 16px;
+    }
+
+    .sectionB__icons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 12px 12px;
+        grid-template-areas:
+            "icon_1a icon_2a icon_3a icon_4a icon_5a"
+            "icon_1b icon_2b icon_3b icon_4b icon_5b";
+        max-width: 650px;
+        justify-items: center;
+        margin-top: 25px;
+    }
+
+    .icon_4a {
+        grid-area: icon_4a;
+        padding: 0 25px;
+    }
+
+    .icon_4b {
+        grid-area: icon_4b;
+        padding: 0 25px;
+    }
+
+    .icon_5a {
+        grid-area: icon_5a;
+        padding: 0 25px;
+    }
+
+    .icon_5b {
+        grid-area: icon_5b;
+        padding: 0 25px;
+    }
+
+    .sectionB__icons img:hover {
+        opacity: 0.7;
+    }
+
+    .btn_secondary {
+        margin-top: 18px;
+        width: 232px;
+    }
+
+
+
+
+    /* --- MAIN - SectionC --- */
+    .sectionC__mobile {
+        display: none;
+    }
+
+    .sectionC__desktop {
+        display: block;
+    }
+
+
+
+
+    /* --- MAIN - SectionD --- */
+    .testimonies {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        gap: 0 20px;
+        grid-template-areas:
+            "testimonies__Img1 testimonies__Img2 testimonies__Img3"
+            "testimonies__Txt1 testimonies__Txt2 testimonies__Txt3"
+            "testimonies__Sign1 testimonies__Sign2 testimonies__Sign3";
+        max-width: 798px;
+        align-items: baseline;
+        margin-top: 140px;
+        margin-bottom: 0px;
+    }
+
+    .fili,
+    .bilbo {
+        max-width: 100%;
+    }
+
+    .testimonies__Img2,
+    .testimonies__Txt2,
+    .testimonies__Sign2 {
+        display: block;
+    }
+
+    .testimonies__Txt1,
+    .testimonies__Txt2,
+    .testimonies__Txt3 {
+        max-width: 180px;
+        font-size: 18px;
+        font-weight: 600;
+        opacity: 0.6;
+        color: $darkGreen;
+    }
+
+    .testimonies__Img1,
+    .testimonies__Img2,
+    .testimonies__Img3 {
+        align-self: baseline;
+    }
+
+
+
+    // ------------ FOOTER ---------------
+    // --- FOOTER - Section Maps ---
+    .footer__map {
+        background-image: url("../imgs/img_footerMap.jpg");
+    }
+
+    .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1024px;
+    }
+
+    .footer__map__icons_a,
+    .footer__map__icons_c {
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .footer__map__icons_a img,
+    .footer__map__icons_c img {
+        margin-bottom: 8px;
+        margin-top: 8px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #here {
+        height: 72px;
+    }
+
+
+
+
+    .footer__info__logo, .footer__info__iconHere, .footer__info__iconTime, .footer__info__iconMail, .footer__info__iconPhone,
+    .footer__info__adress, .footer__info__mail, .footer__info__phone, .footer__info__time {
+        display: block;
+    }
+
+    .footer__info {
+        display: grid;
+        grid-template-columns: 2fr 30px 2.5fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "logo iconHere adress linkServicios linkSeguridad"
+            "logo iconTime time linkLegales linkFAQs"
+            "logo iconMail mail linkBlog linkTrabajo"
+            "logo iconPhone phone socialMedia socialMedia";
+        // align-items: start;
+        align-items: start;
+        max-width: 795px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 85px;
+    }
+
+    .footer__info__socialMedia img {
+        padding-right: 24px;
+
+
+    }
+}

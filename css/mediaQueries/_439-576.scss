@@ -1,0 +1,28 @@
+@media only screen and (min-width: 439px) and (max-width: 576px) {
+
+    // ------------ HEADER ---------------
+    // --- HEADER - navbar ---
+    .logoME {
+        width: 120%;
+    }
+
+    // --- HEADER - hero ---
+    .hero__p1 {
+        max-width: 336px;
+    }
+
+    // --- HEADER - btn_primary ---
+    .hero__btn--primary {
+        margin-top: 49px;
+    }
+
+
+
+
+    // ------------ MAIN ---------------
+    // --- MAIN - SectionB ---
+    .sectionB p {
+        max-width: 340px;
+    }
+
+}

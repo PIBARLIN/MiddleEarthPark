@@ -1,6 +1,9 @@
 /* ------------ MAIN --------------- */
 /* --- MAIN - SectionA - Intro --- */
 .sectionA {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: $darkGreen;
 	padding-bottom: 40px;
 }
@@ -17,10 +20,10 @@
 	padding-top: 24px;
 	font-family: 'Times New Roman';
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: 16px;
 	color: $lightGreen;
 	text-align: left;
+	max-width: 80vw;
 }
 
 .sectionA__p1:first-letter,
@@ -42,20 +45,30 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
 
-.sectionB h3 {
-	font-family: 'Aniron';
-	font-size: 24px;
-	color: $darkGreen;
-	opacity: 0.9;
-}
+	h3 {
+		font-family: 'Aniron';
+		font-size: 24px;
+		color: $darkGreen;
+		opacity: 0.9;
+	}
 
-.sectionB h4 {
-	font-family: 'Aniron';
-	font-size: 15px;
-	color: $darkGreen;
-	opacity: 0.7;
+	h4 {
+		font-family: 'Aniron';
+		font-size: 15px;
+		color: $darkGreen;
+		opacity: 0.7;
+	}
+
+	p {
+		font-family: 'Roboto Condensed';
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: $darkGreen;
+		opacity: 0.8;
+	}
 }
 
 .sectionB__icons {
@@ -130,10 +143,6 @@
 	text-align: center;
 }
 
-.sectionB__icons img:hover {
-	opacity: 0.7;
-}
-
 .icon_1b,
 .icon_2b,
 .icon_3b,
@@ -143,16 +152,6 @@
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
-}
-
-.sectionB p {
-	font-family: 'Roboto Condensed';
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 22px;
-	text-align: center;
-	color: $darkGreen;
-	opacity: 0.8;
 }
 
 .btn_secondary {
@@ -168,16 +167,14 @@
 	background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
 	border: 1px solid $gold;
 	border-radius: 8px;
+
+	&:hover {
+		background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
+		cursor: pointer;
+	}
 }
 
-.btn_secondary:hover {
-	background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
-	cursor: pointer;
-}
-
-
-
-
+.btn_secondary
 /* --- MAIN - SectionC --- */
 /* --- MAIN - Line --- */
 
@@ -187,6 +184,16 @@
 	height: 2px;
 	background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
 }
+
+
+
+
+.sectionC__desktop {
+	display: none;
+}
+
+
+
 
 .carrousel__DownStroke {
 	margin-top: 2px;
@@ -204,10 +211,10 @@
 	grid-template-rows: 1.6fr 0.0fr 1.6fr 0.0fr;
 	grid-auto-flow: row;
 	grid-template-areas:
-		"testimonyImg_1 testimonyTxt_1"
-		"testimonyImg_1 testimonySign_1"
-		"testimonyTxt_3 testimonyImg_3"
-		"testimonySign_3 testimonyImg_3";
+		"testimonies__Img1 testimonies__Txt1"
+		"testimonies__Img1 testimonies__Sign1"
+		"testimonies__Txt3 testimonies__Img3"
+		"testimonies__Sign3 testimonies__Img3";
 	max-width: 320px;
 	align-items: start;
 	justify-items: center;
@@ -215,45 +222,45 @@
 	margin-bottom: 76px;
 }
 
-.testimonyImg_1 {
-	grid-area: testimonyImg_1;
+.testimonies__Img1 {
+	grid-area: testimonies__Img1;
 }
 
-.testimonyImg_2 {
-	grid-area: testimonyImg_2;
+.testimonies__Img2 {
+	grid-area: testimonies__Img2;
 }
 
-.testimonyImg_3 {
-	grid-area: testimonyImg_3;
+.testimonies__Img3 {
+	grid-area: testimonies__Img3;
 }
 
-.testimonyTxt_1 {
-	grid-area: testimonyTxt_1;
+.testimonies__Txt1 {
+	grid-area: testimonies__Txt1;
 }
 
-.testimonyTxt_2 {
-	grid-area: testimonyTxt_2;
+.testimonies__Txt2 {
+	grid-area: testimonies__Txt2;
 }
 
-.testimonyTxt_3 {
-	grid-area: testimonyTxt_3;
+.testimonies__Txt3 {
+	grid-area: testimonies__Txt3;
 }
 
-.testimonySign_1 {
-	grid-area: testimonySign_1;
+.testimonies__Sign1 {
+	grid-area: testimonies__Sign1;
 }
 
-.testimonySign_2 {
-	grid-area: testimonySign_2;
+.testimonies__Sign2 {
+	grid-area: testimonies__Sign2;
 }
 
-.testimonySign_3 {
-	grid-area: testimonySign_3;
+.testimonies__Sign3 {
+	grid-area: testimonies__Sign3;
 }
 
-.testimonyTxt_1,
-.testimonyTxt_2,
-.testimonyTxt_3 {
+.testimonies__Txt1,
+.testimonies__Txt2,
+.testimonies__Txt3 {
 	text-align: left;
 	font-family: "Times New Roman", serif;
 	font-style: italic;
@@ -265,9 +272,9 @@
 	opacity: 0.75;
 }
 
-.testimonySign_1,
-.testimonySign_2,
-.testimonySign_3 {
+.testimonies__Sign1,
+.testimonies__Sign2,
+.testimonies__Sign3 {
 	margin: -20px 30px 0 0;
 	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 600;
@@ -281,23 +288,23 @@
 	max-width: 136px;
 }
 
-.testimonyTxt_1 {
+.testimonies__Txt1 {
 	padding-top: 24px;
 }
 
-.testimonyTxt_3 {
+.testimonies__Txt3 {
 	padding-top: 20px;
 	text-align: right;
 	max-width: 130px;
 }
 
-.testimonySign_3 {
+.testimonies__Sign3 {
 	padding-top: 10px;
 	margin-right: 12px;
 }
 
-.testimonyImg_2,
-.testimonyTxt_2,
-.testimonySign_2 {
+.testimonies__Img2,
+.testimonies__Txt2,
+.testimonies__Sign2 {
 	display: none;
 }

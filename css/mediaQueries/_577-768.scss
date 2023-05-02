@@ -1,0 +1,70 @@
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    // ------------ HEADER ---------------
+    // --- HEADER - navbar ---
+    .logoME {
+        width: 120%;
+    }
+
+
+
+
+    // --- HEADER - Hero ---
+    .hero h1 {
+        max-width: 80vw;
+    }
+
+    // --- HEADER - btn_primary ---
+    .hero__btn--primary {
+        margin-top: 49px;
+    }
+
+
+
+
+    // ------------ MAIN ---------------
+    // --- MAIN - SectionA ---
+    .sectionA__h2 {
+        padding-top: 68px;
+        max-width: 445px;
+    }
+
+
+    // --- MAIN - SectionB ---
+    .sectionB p {
+        max-width: 340px;
+    }
+
+
+
+
+    // ------------ FOOTER ---------------
+    // --- FOOTER - Section Maps ---
+    .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__map__icons_a,
+    .footer__map__icons_c {
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .footer__map__icons_a img,
+    .footer__map__icons_c img {
+        margin-bottom: 8px;
+        margin-top: 8px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+
+
+
+
+
+
+
+
+}
