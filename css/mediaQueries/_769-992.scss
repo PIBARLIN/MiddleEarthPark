@@ -62,6 +62,18 @@
 
 
 
+    /* --- MAIN - SectionC --- */
+    .sectionC__carousel--mobile {
+        display: none;
+    }
+
+    .sectionC__carousel--desktop {
+        display: block;
+    }
+
+
+
+
     // ------------ FOOTER ---------------
     // --- FOOTER - Section Maps ---
     .footer__map {

@@ -66,11 +66,12 @@
 				<h1>Sumérgete en la magia de la Tierra Media</h1>
 				<p class="hero__p1">Adentrate en un universo fantástico en el parque temático de Middle Earth.</p>
 				<p class="hero__p2">Explora lugares mágicos y vive emocionantes aventuras.</p>
-				<div class="hero__btn--primary">
-					<button class="hero__btn">Comprá tus boletos ahora</button>
-					<img class="hero__firuletes" src="./imgs/firuletes.svg" alt="firuletes">
-				</div>
-
+				<a href="./pages/atracciones.html" class="hero__btn--primary">
+					<div>
+						<button class="hero__btn">Comprá tus boletos ahora</button>
+						<img class="hero__btnFiruletes" src="./imgs/firuletes.svg" alt="firuletes">
+					</div>
+				</a>
 			</hero>
 
 		</div>
@@ -118,7 +119,9 @@
 				<div class="icon_5b">Ecuestre extremo</div>
 			</div>
 			<p>¡Comprá tus boletos ahora y vive la aventura de hacer realidad tus sueños de la Edad Media!</p>
-			<button class="btn_secondary">Ver promociones</button>
+			<a href="./pages/promociones.html">
+				<button class="btn_secondary">Ver promociones</button>
+			</a>
 		</section>
 
 
@@ -130,72 +133,71 @@
 
 
 
+
 		<!-- - - Section C: Image's slider - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionC__mobile">
-			<!-- bootstrap carousel -->
-			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		<section class="sectionC__carousel">
 
-				<!-- imgs -->
+			<!-- bootstrap carousel -->
+			<div id="carouselExampleAutoplaying" class="sectionC__carousel--mobile carousel slide carousel-fade" data-bs-ride="carousel">
+
+				<!-- imgs for MOBILE SCREENS-->
 				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="./imgs/carrousel_1Tablets.jpg" class="d-block w-100"
-							alt="Aves volando sobre montañas">
-					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="./imgs/carrousel_2Tablets.jpg" class="d-block w-100" alt="Salida de expedición">
+					<div class="carousel-item active">
+						<img src="./imgs/carrousel_1Tablets.jpg" class="carousel__imgs--mobile1 d-block w-100" alt="Aves volando sobre un paisaje montañoso">
 					</div>
 					<div class="carousel-item">
-						<img src="./imgs/carrousel_3Tablets.jpg" class="d-block w-100"
-							alt="Personas cruzando un puente en un bosque">
+						<img src="./imgs/carrousel_2Tablets.jpg" class="carousel__imgs--mobile2 d-block w-100" alt="Personas saliendo de excursión">
+					</div>
+					<div class="carousel-item">
+						<img src="./imgs/carrousel_3Tablets.jpg" class="carousel__imgs--mobile3 d-block w-100" alt="Grupo de personas cruzando un puente en el bosque">
 					</div>
 				</div>
 
 				<!-- controls previous-next -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
 					data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
-
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
 					data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</section>
 
 
-		<section class="sectionC__desktop">
+
+
 			<!-- bootstrap carousel -->
-			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+			<div id="carouselExampleAutoplaying" class="sectionC__carousel--desktop carousel slide carousel-fade" data-bs-ride="carousel">
 
-				<!-- imgs -->
+				<!-- imgs for MOBILE SCREENS-->
 				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="./imgs/carrousel_1.jpg" class="d-block w-100" alt="Aves volando sobre montañas">
-					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="./imgs/carrousel_2.jpg" class="d-block w-100" alt="Salida de expedición">
+					<div class="carousel-item active">
+						<img src="./imgs/carrousel_1.jpg" class="carousel__imgs--desktop1 d-block w-100" alt="Aves volando sobre un paisaje montañoso">
 					</div>
 					<div class="carousel-item">
-						<img src="./imgs/carrousel_3.jpg" class="d-block w-100" alt="Personas cruzando un puente en un bosque">
+						<img src="./imgs/carrousel_2.jpg" class="carousel__imgs--desktop2 d-block w-100" alt="Personas saliendo de excursión">
+					</div>
+					<div class="carousel-item">
+						<img src="./imgs/carrousel_3.jpg" class="carousel__imgs--desktop3 d-block w-100" alt="Grupo de personas cruzando un puente en el bosque">
 					</div>
 				</div>
 
 				<!-- controls previous-next -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
 					data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
-
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
 					data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
+
 		</section>
 
 
@@ -267,7 +269,7 @@
 
 				<!-- - - Icons with activities - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<div class="footer__map__icons_a">
-					<img src="./iconPerson.svg" alt="Ir caminando" />
+					<img src="./imgs/iconPerson.svg" alt="Ir caminando" />
 					<img src="./imgs/iconEagle.svg" alt="Volar en aguila" />
 					<img src="./imgs/iconDragon.svg" alt="Volar en dragón" />
 					<img src="./imgs/iconHorse.svg" alt="Ir cabalgando" />

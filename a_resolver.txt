@@ -1,0 +1,20 @@
+A resolver:
+
+1- Activé un doble carrousel Bootstrap, con distintos imágenes, según sea para mobile o desktop. Entonces cuando está en desktop por ejemplo el carrousel para mobile esta con un "display: none", pero parece que está doble opción rompe los controles de previous / next.
+Me llama la atención que se rompa porque entonces no pueden cohabitar dos carrousel en un mismo html?? Probé colocando la section de imágenes (ambas, desktop y mobile) con un solo control section, probé con divs independientes, pero no le encuentro la vuelta. 
+El slide de Bootstrap está en autoplay, y si uso las flechas de teclado funciona perfecto el control, pero no sobre los botones estando los dos carousel... 
+
+
+2- El toggler menu cuando se despliega me desplaza los demás elementos de debajo (hero section, h1, etc.). Intenté ponerle un z-index pero no lo pude resolver, se me rompe por varios lados al cambiar la position...
+
+
+3- Hice un button de "ir arriba", pero quiero que al estar top no se vea y solo aparezca al hacer un scroll. Sé que hay códigos con JQ pero quisiera usar cosas que conozco. 
+Se me ocurre que quizás pueda aprovechar a usar un @if de SCSS donde la condicional sea que si la variable es menor al vh, el button esté hidden, y ponerle una transition para que no aparezca repentinamente. No lo pude resolver.
+
+
+
+
+
+PENDIENTES
+Sombra sobre btn_primary
+Sombra sobre imagen de mapa

@@ -11,12 +11,19 @@
 
     // --- HEADER - Hero ---
     .hero h1 {
-        max-width: 80vw;
+        max-width: 90vw;
+        font-size: 38px;
+        line-height: 41px;
     }
 
     // --- HEADER - btn_primary ---
     .hero__btn--primary {
-        margin-top: 49px;
+        margin-top: 31px;
+    }
+
+    .hero__p1 {
+        font-size: 20px;
+        line-height: 23px;
     }
 
 

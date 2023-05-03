@@ -99,16 +99,20 @@
 
 /* --- HEADER - Hero CTA --- */
 .hero__btn--primary {
+  text-decoration: none;
+  margin-top: 25px;
+}
+.hero__btn--primary div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px;
+  transition: all 200ms ease-in-out 0ms;
 }
-.hero__btn--primary:hover {
-  cursor: pointer;
+.hero__btn--primary div:hover {
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.85));
 }
 
-.hero__firuletes {
+.hero__btnFiruletes {
   z-index: 1;
   margin-top: -55px;
 }
@@ -127,6 +131,11 @@
   height: 36px;
   width: 260px;
   z-index: 10;
+  transition: all 200ms ease-in-out 0ms;
+}
+.hero__btn:hover {
+  background: linear-gradient(160deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  color: #0D1105;
 }
 
 /* ------------ MAIN --------------- */
@@ -286,22 +295,20 @@
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
   background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
   border: 1px solid #CE9468;
-  border-radius: 8px;
+  border-radius: 24px;
+  transition: all 200ms ease-in-out 0ms;
 }
 .btn_secondary:hover {
   background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
-  cursor: pointer;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.65));
 }
 
-.btn_secondary .carrousel__UpperStroke {
+/* ------------ Strokes ------------- */
+.carrousel__UpperStroke {
   margin-top: -4px;
   margin-bottom: 2px;
   height: 2px;
   background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
-}
-
-.sectionC__desktop {
-  display: none;
 }
 
 .carrousel__DownStroke {
@@ -309,6 +316,32 @@
   margin-bottom: -4px;
   height: 2px;
   background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+}
+
+/* --- MAIN - SectionC --- */
+/* --- MAIN - Line --- */
+.sectionC__carousel {
+  background-color: #0D1105;
+}
+
+.carousel__imgs--mobile1,
+.carousel__imgs--mobile2,
+.carousel__imgs--mobile3 {
+  max-height: 568px;
+  max-width: 768px;
+  margin: auto;
+}
+
+.carousel__imgs--desktop1,
+.carousel__imgs--desktop2,
+.carousel__imgs--desktop3 {
+  max-height: 568px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.sectionC__carousel--desktop {
+  display: none;
 }
 
 .testimonies {
@@ -440,8 +473,7 @@
 .footer__map__icons_a img {
   width: 36px;
 }
-
-.footer__map__icons_a .footer__map__icons_a img:hover {
+.footer__map__icons_a img:hover {
   opacity: 0.85;
   cursor: pointer;
 }
@@ -478,8 +510,7 @@
   margin-right: 15px;
   margin-left: 15px;
 }
-
-.footer__map__icons_c .footer__map__icons_c img:hover {
+.footer__map__icons_c img:hover {
   opacity: 0.85;
   cursor: pointer;
 }
@@ -494,6 +525,7 @@
   margin: 24px 0 48px 0;
   max-width: 100vw;
   position: fixed;
+  z-index: 10000;
   bottom: 65px;
   right: 0;
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
@@ -525,6 +557,7 @@
 
 .footer__info__logo {
   grid-area: logo;
+  margin-top: -20px;
 }
 
 .footer__info__iconHere {
@@ -655,7 +688,7 @@
   height: 50px;
   z-index: 10;
   margin: -50px auto;
-  width: 100vw;
+  width: 99vw;
 }
 
 .footer__info__shade {
@@ -686,10 +719,16 @@
     width: 120%;
   }
   .hero h1 {
-    max-width: 80vw;
+    max-width: 90vw;
+    font-size: 38px;
+    line-height: 41px;
   }
   .hero__btn--primary {
-    margin-top: 49px;
+    margin-top: 31px;
+  }
+  .hero__p1 {
+    font-size: 20px;
+    line-height: 23px;
   }
   .sectionA__h2 {
     padding-top: 68px;
@@ -747,6 +786,13 @@
   }
   .sectionB p {
     max-width: 340px;
+  }
+  /* --- MAIN - SectionC --- */
+  .sectionC__carousel--mobile {
+    display: none;
+  }
+  .sectionC__carousel--desktop {
+    display: block;
   }
   .footer__map {
     background-image: url("../imgs/img_footerMap.jpg");
@@ -883,10 +929,10 @@
     width: 232px;
   }
   /* --- MAIN - SectionC --- */
-  .sectionC__mobile {
+  .sectionC__carousel--mobile {
     display: none;
   }
-  .sectionC__desktop {
+  .sectionC__carousel--desktop {
     display: block;
   }
   /* --- MAIN - SectionD --- */
