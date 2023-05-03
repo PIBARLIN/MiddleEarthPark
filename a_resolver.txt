@@ -8,13 +8,23 @@ El slide de Bootstrap está en autoplay, y si uso las flechas de teclado funcion
 2- El toggler menu cuando se despliega me desplaza los demás elementos de debajo (hero section, h1, etc.). Intenté ponerle un z-index pero no lo pude resolver, se me rompe por varios lados al cambiar la position...
 
 
-3- Hice un button de "ir arriba", pero quiero que al estar top no se vea y solo aparezca al hacer un scroll. Sé que hay códigos con JQ pero quisiera usar cosas que conozco. 
-Se me ocurre que quizás pueda aprovechar a usar un @if de SCSS donde la condicional sea que si la variable es menor al vh, el button esté hidden, y ponerle una transition para que no aparezca repentinamente. No lo pude resolver.
+3- Hice un button de "ir arriba" algo rudimentario. Inicialmente 
+se me ocurrió que quizás podía aprovechar a usar un @if de SCSS donde la condicional sea que si la variable es menor al vh, el button esté hidden, y ponerle una transition para que no aparezca repentinamente. No lo pude resolver y por lo que google no se puede hacer sin JS. Quisiera hacer que aparezca y desaparezca suavemente, con una transición, pero no pude...
+
+4- 
 
 
 
 
 
 PENDIENTES
-Sombra sobre btn_primary
-Sombra sobre imagen de mapa
+Cargar foto de portada en forma aleatoria
+
+
+
+
+
+
+
+
+

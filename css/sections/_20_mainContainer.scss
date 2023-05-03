@@ -26,8 +26,8 @@
 	max-width: 80vw;
 }
 
-.sectionA__p1:first-letter,
-.sectionA__p2:first-letter {
+.sectionA__p1::first-letter,
+.sectionA__p2::first-letter {
 	initial-letter: 2;
 	padding-right: 2px;
 	color: $gold;

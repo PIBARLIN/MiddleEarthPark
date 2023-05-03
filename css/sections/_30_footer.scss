@@ -86,27 +86,6 @@
 
 
 
-// ---- Floating button with "go up" action ---
-#arrowUp {
-	display: block;
-	margin: 24px 0 48px 0;
-	max-width: 100vw;
-	position: fixed;
-	z-index: 10000;
-	bottom: 65px;
-	right: 0;
-	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
-
-	&:hover {
-		transform: scale(1.05);
-		transition: all 80ms ease-in-out 0ms;
-		transform: translateY(-5px);
-	}
-}
-
-
-
-
 // /* --- FOOTER - Section_info --- */
 .footer__info {
 	display: grid;

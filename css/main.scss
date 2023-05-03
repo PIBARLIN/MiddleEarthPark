@@ -10,12 +10,35 @@
 @import './mediaQueries/_993----';
 
 
+
+
 body {
 	text-align: center;
 	position: relative;
 }
 
 
+
+
+// ---- Floating button with "go up" action and a conditional value ---
+#btn__arrowUp {
+	display: none;
+	margin: 24px 0 48px 0;
+	max-width: 100vw;
+	position: fixed;
+	z-index: 10000;
+	bottom: 65px;
+	right: 0;
+	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
+	transform: translateX(56px);
+	transition: 2s;
+	
+	&:hover {
+		transform: scale(1.05);
+		transition: all 200ms ease-in-out 0ms;
+		transform: translateY(-7px);
+	}
+}
 
 
 
@@ -33,7 +56,7 @@ body {
 // .card{
 // 	box-shadow: #1014095b 0 0 15px;
 // }
-  
+
 // .atr:hover{
 // 	cursor: pointer;
 // 	box-shadow: #10140980 2px 2px 30px;
