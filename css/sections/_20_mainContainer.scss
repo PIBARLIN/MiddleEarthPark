@@ -154,26 +154,90 @@
 	line-height: 16px;
 }
 
-.btn_secondary {
-	font-family: 'Roboto Condensed';
-	font-weight: 500;
-	font-size: 16px;
-	text-align: center;
-	color: $white;
-	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-	width: 288px;
-	height: 36px;
-	filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
-	background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-	border: 1px solid $gold;
-	border-radius: 24px;
-	transition: all 200ms ease-in-out 0ms;
 
-	&:hover {
-		background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
-		filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.65));
+
+
+/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
+// Attraction's cards with BS
+.sectionB__bg {
+	background-color: $lightGray;
+}
+
+.sectionB__cards {
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 64px;
+	padding-bottom: 108px;
+}
+
+.attraction--card {
+	font-family: 'Roboto condensed', serif;
+
+	// Header: type of attraction
+	.card-header {
+		font-size: 15px;
+		padding: 0.16rem;
+		background-image: $golden--gradient;
+		color: $white;
+		opacity: 0.85;
+	}
+
+	// Image: Descriptive of attraction
+	.card-title {
+		font-weight: 900;
+		text-align: left;
+		color: $darkGreen;
+		opacity: 0.65;
+	}
+
+	// Body's texts: Name and description of attraction
+	.card-text {
+		text-align: left;
+		font-size: 15px;
+		color: $darkGreen;
+		opacity: 0.85;
+	}
+
+	// Footer: Price of attraction
+	.text-body {
+		font-weight: 700;
+		color: $lead !important;
+	}
+
+	// Footer: Buttons to buy and more info
+	.btn__cards {
+		display: block;
+		padding: 0.3rem 1rem;
+		font-family: 'Roboto condensed', serif;
+		text-align: center;
+		font-size: 1rem;
+		color: $white;
+		text-decoration: none;
+		text-shadow: $darkTextShadow;
+		background-color: #000;
+		background-image: $golden--gradient;
+		border-radius: 8px;
+		filter: $lightShadow;
+
+		&:hover {
+			filter: $mediumShadow;
+		}
+	}
+
+	// Footer: Tertiary buttons
+	.btn-tertiary {
+		font-size: 0.85rem;
+		font-weight: 600;
+		opacity: 0.65;
+		color: $darkGold;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
+
+
 
 
 
@@ -183,14 +247,14 @@
 	margin-top: -4px;
 	margin-bottom: 2px;
 	height: 2px;
-	background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+	background: $stroke--gradient;
 }
 
 .carrousel__DownStroke {
 	margin-top: 2px;
 	margin-bottom: -4px;
 	height: 2px;
-	background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+	background: $stroke--gradient;
 }
 
 

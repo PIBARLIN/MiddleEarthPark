@@ -3,7 +3,6 @@
 
 .header {
 	background-color: $darkGreen;
-	background-image: url('../imgs/img_homeHeroTablets.png');
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: top;
@@ -11,6 +10,31 @@
 	flex-direction: column;
 	position: relative;
 }
+
+
+// Imgs for background of the header section
+.home {
+	background-image: url('../imgs/header_mobile_home_01.png');
+}
+
+.attractions {
+	background-image: url('../imgs/header_mobile_attractions_01.png');
+}
+
+.promos {
+	background-image: url('../imgs/header_mobile_promos_01.png');
+}
+
+.food {
+	background-image: url('../imgs/header_mobile_food_02.png');
+}
+
+.contact {
+	background-image: url('../imgs/header_mobile_contact_01.png');
+}
+
+
+
 
 .navbar {
 	padding-top: 20px;
@@ -37,7 +61,7 @@
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 14px;
 	color: $white;
-	text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
+	text-shadow: $darkTextShadow;
 
 	&:visited {
 		color: $white;
@@ -45,7 +69,7 @@
 }
 
 .navbar-dark {
-	--bs-navbar-active-color: #fbfbfb90;
+	--bs-navbar-active-color: #fbfbfbb4;
 }
 
 
@@ -57,20 +81,26 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 
 	h1 {
 		position: relative;
 		font-family: "Trajan Pro", "Times New Roman", serif;
 		font-size: 32px;
 		line-height: 34px;
-		background: linear-gradient(92.15deg, #C48452 5.16%, #F7C9A5 64.69%, #A26331 98.09%);
+
+		background-image: $goldenBtn--gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
-		text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
+		color: $gold;
 		margin-top: 198px;
+		// text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 	}
 }
+
+
+
 
 /* --- HEADER - Hero Copy --- */
 .hero__p1,
@@ -81,8 +111,10 @@
 	line-height: 21px;
 	color: $white;
 	margin-top: 16px;
-	opacity: 0.8;
+	// opacity: 0.8;
 	max-width: 380px;
+	text-shadow: $darkTextShadow;
+
 }
 
 .hero__p2 {
@@ -96,7 +128,7 @@
 .hero__btn--primary {
 	text-decoration: none;
 	margin-top: 25px;
-		
+
 	div {
 		display: flex;
 		flex-direction: column;
@@ -104,7 +136,7 @@
 		transition: all 200ms ease-in-out 0ms;
 
 		&:hover {
-			filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.85));
+			filter: $darkShadow;
 		}
 	}
 }
@@ -112,28 +144,4 @@
 .hero__btnFiruletes {
 	z-index: 1;
 	margin-top: -55px;
-}
-
-.hero__btn {
-	font-family: "Roboto condensed", sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 21px;
-	text-align: center;
-	color: $darkGold;
-	filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
-	background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-	border: 1.5px solid #DCA579;
-	border-radius: 16px;
-	height: 36px;
-	width: 260px;
-	z-index: 10;
-	transition: all 200ms ease-in-out 0ms;
-
-	&:hover {
-		background: linear-gradient(160deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-		color: $darkGreen;
-	}
-
-
 }

@@ -2,8 +2,25 @@
 
     // ------------ HEADER ---------------
     // --- HEADER - Global values ---
-    .header {
-        background-image: url('../imgs/img_homeHero.png');
+    // Imgs for background of the header section
+    .home {
+        background-image: url('../imgs/header_desktop_home_01.png');
+    }
+
+    .attractions {
+        background-image: url('../imgs/header_desktop_attractions_01.png');
+    }
+
+    .promos {
+        background-image: url('../imgs/header_desktop_promos_01.png');
+    }
+
+    .food {
+        background-image: url('../imgs/header_desktop_food_02.png');
+    }
+
+    .contact {
+        background-image: url('../imgs/header_desktop_contact_01.png');
     }
 
 

@@ -11,14 +11,20 @@ El slide de Bootstrap está en autoplay, y si uso las flechas de teclado funcion
 3- Hice un button de "ir arriba" algo rudimentario. Inicialmente 
 se me ocurrió que quizás podía aprovechar a usar un @if de SCSS donde la condicional sea que si la variable es menor al vh, el button esté hidden, y ponerle una transition para que no aparezca repentinamente. No lo pude resolver y por lo que google no se puede hacer sin JS. Quisiera hacer que aparezca y desaparezca suavemente, con una transición, pero no pude...
 
-4- 
+4- por qué al cliquear entre links del navbar me modifica temporalmente el estilo?
 
+5- usé un h1 en el header con un gradient, pero con el text-shadow le modifica la apariencia de color. Le puse otro h1 idéntico de fondo pero sin el h1 y a este último le puse la sombra con una position absoluta y funciona a medias, porque en algunas resoluciones por algún motivo uno de los h1 expande diferente al otro. Ayuda por favor, me gustaría comprender como hacerlo, creo que la sombra es útil para el caso.
 
 
 
 
 PENDIENTES
+
 Cargar foto de portada en forma aleatoria
+
+Cambiar Tienda por Restaurante
+
+
 
 
 

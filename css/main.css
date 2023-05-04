@@ -4,6 +4,47 @@
   padding: 0;
 }
 
+.btn_primary {
+  font-family: "Roboto condensed", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #412814;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
+  background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  border: 1.5px solid #CE9468;
+  border-radius: 16px;
+  height: 36px;
+  width: 260px;
+  z-index: 10;
+  transition: all 200ms ease-in-out 0ms;
+}
+.btn_primary:hover {
+  background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
+  color: #0D1105;
+}
+
+.btn_secondary {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fbfbfb;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 288px;
+  height: 36px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
+  background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  border: 1px solid #CE9468;
+  border-radius: 24px;
+  transition: all 200ms ease-in-out 0ms;
+}
+.btn_secondary:hover {
+  background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
+}
+
 @font-face {
   font-family: "Aniron";
   src: url("../fonts/aniron.ttf");
@@ -17,13 +58,32 @@
 /* --- HEADER - Global values --- */
 .header {
   background-color: #0D1105;
-  background-image: url("../imgs/img_homeHeroTablets.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.home {
+  background-image: url("../imgs/header_mobile_home_01.png");
+}
+
+.attractions {
+  background-image: url("../imgs/header_mobile_attractions_01.png");
+}
+
+.promos {
+  background-image: url("../imgs/header_mobile_promos_01.png");
+}
+
+.food {
+  background-image: url("../imgs/header_mobile_food_02.png");
+}
+
+.contact {
+  background-image: url("../imgs/header_mobile_contact_01.png");
 }
 
 .navbar {
@@ -57,7 +117,7 @@
 }
 
 .navbar-dark {
-  --bs-navbar-active-color: #fbfbfb90;
+  --bs-navbar-active-color: #fbfbfbb4;
 }
 
 /* --- HEADER - Hero --- */
@@ -66,17 +126,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .hero h1 {
   position: relative;
   font-family: "Trajan Pro", "Times New Roman", serif;
   font-size: 32px;
   line-height: 34px;
-  background: linear-gradient(92.15deg, #C48452 5.16%, #F7C9A5 64.69%, #A26331 98.09%);
+  background-image: linear-gradient(92.15deg, #C48452 5.16%, #F7C9A5 64.69%, #A26331 98.09%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
+  color: #CE9468;
   margin-top: 198px;
 }
 
@@ -89,8 +150,8 @@
   line-height: 21px;
   color: #fbfbfb;
   margin-top: 16px;
-  opacity: 0.8;
   max-width: 380px;
+  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 }
 
 .hero__p2 {
@@ -115,27 +176,6 @@
 .hero__btnFiruletes {
   z-index: 1;
   margin-top: -55px;
-}
-
-.hero__btn {
-  font-family: "Roboto condensed", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 21px;
-  text-align: center;
-  color: #412814;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
-  background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  border: 1.5px solid #DCA579;
-  border-radius: 16px;
-  height: 36px;
-  width: 260px;
-  z-index: 10;
-  transition: all 200ms ease-in-out 0ms;
-}
-.hero__btn:hover {
-  background: linear-gradient(160deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  color: #0D1105;
 }
 
 /* ------------ MAIN --------------- */
@@ -283,24 +323,69 @@
   line-height: 16px;
 }
 
-.btn_secondary {
-  font-family: "Roboto Condensed";
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  color: #fbfbfb;
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  width: 288px;
-  height: 36px;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
-  background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  border: 1px solid #CE9468;
-  border-radius: 24px;
-  transition: all 200ms ease-in-out 0ms;
+/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
+.sectionB__bg {
+  background-color: #B8BAB8;
 }
-.btn_secondary:hover {
-  background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.65));
+
+.sectionB__cards {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 64px;
+  padding-bottom: 108px;
+}
+
+.attraction--card {
+  font-family: "Roboto condensed", serif;
+}
+.attraction--card .card-header {
+  font-size: 15px;
+  padding: 0.16rem;
+  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  color: #fbfbfb;
+  opacity: 0.85;
+}
+.attraction--card .card-title {
+  font-weight: 900;
+  text-align: left;
+  color: #0D1105;
+  opacity: 0.65;
+}
+.attraction--card .card-text {
+  text-align: left;
+  font-size: 15px;
+  color: #0D1105;
+  opacity: 0.85;
+}
+.attraction--card .text-body {
+  font-weight: 700;
+  color: #7C7C7C !important;
+}
+.attraction--card .btn__cards {
+  display: block;
+  padding: 0.3rem 1rem;
+  font-family: "Roboto condensed", serif;
+  text-align: center;
+  font-size: 1rem;
+  color: #fbfbfb;
+  text-decoration: none;
+  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
+  background-color: #000;
+  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
+}
+.attraction--card .btn__cards:hover {
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
+}
+.attraction--card .btn-tertiary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.65;
+  color: #412814;
+}
+.attraction--card .btn-tertiary:hover {
+  text-decoration: underline;
 }
 
 /* ------------ Strokes ------------- */
@@ -487,7 +572,7 @@
   font-size: 22px;
   line-height: 26px;
   color: #fbfbfb;
-  text-shadow: 0px 2px 16px rgb(13, 17, 5);
+  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 }
 
 #here {
@@ -739,8 +824,20 @@
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  .header {
-    background-image: url("../imgs/img_homeHero.png");
+  .home {
+    background-image: url("../imgs/header_desktop_home_01.png");
+  }
+  .attractions {
+    background-image: url("../imgs/header_desktop_attractions_01.png");
+  }
+  .promos {
+    background-image: url("../imgs/header_desktop_promos_01.png");
+  }
+  .food {
+    background-image: url("../imgs/header_desktop_food_02.png");
+  }
+  .contact {
+    background-image: url("../imgs/header_desktop_contact_01.png");
   }
   .logoME {
     width: 140%;
@@ -825,8 +922,20 @@
   }
 }
 @media only screen and (min-width: 993px) {
-  .header {
-    background-image: url("../imgs/img_homeHero.png");
+  .home {
+    background-image: url("../imgs/header_desktop_home_01.png");
+  }
+  .attractions {
+    background-image: url("../imgs/header_desktop_attractions_01.png");
+  }
+  .promos {
+    background-image: url("../imgs/header_desktop_promos_01.png");
+  }
+  .food {
+    background-image: url("../imgs/header_desktop_food_02.png");
+  }
+  .contact {
+    background-image: url("../imgs/header_desktop_contact_01.png");
   }
   .logoME {
     width: 180%;
@@ -976,8 +1085,15 @@
   #here {
     height: 72px;
   }
-  .footer__info__logo, .footer__info__iconHere, .footer__info__iconTime, .footer__info__iconMail, .footer__info__iconPhone,
-  .footer__info__adress, .footer__info__mail, .footer__info__phone, .footer__info__time {
+  .footer__info__logo,
+  .footer__info__iconHere,
+  .footer__info__iconTime,
+  .footer__info__iconMail,
+  .footer__info__iconPhone,
+  .footer__info__adress,
+  .footer__info__mail,
+  .footer__info__phone,
+  .footer__info__time {
     display: block;
   }
   .footer__info {

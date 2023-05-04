@@ -44,7 +44,7 @@
 		font-size: 22px;
 		line-height: 26px;
 		color: $white;
-		text-shadow: 0px 2px 16px rgba(13, 17, 5, 1);
+		text-shadow: $darkTextShadow;
 	}
 }
 
@@ -80,7 +80,7 @@
 
 .footer__centeredYStroke {
 	height: 2px;
-	background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+	background: $stroke--gradient;
 }
 
 
@@ -237,7 +237,7 @@
 .footer__info__final .footer__info__stroke_final {
 	position: relative;
 	height: 2px;
-	background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+	background: $stroke--gradient;
 	z-index: 20;
 	margin-top: 76px;
 	max-width: 1280px;

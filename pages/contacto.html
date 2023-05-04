@@ -5,20 +5,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- favicon -->
 	<link rel="shortcut icon" href="../imgs/fav_ME.svg">
+
 	<!-- bootstrap connection -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/main.css">
-	<title>Middle Earth Park</title>
+	<title>Contacto | Middle Earth Park</title>
 </head>
+
+
 
 
 <body>
 
 	<!--===== HEADER SECTION ==========================================================================================================-->
-	<header class="header">
+	<header class="header contact">
 
 		<!-- - - HEADER__navbar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<div id="arriba" class="container-fluid">
@@ -50,10 +54,10 @@
 								<a class="nav-link" href="../pages/promociones.html">Promociones</a>
 							</li>
 							<li class="nav-item ms-auto">
-								<a class="nav-link" href="../pages/tienda.html">Tienda</a>
+								<a class="nav-link" href="../pages/gastronomia.html">Gastronomía</a>
 							</li>
 							<li class="nav-item ms-auto">
-								<a class="nav-link active" aria-current="page" href="#">Contacto</a>
+								<a class="border-bottom nav-link active" aria-current="page" href="#">Contacto</a>
 							</li>
 						</ul>
 					</div>
@@ -66,7 +70,7 @@
 				<h1>Sumérgete en la magia de la Tierra Media</h1>
 				<p class="hero__p1">Adentrate en un universo fantástico en el parque temático de Middle Earth.</p>
 				<p class="hero__p2">Explora lugares mágicos y vive emocionantes aventuras.</p>
-				<div class="hero__btn--primary">
+				<div class="hero__btn--primary invisible">
 					<button class="hero__btn">Comprá tus boletos ahora</button>
 					<img class="hero__firuletes" src="../imgs/firuletes.svg" alt="firuletes">
 				</div>
@@ -101,24 +105,10 @@
 		</section>
 
 
+
+
 		<!-- - - Section B: Benefits in the park - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<section class="sectionB container-fluid">
-			<h3>Middle Earth</h3>
-			<h4>- Adventure -</h4>
-			<div class="sectionB__icons">
-				<div class="icon_1a"><img src="../imgs/iconWalks.svg" alt="icono de persona caminando"></div>
-				<div class="icon_1b">Excursiones salvajes</div>
-				<div class="icon_2a"><img src="../imgs/iconFood.svg" alt="icono de comida"></div>
-				<div class="icon_2b">Experiencias Gourmet</div>
-				<div class="icon_3a"><img src="../imgs/iconFights.svg" alt="icono de luchas"></div>
-				<div class="icon_3b">Justas épicas</div>
-				<div class="icon_4a"><img src="../imgs/iconBeer.svg" alt="icono de cerveza"></div>
-				<div class="icon_4b">Cervezas medievales</div>
-				<div class="icon_5a"><img src="../imgs/iconRiding.svg" alt="icono de cabalgatas"></div>
-				<div class="icon_5b">Ecuestre extremo</div>
-			</div>
-			<p>¡Comprá tus boletos ahora y vive la aventura de hacer realidad tus sueños de la Edad Media!</p>
-			<button class="btn_secondary">Ver promociones</button>
 		</section>
 
 
@@ -130,131 +120,27 @@
 
 
 
-		<!-- - - Section C: Image's slider - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionC__mobile">
-			<!-- bootstrap carousel -->
-			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-
-				<!-- imgs -->
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../imgs/carrousel_1Tablets.jpg" class="d-block w-100"
-							alt="Aves volando sobre montañas">
-					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../imgs/carrousel_2Tablets.jpg" class="d-block w-100" alt="Salida de expedición">
-					</div>
-					<div class="carousel-item">
-						<img src="../imgs/carrousel_3Tablets.jpg" class="d-block w-100"
-							alt="Personas cruzando un puente en un bosque">
-					</div>
-				</div>
-
-				<!-- controls previous-next -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</section>
-
-
-		<section class="sectionC__desktop">
-			<!-- bootstrap carousel -->
-			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-
-				<!-- imgs -->
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../imgs/carrousel_1.jpg" class="d-block w-100" alt="Aves volando sobre montañas">
-					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../imgs/carrousel_2.jpg" class="d-block w-100" alt="Salida de expedición">
-					</div>
-					<div class="carousel-item">
-						<img src="../imgs/carrousel_3.jpg" class="d-block w-100"
-							alt="Personas cruzando un puente en un bosque">
-					</div>
-				</div>
-
-				<!-- controls previous-next -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</section>
-
-
-
-
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<div class="carrousel__DownStroke"></div>
 
 
 
-
-		<!-- - - Section D: Testimonies - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionD">
-			<div class="testimonies container-fluid">
-
-				<!-- imgs -->
-				<div class="testimonies__Img1">
-					<img src="../imgs/testimony_1.png" alt="Fili" class="fili">
-				</div>
-				<div class="testimonies__Img2">
-					<img src="../imgs/testimony_2.png" alt="Gandalf" class="gandalf">
-				</div>
-				<div class="testimonies__Img3">
-					<img src="../imgs/testimony_3.png" alt="Bilbo" class="bilbo">
-				</div>
-
-				<!-- opinions -->
-				<div class="testimonies__Txt1">
-					<p>Una maravilla de la Tierra Media. Impresionantes atracciones y deliciosa comida élfica.</p>
-				</div>
-				<div class="testimonies__Txt2">
-					<p>El mejor lugar para experimentar la auténtica atmósfera de la Tierra Media. Impresionantes vistas
-						panorámicas.</p>
-				</div>
-				<div class="testimonies__Txt3">
-					<p>Un lugar verdaderamente mágico. El juego de rol en la Comarca fue una experiencia inolvidable.
-					</p>
-				</div>
-
-				<!-- signs -->
-				<div class="testimonies__Sign1">
-					<p>Fili</p>
-				</div>
-				<div class="testimonies__Sign2">
-					<p>Gandalf</p>
-				</div>
-				<div class="testimonies__Sign3">
-					<p>Bilbo</p>
-				</div>
-			</div>
-		</section>
-
 	</main>
+
 
 
 
 	<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	<div class="carrousel__UpperStroke"></div>
+
+
+	
+
+	<!-- - - Up Arrow button - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<div id="btn__arrowUp">
+		<a href="#arriba">
+			<img class="btn__arrow" src="../imgs/iconArrowUpBox--txt.svg" alt="Ir arriba" /></a>
+	</div>
 
 
 
@@ -292,14 +178,9 @@
 
 
 
+
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<div class="footer__centeredYStroke"></div>
-
-
-
-		<!-- - - Up Arrow - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div id="arrowUp"><a href="#arriba"><img class="arrow" src="../imgs/iconArrowUpBox.svg" alt="Ir arriba" /></a>
-		</div>
 
 
 
@@ -368,10 +249,16 @@
 	</footer>
 
 
+
+
 	<!-- bootstrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
 	</script>
+
+	<!-- link to the script for the button arrowUP (go to the top of the page) -->
+	<script src="../js/arrow-up.js"></script>
+	
 </body>
 
 </html>
