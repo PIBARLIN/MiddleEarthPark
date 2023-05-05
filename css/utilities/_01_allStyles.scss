@@ -31,13 +31,11 @@ $stroke--gradient: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36
 
 // ---------SHADOWS--------------------
 // Drop Shadows
-$lightShadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
-$mediumShadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
-$darkShadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.85));
+$lightShadow: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.35));
+$mediumShadow: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
+$darkShadow: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
+$textShadow: drop-shadow(0 0 3px rgba(13, 17, 5, 1));
 
-// Text Shadows
-$lightTextShadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-$darkTextShadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 
 
 
@@ -55,7 +53,7 @@ $darkTextShadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 // 	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
 // 	transform: translateX(56px);
 // 	transition: 2s;
-	
+
 // 	&:hover {
 // 		transform: scale(1.05);
 // 		transition: all 200ms ease-in-out 0ms;
@@ -106,7 +104,7 @@ $darkTextShadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 	font-size: 16px;
 	text-align: center;
 	color: $white;
-	text-shadow: $lightTextShadow;
+	filter: $textShadow;
 	width: 288px;
 	height: 36px;
 	filter: $lightShadow;
@@ -135,7 +133,7 @@ $darkTextShadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 // 	font-size: 1rem;
 // 	color: $white;
 // 	text-decoration: none;
-// 	text-shadow: $darkTextShadow;
+// 	filter: $textShadow;
 // 	background-color: #000;
 // 	background-image: $golden--gradient;
 // 	border-radius: 8px;

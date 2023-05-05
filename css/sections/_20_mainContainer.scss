@@ -24,13 +24,13 @@
 	color: $lightGreen;
 	text-align: left;
 	max-width: 80vw;
-}
 
-.sectionA__p1::first-letter,
-.sectionA__p2::first-letter {
-	initial-letter: 2;
-	padding-right: 2px;
-	color: $gold;
+	&::first-letter,
+	&::first-letter {
+		initial-letter: 2;
+		padding-right: 2px;
+		color: $gold;
+	}
 }
 
 
@@ -41,7 +41,6 @@
 .sectionB {
 	padding-top: 56px;
 	padding-bottom: 56px;
-	background-color: $lightGray;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -157,93 +156,10 @@
 
 
 
-/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
-// Attraction's cards with BS
-.sectionB__bg {
-	background-color: $lightGray;
-}
-
-.sectionB__cards {
-	max-width: 1000px;
-	margin: auto;
-	padding-top: 64px;
-	padding-bottom: 108px;
-}
-
-.attraction--card {
-	font-family: 'Roboto condensed', serif;
-
-	// Header: type of attraction
-	.card-header {
-		font-size: 15px;
-		padding: 0.16rem;
-		background-image: $golden--gradient;
-		color: $white;
-		opacity: 0.85;
-	}
-
-	// Image: Descriptive of attraction
-	.card-title {
-		font-weight: 900;
-		text-align: left;
-		color: $darkGreen;
-		opacity: 0.65;
-	}
-
-	// Body's texts: Name and description of attraction
-	.card-text {
-		text-align: left;
-		font-size: 15px;
-		color: $darkGreen;
-		opacity: 0.85;
-	}
-
-	// Footer: Price of attraction
-	.text-body {
-		font-weight: 700;
-		color: $lead !important;
-	}
-
-	// Footer: Buttons to buy and more info
-	.btn__cards {
-		display: block;
-		padding: 0.3rem 1rem;
-		font-family: 'Roboto condensed', serif;
-		text-align: center;
-		font-size: 1rem;
-		color: $white;
-		text-decoration: none;
-		text-shadow: $darkTextShadow;
-		background-color: #000;
-		background-image: $golden--gradient;
-		border-radius: 8px;
-		filter: $lightShadow;
-
-		&:hover {
-			filter: $mediumShadow;
-		}
-	}
-
-	// Footer: Tertiary buttons
-	.btn-tertiary {
-		font-size: 0.85rem;
-		font-weight: 600;
-		opacity: 0.65;
-		color: $darkGold;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
-
-
-
-
-
-
 /* ------------ Strokes ------------- */
 .carrousel__UpperStroke {
+	position: relative;
+	z-index: 200;
 	margin-top: -4px;
 	margin-bottom: 2px;
 	height: 2px;
@@ -251,6 +167,8 @@
 }
 
 .carrousel__DownStroke {
+	position: relative;
+	z-index: 200;
 	margin-top: 2px;
 	margin-bottom: -4px;
 	height: 2px;
@@ -261,7 +179,6 @@
 
 
 /* --- MAIN - SectionC --- */
-/* --- MAIN - Line --- */
 .sectionC__carousel {
 	background-color: $darkGreen;
 }
@@ -292,6 +209,13 @@
 
 
 
+
+/* --- MAIN - SectionD --- */
+.sectionD {
+	background-color: $white;
+	padding: 36px 0;
+}
+
 .testimonies {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -305,8 +229,8 @@
 	max-width: 320px;
 	align-items: start;
 	justify-items: center;
-	margin-top: 76px;
-	margin-bottom: 76px;
+	// margin-top: 76px;
+	// margin-bottom: 76px;
 }
 
 .testimonies__Img1 {
@@ -394,4 +318,135 @@
 .testimonies__Txt2,
 .testimonies__Sign2 {
 	display: none;
+}
+
+
+
+
+
+
+
+
+
+// ================================================================================
+
+// Changes for Attractions, Promos and Restaurant
+.sectionA_content {
+	background-color: transparent;
+}
+
+.sectionA__h2_content {
+	color: $darkGold;
+	padding-top: 16px;
+}
+
+.sectionA__p1_content,
+.sectionA__p2_content {
+	color: $darkGreen;
+	padding-bottom: 25px;
+
+	&::first-letter,
+	&::first-letter {
+		color: $darkGold;
+	}
+}
+
+
+
+
+/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
+// Attraction's cards with BS
+.sectionB__cards {
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 64px;
+	padding-bottom: 108px;
+}
+
+.attraction--card {
+	font-family: 'Roboto condensed', serif;
+
+	// Header: type of attraction
+	.card-header {
+		font-size: 15px;
+		padding: 0.16rem;
+		background-image: $golden--gradient;
+		color: $white;
+
+	}
+
+	// Image: Descriptive of attraction
+	.card-title {
+		font-weight: 900;
+		text-align: left;
+		color: $darkGreen;
+		opacity: 0.65;
+	}
+
+	// Body's texts: Name and description of attraction
+	.card-text {
+		text-align: left;
+		font-size: 15px;
+		color: $darkGreen;
+		opacity: 0.85;
+	}
+
+	// Footer: Price of attraction
+	.text-body {
+		font-weight: 700;
+		color: $lead !important;
+		display: block;
+	}
+
+	// Footer: Buttons to buy and more info
+	.btn__cards {
+		display: block;
+		padding: 0.3rem 1rem;
+		font-family: 'Roboto condensed', serif;
+		text-align: center;
+		font-size: 1rem;
+		color: $white;
+		text-decoration: none;
+		background-color: #000;
+		background-image: $golden--gradient;
+		border-radius: 8px;
+		filter: $lightShadow;
+
+		&:hover {
+			filter: $mediumShadow;
+		}
+	}
+
+	// Footer: Tertiary buttons
+	.btn-tertiary {
+		font-size: 0.85rem;
+		font-weight: 600;
+		opacity: 0.65;
+		color: $darkGold;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+
+/* ------------ MAIN Section B :: PROMOS PAGE ------------- */
+// Promo's cards with BS
+// Last moment in Promos
+.sectionC__lastMoment {
+	max-width: 768px;
+	margin: auto;
+
+	&:hover {
+		filter: $darkShadow;
+		transform: scale(1.009);
+	}
+}
+
+.btn__cards--tight {
+	max-width: 256px;
+	margin: auto;
 }

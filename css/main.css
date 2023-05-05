@@ -11,7 +11,7 @@
   line-height: 21px;
   text-align: center;
   color: #412814;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
   background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
   border: 1.5px solid #CE9468;
   border-radius: 16px;
@@ -31,10 +31,10 @@
   font-size: 16px;
   text-align: center;
   color: #fbfbfb;
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 0 3px rgb(13, 17, 5));
   width: 288px;
   height: 36px;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.35));
   background: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
   border: 1px solid #CE9468;
   border-radius: 24px;
@@ -42,7 +42,7 @@
 }
 .btn_secondary:hover {
   background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
 }
 
 @font-face {
@@ -75,7 +75,7 @@
 }
 
 .promos {
-  background-image: url("../imgs/header_mobile_promos_01.png");
+  background-image: url("../imgs/header_mobile_promos_02.png");
 }
 
 .food {
@@ -90,6 +90,7 @@
   padding-top: 20px;
   --bs-navbar-toggler-padding-y: 0.15rem;
   --bs-navbar-toggler-padding-x: 0.35rem;
+  filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
 
 .navbar-brand:hover {
@@ -110,7 +111,6 @@
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   color: #fbfbfb;
-  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
 }
 .navbar a:visited {
   color: #fbfbfb;
@@ -139,6 +139,7 @@
   background-clip: text;
   color: #CE9468;
   margin-top: 198px;
+  filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
 
 /* --- HEADER - Hero Copy --- */
@@ -151,7 +152,7 @@
   color: #fbfbfb;
   margin-top: 16px;
   max-width: 380px;
-  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
+  filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
 
 .hero__p2 {
@@ -170,12 +171,16 @@
   transition: all 200ms ease-in-out 0ms;
 }
 .hero__btn--primary div:hover {
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.85));
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
 }
 
 .hero__btnFiruletes {
   z-index: 1;
   margin-top: -55px;
+}
+
+.header_content {
+  background-color: transparent;
 }
 
 /* ------------ MAIN --------------- */
@@ -205,8 +210,8 @@
   text-align: left;
   max-width: 80vw;
 }
-
-.sectionA__p1::first-letter,
+.sectionA__p1::first-letter, .sectionA__p1::first-letter,
+.sectionA__p2::first-letter,
 .sectionA__p2::first-letter {
   initial-letter: 2;
   padding-right: 2px;
@@ -217,7 +222,6 @@
 .sectionB {
   padding-top: 56px;
   padding-bottom: 56px;
-  background-color: #B8BAB8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,73 +327,10 @@
   line-height: 16px;
 }
 
-/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
-.sectionB__bg {
-  background-color: #B8BAB8;
-}
-
-.sectionB__cards {
-  max-width: 1000px;
-  margin: auto;
-  padding-top: 64px;
-  padding-bottom: 108px;
-}
-
-.attraction--card {
-  font-family: "Roboto condensed", serif;
-}
-.attraction--card .card-header {
-  font-size: 15px;
-  padding: 0.16rem;
-  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  color: #fbfbfb;
-  opacity: 0.85;
-}
-.attraction--card .card-title {
-  font-weight: 900;
-  text-align: left;
-  color: #0D1105;
-  opacity: 0.65;
-}
-.attraction--card .card-text {
-  text-align: left;
-  font-size: 15px;
-  color: #0D1105;
-  opacity: 0.85;
-}
-.attraction--card .text-body {
-  font-weight: 700;
-  color: #7C7C7C !important;
-}
-.attraction--card .btn__cards {
-  display: block;
-  padding: 0.3rem 1rem;
-  font-family: "Roboto condensed", serif;
-  text-align: center;
-  font-size: 1rem;
-  color: #fbfbfb;
-  text-decoration: none;
-  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
-  background-color: #000;
-  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  border-radius: 8px;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
-}
-.attraction--card .btn__cards:hover {
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.55));
-}
-.attraction--card .btn-tertiary {
-  font-size: 0.85rem;
-  font-weight: 600;
-  opacity: 0.65;
-  color: #412814;
-}
-.attraction--card .btn-tertiary:hover {
-  text-decoration: underline;
-}
-
 /* ------------ Strokes ------------- */
 .carrousel__UpperStroke {
+  position: relative;
+  z-index: 200;
   margin-top: -4px;
   margin-bottom: 2px;
   height: 2px;
@@ -397,6 +338,8 @@
 }
 
 .carrousel__DownStroke {
+  position: relative;
+  z-index: 200;
   margin-top: 2px;
   margin-bottom: -4px;
   height: 2px;
@@ -404,7 +347,6 @@
 }
 
 /* --- MAIN - SectionC --- */
-/* --- MAIN - Line --- */
 .sectionC__carousel {
   background-color: #0D1105;
 }
@@ -429,6 +371,12 @@
   display: none;
 }
 
+/* --- MAIN - SectionD --- */
+.sectionD {
+  background-color: #fbfbfb;
+  padding: 36px 0;
+}
+
 .testimonies {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -438,8 +386,6 @@
   max-width: 320px;
   align-items: start;
   justify-items: center;
-  margin-top: 76px;
-  margin-bottom: 76px;
 }
 
 .testimonies__Img1 {
@@ -529,6 +475,101 @@
   display: none;
 }
 
+.sectionA_content {
+  background-color: transparent;
+}
+
+.sectionA__h2_content {
+  color: #412814;
+  padding-top: 16px;
+}
+
+.sectionA__p1_content,
+.sectionA__p2_content {
+  color: #0D1105;
+  padding-bottom: 25px;
+}
+.sectionA__p1_content::first-letter, .sectionA__p1_content::first-letter,
+.sectionA__p2_content::first-letter,
+.sectionA__p2_content::first-letter {
+  color: #412814;
+}
+
+/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
+.sectionB__cards {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 64px;
+  padding-bottom: 108px;
+}
+
+.attraction--card {
+  font-family: "Roboto condensed", serif;
+}
+.attraction--card .card-header {
+  font-size: 15px;
+  padding: 0.16rem;
+  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  color: #fbfbfb;
+}
+.attraction--card .card-title {
+  font-weight: 900;
+  text-align: left;
+  color: #0D1105;
+  opacity: 0.65;
+}
+.attraction--card .card-text {
+  text-align: left;
+  font-size: 15px;
+  color: #0D1105;
+  opacity: 0.85;
+}
+.attraction--card .text-body {
+  font-weight: 700;
+  color: #7C7C7C !important;
+  display: block;
+}
+.attraction--card .btn__cards {
+  display: block;
+  padding: 0.3rem 1rem;
+  font-family: "Roboto condensed", serif;
+  text-align: center;
+  font-size: 1rem;
+  color: #fbfbfb;
+  text-decoration: none;
+  background-color: #000;
+  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.35));
+}
+.attraction--card .btn__cards:hover {
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
+}
+.attraction--card .btn-tertiary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.65;
+  color: #412814;
+}
+.attraction--card .btn-tertiary:hover {
+  text-decoration: underline;
+}
+
+/* ------------ MAIN Section B :: PROMOS PAGE ------------- */
+.sectionC__lastMoment {
+  max-width: 768px;
+  margin: auto;
+}
+.sectionC__lastMoment:hover {
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
+  transform: scale(1.009);
+}
+
+.btn__cards--tight {
+  max-width: 256px;
+  margin: auto;
+}
+
 /* --- FOOTER - Section_map --- */
 .footer {
   background-color: #0D1105;
@@ -572,7 +613,7 @@
   font-size: 22px;
   line-height: 26px;
   color: #fbfbfb;
-  text-shadow: 0px 2px 8px rgba(13, 17, 5, 0.85);
+  filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
 
 #here {
@@ -831,7 +872,7 @@
     background-image: url("../imgs/header_desktop_attractions_01.png");
   }
   .promos {
-    background-image: url("../imgs/header_desktop_promos_01.png");
+    background-image: url("../imgs/header_desktop_promos_02.png");
   }
   .food {
     background-image: url("../imgs/header_desktop_food_02.png");
@@ -929,7 +970,7 @@
     background-image: url("../imgs/header_desktop_attractions_01.png");
   }
   .promos {
-    background-image: url("../imgs/header_desktop_promos_01.png");
+    background-image: url("../imgs/header_desktop_promos_02.png");
   }
   .food {
     background-image: url("../imgs/header_desktop_food_02.png");
@@ -1115,6 +1156,7 @@
 body {
   text-align: center;
   position: relative;
+  background-image: linear-gradient(-45deg, #2B2B2B 0%, #C8C8C8 35%, #E2E2E2 53%, #ABABAB 69%, #5B5B5B 100%);
 }
 
 #btn__arrowUp {

@@ -22,7 +22,12 @@ PENDIENTES
 
 Cargar foto de portada en forma aleatoria
 
-Cambiar Tienda por Restaurante
+Sombra en h1
+
+Modal de cookies
+
+Mejorar foto del heather de comidas
+
 
 
 
