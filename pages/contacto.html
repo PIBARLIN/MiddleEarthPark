@@ -22,7 +22,7 @@
 <body>
 
 	<!--===== HEADER SECTION ==========================================================================================================-->
-	<header class="header contact">
+	<header class="header header_content contact">
 
 		<div id="arriba" class="container-fluid">
 			<!-- - - HEADER__navbar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -85,43 +85,69 @@
 
 	<!--===== MAIN SECTION ==========================================================================================================-->
 	<main>
+		<!-- Section A contact form with BS -->
+		<section class="container-fluid sectionA__contact p-3 border-0 bd-example">
 
-		<!-- - - Section A: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionA container-fluid">
-			<h2 class="sectionA__h2">¡Bienvenidos a la Edad Media en todo su esplendor!</h2>
-			<div>
-				<p class="sectionA__p1">En Middle Earth transportarás tus sentidos a una época de caballeros y
-					damiselas, justas y torneos, y aventuras emocionantes en cada rincón. Descubre nuestro castillo
-					imponente y sus murallas, explora nuestras atracciones, con una amplia variedad de comidas y bebidas
-					para todos los gustos y presupuestos, así como tiendas de souvenirs.
-				</p>
-				<p class="sectionA__p2">En el parque temático de Middle Earth, siempre hay algo nuevo por descubrir, ya
-					sea que estés explorando lugares icónicos de las historias de Tolkien, conociendo personajes
-					icónicos de
-					la Tierra Media, siempre tendrás una experiencia única e inolvidable. ¿Estás listo para una aventura
-					inolvidable en nuestra época favorita?
-				</p>
-			</div>
+			<img src="../imgs/gandalfWithComputer.png" class="gandalfComputer" alt="Gandalf usando una computadora">
+			
+			<form class="text-start row g-3 needs-validation">
+
+				<div>
+					<!-- Campo nombre -->
+					<div class="col-md-4">
+						<label for="validationCustom02" class="form-label">Nombre</label>
+						<input type="text" class="form-control" id="validationCustom01"
+							placeholder="Ingresá tu nombre y apellido" value="" required="">
+					</div>
+
+					<!-- Campo email -->
+					<div class="col-md-4">
+						<label for="validationCustom02" class="form-label">Email</label>
+						<input type="text" class="form-control" id="validationCustom02"
+							placeholder="Ingresá tu correo electrónico" value="" required="">
+					</div>
+
+					<!-- Campo asuntos -->
+					<div class="col-md-3">
+						<label for="validationCustom04" class="form-label">Asunto</label>
+						<select class="form-select" id="validationCustom04" required="">
+							<option selected="" disabled="" value="">Elige el asunto de tu mensaje</option>
+							<option value="1">Consultas generales sobre el parque</option>
+							<option value="2">Información sobre los horarios de apertura y cierre</option>
+							<option value="3">Reservas para eventos y celebraciones especiales</option>
+							<option value="4">Comentarios o sugerencias sobre las atracciones o servicios</option>
+							<option value="5">Preguntas sobre los precios de entradas y paquetes</option>
+							<option value="6">Reporte de incidencias o problemas técnicos en el parque</option>
+							<option value="7">Otros</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Campo mensaje -->
+				<div class="mb-3">
+					<label for="validationTextarea" class="form-label">Mensaje</label>
+					<textarea class="form-control" id="validationTextarea"
+						placeholder="Escribe tu mensaje para nosotros" required></textarea>
+				</div>
+
+				<!-- Campo subscripción -->
+				<div class="col-12">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+						<label class="form-check-label" for="invalidCheck">
+							Quiero subscribirme y recibir novedades y promociones en mi correo electrónico
+						</label>
+					</div>
+				</div>
+
+				<!-- Botón de envío -->
+				<div class="col-12 text-center">
+					<button class="btn__cards" type="submit">Enviar mensaje</button>
+				</div>
+			</form>
+
 		</section>
 
-
-
-
-		<!-- - - Section B: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionB container-fluid">
-		</section>
-
-
-
-
-		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="carrousel__UpperStroke"></div>
-
-
-
-
-		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="carrousel__DownStroke"></div>
 
 
 
@@ -134,7 +160,7 @@
 	<div class="carrousel__UpperStroke"></div>
 
 
-	
+
 
 	<!-- - - Up Arrow button - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	<div id="btn__arrowUp">
@@ -258,7 +284,7 @@
 
 	<!-- link to the script for the button arrowUP (go to the top of the page) -->
 	<script src="../js/arrow-up.js"></script>
-	
+
 </body>
 
 </html>

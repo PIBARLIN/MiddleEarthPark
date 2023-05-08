@@ -271,4 +271,41 @@
 
 
     }
+
+
+
+
+    // ---------- MAIN CONTACT ------------
+    // Contact form
+    .sectionA__contact {
+        max-width: 1000px;
+        margin-top: 48px;
+        flex-direction: row;
+        align-items: flex-start;
+
+        img {
+            display: block;
+            margin-top: 48px;
+            margin-right: 12px;
+        }
+    }
+
+
+
+
+    // ---------- MAIN RESTAURANT ------------
+    // Section A Intro
+    //Logo restaurant
+    .logo_theGreenDragon {
+        max-width: 300px;
+    }
+
+    //Section E restaurant menu
+    .sectionE__carousel--menu {
+        display: none;
+    }
+
+    .grid__imgs--menu{
+        display: block;
+    }
 }

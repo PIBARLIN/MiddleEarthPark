@@ -28,7 +28,18 @@ Modal de cookies
 
 Mejorar foto del heather de comidas
 
+Crear menú
 
+allow cookies
+
+-----
+GIF de comida
+<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/S1PNogIEHI4aQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/the-hobbit-an-unexpected-journey-S1PNogIEHI4aQ">via GIPHY</a></p>
+-----
+
+agencia de turismo de la edad media
+
+Covid 19 Update
 
 
 

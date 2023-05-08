@@ -23,7 +23,7 @@
 <body>
 
 	<!--===== HEADER SECTION ==========================================================================================================-->
-	<header class="header food">
+	<header class="header header_content food">
 
 		<div id="arriba" class="container-fluid">
 			<!-- - - HEADER__navbar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -68,12 +68,15 @@
 
 			<!-- - - HEADER__hero - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 			<hero class="hero">
-				<h1>Sumérgete en la magia de la Tierra Media</h1>
-				<p class="hero__p1">Adentrate en un universo fantástico en el parque temático de Middle Earth.</p>
-				<p class="hero__p2">Explora lugares mágicos y vive emocionantes aventuras.</p>
-				<div class="hero__btn--primary invisible">
-					<button class="hero__btn">Comprá tus boletos ahora</button>
-					<img class="hero__firuletes" src="../imgs/firuletes.svg" alt="firuletes">
+				<h1 class="invisible">Sumérgete en la magia de la Tierra Media</h1>
+				<p class="hero__p1 invisible">Adentrate en un universo fantástico en el parque temático de Middle Earth.
+				</p>
+				<p class="hero__p2 invisible">Explora lugares mágicos y vive emocionantes aventuras.</p>
+				<div class="hero__btn--primary">
+					<div>
+						<button class="btn_primary">Reservá ahora</button>
+						<img class="hero__btnFiruletes" src="../imgs/firuletes.svg" alt="firuletes">
+					</div>
 				</div>
 
 			</hero>
@@ -88,39 +91,124 @@
 	<main>
 
 		<!-- - - Section A: Intro - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionA container-fluid">
-			<h2 class="sectionA__h2">¡Bienvenidos a la Edad Media en todo su esplendor!</h2>
+		<section class="sectionA sectionA_content container-fluid">
+			<img class="logo_theGreenDragon" src="../imgs/logo_theGreenDragon.svg"
+				alt="Logo restaurante The Green Dragon" /></a>
 			<div>
-				<p class="sectionA__p1">En Middle Earth transportarás tus sentidos a una época de caballeros y
-					damiselas, justas y torneos, y aventuras emocionantes en cada rincón. Descubre nuestro castillo
-					imponente y sus murallas, explora nuestras atracciones, con una amplia variedad de comidas y bebidas
-					para todos los gustos y presupuestos, así como tiendas de souvenirs.
+				<p class="sectionA__p1 sectionA__p1_content">En el corazón de nuestro parque temático medieval se
+					encuentra el restaurante The Green Dragon, donde ofrecemos una auténtica experiencia gastronómica
+					medieval.
 				</p>
-				<p class="sectionA__p2">En el parque temático de Middle Earth, siempre hay algo nuevo por descubrir, ya
-					sea que estés explorando lugares icónicos de las historias de Tolkien, conociendo personajes
-					icónicos de
-					la Tierra Media, siempre tendrás una experiencia única e inolvidable. ¿Estás listo para una aventura
-					inolvidable en nuestra época favorita?
+				<p class="sectionA__p2 sectionA__p2_content">Nuestros chefs expertos han creado un menú inspirado en los
+					sabores y técnicas de cocina de la época, usando solo los ingredientes más frescos y de alta
+					calidad.
 				</p>
 			</div>
+
 		</section>
 
-
-		<!-- - - Section B - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionB container-fluid">
-		</section>
-
-
-
-
-		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="carrousel__UpperStroke"></div>
+		<div class="tolkienPhrase">
+			<div class="carrousel__UpperStroke"></div>
+			<p class="sectionA__tolkien">“No es malo celebrar una vida sencilla.”</p>
+			<p class="sectionA__tolkien__sign">J.R.R. Tolkien</p>
+			<div class="carrousel__DownStroke"></div>
+		</div>
 
 
 
 
 		<!-- - - Section C - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionC__mobile">
+		<section class="sectionC__carousel">
+
+			<!-- bootstrap carousel Mobile -->
+			<div id="carouselExampleAutoplaying" class="sectionC__carousel--mobile carousel slide carousel-fade"
+				data-bs-ride="carousel">
+
+				<!-- imgs for MOBILE SCREENS-->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="../imgs/restaurant__carouselMobile--01.jpg"
+							class="carousel__imgs--desktop1 d-block w-100"
+							alt="Aves volando sobre un paisaje montañoso">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carouselMobile--02.jpg"
+							class="carousel__imgs--desktop2 d-block w-100" alt="Personas saliendo de excursión">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carouselMobile--03.jpg"
+							class="carousel__imgs--desktop3 d-block w-100"
+							alt="Grupo de personas cruzando un puente en el bosque">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carouselMobile--04.jpg"
+							class="carousel__imgs--desktop3 d-block w-100"
+							alt="Grupo de personas cruzando un puente en el bosque">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carouselMobile--05.jpg"
+							class="carousel__imgs--desktop3 d-block w-100"
+							alt="Grupo de personas cruzando un puente en el bosque">
+					</div>
+				</div>
+
+				<!-- controls previous-next -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+
+
+
+			<!-- bootstrap carousel Desktop -->
+			<div id="carouselExampleAutoplaying" class="sectionC__carousel--desktop carousel slide carousel-fade"
+				data-bs-ride="carousel">
+
+				<!-- imgs for MOBILE SCREENS-->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="../imgs/restaurant__carousel--01.jpg" class="carousel__imgs--desktop1 d-block w-100"
+							alt="Aves volando sobre un paisaje montañoso">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carousel--02.jpg" class="carousel__imgs--desktop2 d-block w-100"
+							alt="Personas saliendo de excursión">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carousel--03.jpg" class="carousel__imgs--desktop3 d-block w-100"
+							alt="Grupo de personas cruzando un puente en el bosque">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carousel--04.jpg" class="carousel__imgs--desktop3 d-block w-100"
+							alt="Grupo de personas cruzando un puente en el bosque">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/restaurant__carousel--05.jpg" class="carousel__imgs--desktop3 d-block w-100"
+							alt="Grupo de personas cruzando un puente en el bosque">
+					</div>
+				</div>
+
+				<!-- controls previous-next -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
 		</section>
 
 
@@ -130,6 +218,150 @@
 		<div class="carrousel__DownStroke"></div>
 
 
+
+
+		<!-- - - Section E menu - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<section class="sectionE__menu">
+
+			<!-- Accordion with BS -->
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							Nuestro Menú
+						</button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<p>Recomendamos nuestras deliciosas sopas de cebolla con queso gratinado o nuestra selección
+								de aperitivos
+								de estilo medieval como pan de ajo y queso derretido o empanadas de carne y verduras.
+							</p>
+							<p>Nuestros platos principales incluyen pollo asado con hierbas y especias, cordero asado
+								con romero y ajo,
+								o nuestro filete de res a la parrilla con mantequilla de ajo y hierbas. Todos nuestros
+								platos se sirven
+								con guarnicione s medievales tradicionales como verduras de temporada, puré de papas o
+								arroz especiado.
+							</p>
+							<p>Para el postre, ofrecemos una selección de tartas y pasteles hechos en casa, como tarta
+								de manzana con
+								canela, pastel de chocolate y tarta de frutas de temporada.
+							</p>
+						</div>
+						<img src="../imgs/menu.jpg" alt="Grupo de personas festejando y comiendo">
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							Eventos privados
+						</button>
+					</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Sumá un poco de magia medieval en tu próximo evento y comparte con
+							cuantos quieras.</div>
+						<img src="../imgs/privatesEvents.png" alt="Grupo de personas festejando y comiendo">
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree" aria-expanded="false"
+							aria-controls="flush-collapseThree">
+							Festival de la cerveza
+						</button>
+					</h2>
+					<div id="flush-collapseThree" class="accordion-collapse collapse"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Se servirá una variedad de cervezas especiales exclusivamente para
+							este evento y para aquellos que no son tan aficionados a la cerveza, pueden disfrutar de
+							nuestra sidra, Vino de la Tierra Media™ y bebidas sin alcohol.</div>
+						<img src="../imgs/beerFestival.jpg" alt="Dos hombes festejand con cerveza">
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- Carousel with BS -->
+			<div id="carouselExample" class="carousel sectionE__carousel--menu slide carousel-fade">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="../imgs/slider__menu--01.png" class="img_menu d-block w-100" alt="Comida">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/slider__menu--02.png" class="img_menud-block w-100" alt="Comida">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/slider__menu--03.png" class="img_menud-block w-100" alt="Comida">
+					</div>
+					<div class="carousel-item active">
+						<img src="../imgs/slider__menu--04.png" class="img_menud-block w-100" alt="Comida">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/slider__menu--05.png" class="img_menud-block w-100" alt="Comida">
+					</div>
+					<div class="carousel-item">
+						<img src="../imgs/slider__menu--06.png" class="img_menud-block w-100" alt="Comida">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Grid imgs with food -->
+			<div class="grid__imgs--menu container-fluid">
+				<div class="imgs__menu">
+					<div class="menu_01"><img src="../imgs/menu_01.jpg" alt="food"></div>
+					<div class="menu_02"><img src="../imgs/menu_02.jpg" alt="food"></div>
+					<div class="menu_03"><img src="../imgs/menu_03.jpg" alt="food"></div>
+					<div class="menu_04"><img src="../imgs/menu_04.jpg" alt="food"></div>
+					<div class="menu_05"><img src="../imgs/menu_05.jpg" alt="food"></div>
+					<div class="menu_06"><img src="../imgs/menu_06.jpg" alt="food"></div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+		<!-- - - Section F reservations- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<section class="sectionF__reservations container-fluid">
+			<h3>Reservaciones</h3>
+			<p>Se recomienda hacer reservaciones con anticipación para asegurar un asiento en nuestro restaurante.</p>
+			<p>Puedes reservar en línea o por teléfono al +5 564-654-9457.</p>
+
+
+		</section>
+
+		<!-- - - Section G reservations- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<section class="video__restaurant">
+			<iframe src="https://www.youtube.com/embed/T3p_A3CbN-0" title="The Green Dragon" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe>
+		</section>
+
+		<!-- - - Section H adress - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<section class="restaurantAdress container-fluid">
+			<h3>Ubicación y horario</h3>
+			<p>Estamos ubicados en el corazón del parque temático medieval, en la Plaza del Castillo.</p>
+			<p>Abierto todos los días de la semana de 12:00 p.m. a 9:00 p.m.</p>
+		</section>
 
 
 	</main>
@@ -265,7 +497,7 @@
 
 	<!-- link to the script for the button arrowUP (go to the top of the page) -->
 	<script src="../js/arrow-up.js"></script>
-	
+
 </body>
 
 </html>

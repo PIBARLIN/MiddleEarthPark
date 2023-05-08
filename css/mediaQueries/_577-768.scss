@@ -71,7 +71,19 @@
 
 
 
+    // ---------- MAIN RESTAURANT ------------
+    // Section A Intro
+    //Logo restaurant
+    .logo_theGreenDragon {
+        max-width: 300px;
+    }
 
+    //Section E restaurant menu
+    .sectionE__carousel--menu {
+        display: none;
+    }
 
-
+    .grid__imgs--menu{
+        display: block;
+    }
 }
