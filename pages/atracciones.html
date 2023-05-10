@@ -40,7 +40,7 @@
 <!-- ================================================================================================= -->
 
 
-<body>
+<body class="loading">
 
 	<!--===== HEADER SECTION ==========================================================================================================-->
 	<header class="header header__content attractions">
@@ -112,7 +112,8 @@
 		<section class="sectionA sectionA__content container-fluid">
 			<h2 class="sectionA__h2 sectionA__h2--content">¡Vive la aventura de tu vida!</h2>
 			<div>
-				<p class="sectionA__p1 sectionA__p1--content">Si buscas emociones fuertes y quieres vivir una experiencia
+				<p class="sectionA__p1 sectionA__p1--content">Si buscas emociones fuertes y quieres vivir una
+					experiencia
 					única, en nuestro
 					parque encontrarás las mejores atracciones para disfrutar en familia o con amigos. Desde montañas
 					rusas de alta velocidad hasta atracciones acuáticas refrescantes, tenemos todo lo que necesitas para
@@ -163,7 +164,7 @@
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 450 monedas de oro - - - ---</small>
 						</div>
-						
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
@@ -310,7 +311,7 @@
 
 						<!-- Header: type of attraction -->
 						<div class="card-header">Entretenimiento & espectáculos</div>
-						
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_06.jpg" class="card_attractionImg" alt="Dragón volando">
 
@@ -466,7 +467,7 @@
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
-						
+
 					</div>
 				</div>
 
@@ -606,6 +607,13 @@
 
 	<!-- link to the script for the button arrowUP (go to the top of the page) -->
 	<script src="../js/arrow-up.js"></script>
+
+	<!-- Wait the page is fully loaded until you can see it -->
+	<script>
+		window.addEventListener('load', function () {
+			document.body.classList.remove('loading');
+		});
+	</script>
 </body>
 
 </html>
