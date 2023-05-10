@@ -1,7 +1,8 @@
 @media only screen and (min-width: 577px) and (max-width: 768px) {
 
-    // ------------ HEADER ---------------
-    // --- HEADER - navbar ---
+    /* ------------ HEADER SECTION --------------- */
+    //=========================================================
+    /* --- HEADER Section :: Navbar --- */
     .logoME {
         width: 120%;
     }
@@ -9,14 +10,14 @@
 
 
 
-    // --- HEADER - Hero ---
+    /* --- HEADER Section :: Hero --- */
     .hero h1 {
         max-width: 90vw;
         font-size: 38px;
         line-height: 41px;
     }
 
-    // --- HEADER - btn_primary ---
+    /* --- HEADER Section :: btn_primary --- */
     .hero__btn--primary {
         margin-top: 31px;
     }
@@ -29,24 +30,40 @@
 
 
 
-    // ------------ MAIN ---------------
-    // --- MAIN - SectionA ---
+    //=========================================================
+    /* --- MAIN Section A --- */
     .sectionA__h2 {
         padding-top: 68px;
         max-width: 445px;
     }
 
 
-    // --- MAIN - SectionB ---
+    /* --- MAIN Section B --- */
     .sectionB p {
         max-width: 340px;
     }
 
 
+    /* --- MAIN Section A :: RESTAURANT PAGE --- */
+    //Logo restaurant
+    .logo_theGreenDragon {
+        max-width: 300px;
+    }
+
+    /* --- MAIN Section A :: RESTAURANT PAGE ==> Menu --- */
+    .sectionE__carousel--menu {
+        display: none;
+    }
+
+    .grid__imgs--menu {
+        display: block;
+    }
 
 
-    // ------------ FOOTER ---------------
-    // --- FOOTER - Section Maps ---
+
+
+    //=========================================================
+    /* --- FOOTER Section Maps --- */
     .footer__content {
         flex-direction: row;
         justify-content: space-between;
@@ -56,34 +73,13 @@
     .footer__map__icons_c {
         flex-direction: column;
         min-width: 0;
-    }
 
-    .footer__map__icons_a img,
-    .footer__map__icons_c img {
-        margin-bottom: 8px;
-        margin-top: 8px;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-
-
-
-
-
-
-    // ---------- MAIN RESTAURANT ------------
-    // Section A Intro
-    //Logo restaurant
-    .logo_theGreenDragon {
-        max-width: 300px;
-    }
-
-    //Section E restaurant menu
-    .sectionE__carousel--menu {
-        display: none;
-    }
-
-    .grid__imgs--menu{
-        display: block;
+        & img,
+        & img {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
     }
 }

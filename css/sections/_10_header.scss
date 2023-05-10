@@ -1,18 +1,19 @@
 /* ------------ HEADER SECTION --------------- */
-/* --- HEADER - Global values --- */
-
+//=========================================================
+/* --- HEADER SECTION Global values --- */
 .header {
 	background-color: $darkGreen;
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: top;
+	background-position: center top;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+
+	// Changes for Attractions, Promos and Restaurant
+	&__content {
+		background-color: transparent;
+	}
 }
-
-
-
 
 // Imgs for background of the header section
 .home {
@@ -24,7 +25,7 @@
 }
 
 .promos {
-	background-image: url('../imgs/header_mobile_promos_02.png');
+	background-image: url('../imgs/header_mobile_promos_01.png');
 }
 
 .food {
@@ -38,131 +39,92 @@
 
 
 
+/* --- HEADER SECTION :: NAVBAR with BS --- */
 .navbar {
 	padding-top: 20px;
-	--bs-navbar-toggler-padding-y: 0.15rem;
-	--bs-navbar-toggler-padding-x: 0.35rem;
 	filter: $textShadow;
-}
 
-.navbar-brand:hover {
-	opacity: 0.7;
-}
+	&-toggler {
+		border-color: rgba(255, 255, 255, 0.6);
+		padding: 0.15rem 0.35rem;
+	}
 
-.navbar-nav {
-	--bs-nav-link-padding-x: 0.2rem;
-	--bs-nav-link-padding-y: 0.3rem;
-}
+	&-brand:hover {
+		opacity: 0.7;
+	}
 
-/* --- BS HEADER - navbar toggler --- */
-.navbar-toggler {
-	border-color: rgba(255, 255, 255, 0.6);
-}
+	&-nav {
+		&-link {
+			padding: 0.3rem 0.2rem;
+		}
+	}
 
-// BS HEADER navbar items
-.navbar a {
-	font-family: "Roboto Condensed", sans-serif;
-	font-size: 14px;
-	color: $white;
-
-
-	&:visited {
-		color: $white;
+	&-dark {
+		--navbar-active-color: #fbfbfbb4;
 	}
 }
 
-.navbar-dark {
-	--bs-navbar-active-color: #fbfbfbb4;
-}
 
 
 
-
-/* --- HEADER - Hero --- */
-/* --- HEADER - Hero Title --- */
+/* --- HEADER SECTION :: HERO Styles --- */
 .hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 
+	// title
 	h1 {
 		position: relative;
-		font-family: "Trajan Pro", "Times New Roman", serif;
+		font-family: $trajan;
 		font-size: 32px;
 		line-height: 34px;
-
+		color: $gold;
 		background-image: $goldenBtn--gradient;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
-		color: $gold;
 		margin-top: 198px;
 		filter: $textShadow;
 	}
-}
 
+	// copy
+	&__p1,
+	&__p2 {
+		font-family: $s--serif;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 21px;
+		color: $white;
+		margin-top: 16px;
+		max-width: 380px;
+		filter: $textShadow;
+	}
 
+	&__p2 {
+		display: none;
+	}
 
+	// CTA button
+	&__btn--primary {
+		text-decoration: none;
+		margin-top: 25px;
 
-/* --- HEADER - Hero Copy --- */
-.hero__p1,
-.hero__p2 {
-	font-family: "Roboto Condensed", sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 21px;
-	color: $white;
-	margin-top: 16px;
-	// opacity: 0.8;
-	max-width: 380px;
-	filter: $textShadow;
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: all 200ms ease-in-out 0ms;
 
-
-}
-
-.hero__p2 {
-	display: none;
-}
-
-
-
-
-/* --- HEADER - Hero CTA --- */
-.hero__btn--primary {
-	text-decoration: none;
-	margin-top: 25px;
-
-	div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		transition: all 200ms ease-in-out 0ms;
-
-		&:hover {
-			filter: $darkShadow;
+			&:hover {
+				filter: $darkShadow;
+			}
 		}
 	}
-}	
 
-.hero__btnFiruletes {
-	z-index: 1;
-	margin-top: -55px;
+	&__btnFiruletes {
+		z-index: 1;
+		margin-top: -55px;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-// ================================================================================
-
-// Changes for Attractions, Promos and Restaurant
-.header_content {
-	background-color: transparent;
-}
-

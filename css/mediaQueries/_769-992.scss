@@ -1,7 +1,10 @@
 @media only screen and (min-width: 769px) and (max-width: 992px) {
 
-    // ------------ HEADER ---------------
-    // --- HEADER - Global values ---
+
+    /* ------------ HEADER SECTION --------------- */
+    //=========================================================
+    /* --- HEADER Section --- */
+
     // Imgs for background of the header section
     .home {
         background-image: url('../imgs/header_desktop_home_01.png');
@@ -12,7 +15,7 @@
     }
 
     .promos {
-        background-image: url('../imgs/header_desktop_promos_02.png');
+        background-image: url('../imgs/header_desktop_promos_01.png');
     }
 
     .food {
@@ -24,31 +27,30 @@
     }
 
 
-
-
-    // --- HEADER - navbar ---
+    /* --- HEADER Section :: Navbar --- */
     .logoME {
         width: 140%;
     }
 
 
+    /* --- HEADER Section :: Hero --- */
+    .hero {
+        h1 {
+            font-size: 46px;
+            line-height: 49px;
+            max-width: 60vw;
+            margin-top: 248px;
+        }
 
-
-    // --- HEADER - Hero ---
-    .hero h1 {
-        font-size: 46px;
-        line-height: 49px;
-        max-width: 60vw;
-        margin-top: 248px;
+        &__p1 {
+            font-size: 21px;
+            line-height: 25px;
+            margin-top: 25px;
+        }
     }
 
-    .hero__p1 {
-        font-size: 21px;
-        line-height: 25px;
-        margin-top: 25px;
-    }
 
-    // --- HEADER - btn_primary ---
+    /* --- HEADER Section :: btn_primary --- */
     .hero__btn--primary {
         margin-top: 56px;
     }
@@ -56,8 +58,8 @@
 
 
 
-    // ------------ MAIN ---------------
-    // --- MAIN - SectionA ---
+
+    /* --- MAIN Section :: Section A --- */
     .sectionA div {
         columns: 2;
         max-width: 80vw;
@@ -70,8 +72,35 @@
 
 
 
+    /* --- MAIN Section A :: RESTAURANT PAGE --- */
+    //Logo restaurant
+    .logo_theGreenDragon {
+        max-width: 300px;
+    }
 
-    // --- MAIN - SectionB ---
+
+
+
+    /* --- MAIN Section A :: CONTACT PAGE --- */
+    // Contact form
+    .sectionA__contact {
+        max-width: 1000px;
+        margin-top: 48px;
+        flex-direction: row;
+        align-items: flex-start;
+
+        img {
+            display: block;
+            margin-top: 48px;
+            margin-right: 12px;
+        }
+    }
+
+
+
+
+
+    /* --- MAIN Section B :: INDEX PAGE --- */
     .sectionB p {
         max-width: 340px;
     }
@@ -79,26 +108,112 @@
 
 
 
-    /* --- MAIN - SectionC --- */
-    .sectionC__carousel--mobile {
+    /* --- MAIN Section C :: INDEX PAGE --- */
+    .sectionC__carousel {
+        &--mobile {
+            display: none;
+        }
+
+        .sectionC__carousel--desktop {
+            display: block;
+        }
+
+        .carousel__inner {
+            display: none;
+        }
+    }
+
+
+
+
+    /* --- MAIN - Section D ==> Testimonies--- */
+    .sectionD {
+        .testimonies {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 2fr 1fr 1fr;
+            gap: 0 20px;
+            grid-template-areas:
+                "testimonies__Img1 testimonies__Img2 testimonies__Img3"
+                "testimonies__Txt1 testimonies__Txt2 testimonies__Txt3"
+                "testimonies__Sign1 testimonies__Sign2 testimonies__Sign3";
+            max-width: 798px;
+            align-items: baseline;
+            margin-top: 140px;
+            margin-bottom: 0px;
+
+            .fili,
+            .bilbo {
+                max-width: 100%;
+            }
+
+            .testimonies__Img2,
+            .testimonies__Txt2,
+            .testimonies__Sign2 {
+                display: block;
+            }
+
+            .testimonies__Txt1,
+            .testimonies__Txt2,
+            .testimonies__Txt3 {
+                max-width: 180px;
+                font-size: 18px;
+                font-weight: 600;
+                opacity: 0.6;
+                color: $darkGreen;
+            }
+
+            .testimonies__Img1,
+            .testimonies__Img2,
+            .testimonies__Img3 {
+                align-self: baseline;
+            }
+        }
+    }
+
+
+
+
+    /* --- MAIN Section E :: RESTAURANT PAGE ==> Menu --- */
+    .sectionE__carousel--menu {
         display: none;
     }
 
-    .sectionC__carousel--desktop {
+    .grid__imgs--menu {
         display: block;
     }
 
-    .carousel__inner {
-        display: none;
+
+    /* --- MAIN Section F and H :: RESTAURANT PAGE ==> Reservations --- */
+    .sectionF__reservations,
+    .sectionH__restaurantAdress {
+        width: 1000px;
     }
 
 
 
 
-    // ------------ FOOTER ---------------
-    // --- FOOTER - Section Maps ---
+    // ===============================================================================
+    /* --- FOOTER - Section Map --- */
     .footer__map {
         background-image: url("../imgs/img_footerMap.jpg");
+
+        &__icons_a,
+        &__icons_c {
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        &__icons_a img,
+        &__icons_c img {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        #here {
+            height: 72px;
+        }
     }
 
     .footer__content {
@@ -106,38 +221,6 @@
         justify-content: space-between;
     }
 
-    .footer__map__icons_a,
-    .footer__map__icons_c {
-        flex-direction: column;
-        min-width: 0;
-    }
-
-    .footer__map__icons_a img,
-    .footer__map__icons_c img {
-        margin-bottom: 8px;
-        margin-top: 8px;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-
-    #here {
-        height: 58px;
-    }
-
-
-
-
-    .footer__info__logo,
-    .footer__info__iconHere,
-    .footer__info__iconTime,
-    .footer__info__iconMail,
-    .footer__info__iconPhone,
-    .footer__info__adress,
-    .footer__info__mail,
-    .footer__info__phone,
-    .footer__info__time {
-        display: block;
-    }
 
     .footer__info {
         display: grid;
@@ -152,63 +235,21 @@
         // align-items: start;
         align-items: start;
         max-width: 90vw;
-    }
 
-    .footer__info__socialMedia img {
-        padding-right: 24px;
-
-
-    }
-
-
-
-
-
-    // ---------- MAIN RESTAURANT ------------
-    // Section A Intro
-    //Logo restaurant
-    .logo_theGreenDragon {
-        max-width: 300px;
-    }
-
-    // ---------- MAIN RESTAURANT ------------
-    // Section A Intro
-    //Logo restaurant
-    .logo_theGreenDragon {
-        max-width: 300px;
-    }
-
-    //Section E restaurant menu
-    .sectionE__carousel--menu {
-        display: none;
-    }
-
-    .grid__imgs--menu{
-        display: block;
-    }
-
-    // Section F reservations
-    .sectionF__reservations,
-    .restaurantAdress {
-        max-width: 90vw;
-    }
-
-
-
-
-
-    // ---------- MAIN CONTACT ------------
-    // Contact form
-    .sectionA__contact {
-        max-width: 1000px;
-        margin-top: 48px;
-        flex-direction: row;
-        align-items: flex-start;
-
-        img {
+        &__logo,
+        &__iconHere,
+        &__iconTime,
+        &__iconMail,
+        &__iconPhone,
+        &__adress,
+        &__mail,
+        &__phone,
+        &__time {
             display: block;
-            margin-top: 48px;
-            margin-right: 12px;
+        }
+
+        &__socialMedia img {
+            padding-right: 24px;
         }
     }
 }

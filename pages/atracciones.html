@@ -6,6 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!--- SEO - Palabras claves -->
+	<meta name="keywords"
+		content="atracciones, parque temático, caballeros, princesas, espectáculos, entretenimiento, diversión, adrenalina, medieval">
+
+	<!--- SEO - Description -->
+	<meta name="description"
+		content="Descubre las mejores atracciones medievales en nuestro parque temático. Vive emocionantes aventuras de caballeros, conoce a nuestras hermosas princesas y disfruta de espectáculos únicos llenos de diversión y adrenalina" />
+
+	<!-- Indica que carga los estilos y scripts previo al renderizado -->
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" as="style"
+		onload="this.rel='stylesheet'">
+
 	<!-- favicon -->
 	<link rel="shortcut icon" href="../imgs/fav_ME.svg">
 
@@ -13,16 +25,25 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/main.css">
+
+	<!-- Indicación para activar JS de no tenerlo y poder ver el contenido aún si él -->
+	<noscript>
+		<div class="no-script-message">
+			<p>Para ver el contenido de esta página, debes activar JavaScript en tu navegador.</p>
+		</div>
+	</noscript>
+
 	<title>Atracciones | Middle Earth Park</title>
 </head>
 
 
+<!-- ================================================================================================= -->
 
 
 <body>
 
 	<!--===== HEADER SECTION ==========================================================================================================-->
-	<header class="header header_content attractions">
+	<header class="header header__content attractions">
 
 
 		<div id="arriba" class="container-fluid">
@@ -88,16 +109,16 @@
 	<main>
 
 		<!-- - - Section A - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionA sectionA_content container-fluid">
-			<h2 class="sectionA__h2 sectionA__h2_content">¡Vive la aventura de tu vida!</h2>
+		<section class="sectionA sectionA__content container-fluid">
+			<h2 class="sectionA__h2 sectionA__h2--content">¡Vive la aventura de tu vida!</h2>
 			<div>
-				<p class="sectionA__p1 sectionA__p1_content">Si buscas emociones fuertes y quieres vivir una experiencia
+				<p class="sectionA__p1 sectionA__p1--content">Si buscas emociones fuertes y quieres vivir una experiencia
 					única, en nuestro
 					parque encontrarás las mejores atracciones para disfrutar en familia o con amigos. Desde montañas
 					rusas de alta velocidad hasta atracciones acuáticas refrescantes, tenemos todo lo que necesitas para
 					una aventura inolvidable.
 				</p>
-				<p class="sectionA__p2 sectionA__p2_content">Atrevete a subirte a nuestras atracciones más extremas, ¿o
+				<p class="sectionA__p2 sectionA__p2--content">Atrevete a subirte a nuestras atracciones más extremas, ¿o
 					tal vez
 					prefieres relajarte en una atracción tranquila? Sea cual sea tu estilo, ¡en nuestro parque de
 					atracciones lo encontrarás! ¡Te esperamos para que disfrutes de una experiencia emocionante y
@@ -123,10 +144,13 @@
 				<!-- 1st card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Extremo</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_01.jpg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Vuelo sobre la Tierra Media</h5>
@@ -134,15 +158,18 @@
 								estilo medieval en una arena especialmente diseñada para la ocasión! Una oportunidad
 								única para disfrutar de la emoción y el espectáculo de la Tierra Media.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 450 monedas de oro - - - ---</small>
 						</div>
+						
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -150,10 +177,13 @@
 				<!-- 2nd card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Entretenimiento & espectáculos</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_02.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Torneos y Justas Élficas</h5>
@@ -162,10 +192,12 @@
 								medieval en una arena especialmente diseñada para la ocasión! Una oportunidad única para
 								disfrutar de la emoción y el espectáculo de la Tierra Media.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 380 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
@@ -178,25 +210,31 @@
 				<!-- 3rd card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Familia</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_03.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Paseo en carruaje en la Comarca</h5>
 							<p class="card-text">Relájate y disfruta de un paseo en carruaje tirado por caballos a
 								través de La Comarca mientras te sumerges en la atmósfera de la Tierra Media.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 150 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -204,25 +242,31 @@
 				<!-- 4th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Aventura</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_04.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Tiro con arco élfico</h5>
 							<p class="card-text">Aprende las técnicas del tiro con arco élfico y apunta al blanco en una
 								zona de entrenamiento especialmente diseñada para esta actividad.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 200 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -230,10 +274,13 @@
 				<!-- 5th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Extremo</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_05.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Laberinto del Bosque Encantado</h5>
@@ -241,15 +288,18 @@
 								emocionante recorrido a través de la historia de la Tierra Media, mientras tratas de
 								encontrar la salida.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 230 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -257,10 +307,13 @@
 				<!-- 6th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Entretenimiento & espectáculos</div>
+						
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_06.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Exposición de armas de la Comunidad del Anillo</h5>
@@ -268,15 +321,18 @@
 								Comunidad del Anillo. Observa la técnica utilizada en la elaboración de estas piezas y
 								cómo se ajustaban para brindar protección en el campo de batalla.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 350 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -284,10 +340,13 @@
 				<!-- 7th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Aventura</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_07.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Juegos de rol en la Comarca</h5>
@@ -295,15 +354,18 @@
 								inolvidable en un mundo de fantasía. Sumérgete en una aventura épica mientras juegas el
 								papel de un personaje de tu elección.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 210 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -311,10 +373,13 @@
 				<!-- 8th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Entretenimiento & espectáculos</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_08.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Teatro en vivo de la Guerra del Anillo</h5>
@@ -322,15 +387,18 @@
 								épicas de la Tierra Media, desde la Batalla de los Cinco Ejércitos hasta la Guerra del
 								Anillo. Déjate llevar por la emoción y la acción en un ambiente de fantasía.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 290 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -338,10 +406,13 @@
 				<!-- 9th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Familia</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_09.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">La Comarca</h5>
@@ -350,15 +421,18 @@
 								delicioso pastel de carne y una pinta de cerveza en el famoso pub El Dragón Verde. Una
 								experiencia que te transportará directamente a la Tierra Media.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 350 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+
 					</div>
 				</div>
 
@@ -366,10 +440,13 @@
 				<!-- 10th card -->
 				<div class="col">
 					<div class="attraction--card card h-100 shadow">
+
 						<!-- Header: type of attraction -->
 						<div class="card-header">Gastronomía</div>
+
 						<!-- Image: Descriptive of attraction -->
 						<img src="../imgs/atr_10.jpg" class="card_attractionImg" alt="Dragón volando">
+
 						<!-- Body's texts: Name and description of attraction -->
 						<div class="card-body">
 							<h5 class="card-title">Cata de comidas y bebidas medievales</h5>
@@ -378,15 +455,18 @@
 								élficos. Una oportunidad para disfrutar de la auténtica gastronomía de la Tierra Media
 								en un ambiente encantador.</p>
 						</div>
+
 						<!-- Footer: Price of attraction -->
 						<div class="card-footer">
 							<small class="text-body">--- - - - $ 350 monedas de oro - - - ---</small>
 						</div>
+
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
 							<a href="#" class="btn btn-tertiary">Ver más</a>
 						</div>
+						
 					</div>
 				</div>
 

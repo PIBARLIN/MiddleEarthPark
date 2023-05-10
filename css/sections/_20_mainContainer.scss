@@ -1,5 +1,7 @@
 /* ------------ MAIN --------------- */
-/* --- MAIN - SectionA - Intro --- */
+
+//=========================================================
+/* --- MAIN Section A :: INDEX PAGE ==> Intro --- */
 .sectionA {
 	position: relative;
 	display: flex;
@@ -7,340 +9,61 @@
 	align-items: center;
 	background-color: $darkGreen;
 	padding-bottom: 40px;
-}
 
-.sectionA__h2 {
-	font-family: "Trajan Pro", "Times New Roman", serif;
-	font-size: 24px;
-	color: $gold;
-	padding-top: 88px;
-}
-
-.sectionA__p1,
-.sectionA__p2 {
-	padding-top: 24px;
-	font-family: 'Times New Roman';
-	font-weight: 400;
-	font-size: 16px;
-	color: $lightGreen;
-	text-align: left;
-	max-width: 80vw;
-
-	&::first-letter,
-	&::first-letter {
-		initial-letter: 2;
-		padding-right: 2px;
-		color: $gold;
-	}
-}
-
-
-
-
-
-/* --- MAIN - SectionB --- */
-.sectionB {
-	padding-top: 56px;
-	padding-bottom: 56px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	h3 {
-		font-family: 'Aniron';
+	// title
+	&__h2 {
+		font-family: $serif;
 		font-size: 24px;
-		color: $darkGreen;
-		opacity: 0.9;
+		color: $gold;
+		padding-top: 88px;
 	}
 
-	h4 {
-		font-family: 'Aniron';
-		font-size: 15px;
-		color: $darkGreen;
-		opacity: 0.7;
-	}
-
-	p {
-		font-family: 'Roboto Condensed';
-		font-weight: 700;
+	// copy
+	&__p1,
+	&__p2 {
+		padding-top: 24px;
+		font-family: $serif;
+		font-weight: 400;
 		font-size: 16px;
-		line-height: 22px;
-		text-align: center;
+		color: $lightGreen;
+		text-align: left;
+		max-width: 80vw;
+
+		&::first-letter,
+		&::first-letter {
+			initial-letter: 2;
+			padding-right: 2px;
+			color: $gold;
+		}
+	}
+
+
+	// -------------------------------------------------------------
+	/* --- CHANGES FOR ATTRACTION, PROMOS and RESTAURANT PAGE --- */
+	&__content {
+		background-color: transparent;
+	}
+
+	// title
+	&__h2--content {
+		color: $darkGold;
+		padding-top: 16px;
+	}
+
+	// copy
+	&__p1--content,
+	&__p2--content {
 		color: $darkGreen;
-		opacity: 0.8;
+
+		&::first-letter,
+		&::first-letter {
+			color: $darkGold;
+		}
 	}
 }
 
-.sectionB__icons {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-template-areas:
-		"icon_1a icon_1a icon_2a icon_2a icon_3a icon_3a"
-		"icon_1b icon_1b icon_2b icon_2b icon_3b icon_3b"
-		"icon_4a icon_4a icon_4a icon_5a icon_5a icon_5a"
-		"icon_4b icon_4b icon_4b icon_5b icon_5b icon_5b";
-	justify-items: center;
-	max-width: 300px;
-}
 
-.icon_1a {
-	grid-area: icon_1a;
-	padding: 0 25px;
-}
-
-.icon_1b {
-	grid-area: icon_1b;
-	padding: 0 25px;
-}
-
-.icon_2a {
-	grid-area: icon_2a;
-	padding: 0 25px;
-}
-
-.icon_2b {
-	grid-area: icon_2b;
-	padding: 0 25px;
-}
-
-.icon_3a {
-	grid-area: icon_3a;
-	padding: 0 25px;
-}
-
-.icon_3b {
-	grid-area: icon_3b;
-	padding: 0 25px;
-}
-
-.icon_4a {
-	grid-area: icon_4a;
-	padding: 0 25px;
-	justify-self: end;
-	max-width: 115px;
-}
-
-.icon_4b {
-	grid-area: icon_4b;
-	padding-left: 34px;
-	justify-self: end;
-	max-width: 155px;
-	text-align: center;
-}
-
-.icon_5a {
-	grid-area: icon_5a;
-	padding: 0 8px;
-	justify-self: start;
-}
-
-.icon_5b {
-	grid-area: icon_5b;
-	padding-right: 64px;
-	justify-self: start;
-	max-width: 155px;
-	text-align: center;
-}
-
-.icon_1b,
-.icon_2b,
-.icon_3b,
-.icon_4b,
-.icon_5b {
-	font-family: 'Roboto condensed', sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
-}
-
-
-
-
-/* ------------ Strokes ------------- */
-.carrousel__UpperStroke {
-	position: relative;
-	z-index: 2000;
-	margin-top: -4px;
-	margin-bottom: 2px;
-	height: 2px;
-	background: $stroke--gradient;
-}
-
-.carrousel__DownStroke {
-	position: relative;
-	z-index: 200;
-	margin-top: 2px;
-	margin-bottom: -4px;
-	height: 2px;
-	background: $stroke--gradient;
-}
-
-
-
-
-/* --- MAIN - SectionC --- */
-.sectionC__carousel {
-	background-color: $darkGreen;
-}
-
-.carousel__imgs--mobile1,
-.carousel__imgs--mobile2,
-.carousel__imgs--mobile3 {
-	max-height: 568px;
-	max-width: 768px;
-	margin: auto;
-}
-
-.carousel__imgs--desktop1,
-.carousel__imgs--desktop2,
-.carousel__imgs--desktop3 {
-	max-height: 568px;
-	max-width: 1920px;
-	margin: auto;
-}
-
-
-
-
-.sectionC__carousel--desktop {
-	display: none;
-}
-
-
-
-
-
-/* --- MAIN - SectionD --- */
-.sectionD {
-	background-color: $white;
-	padding: 36px 0;
-}
-
-.testimonies {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1.6fr 0.0fr 1.6fr 0.0fr;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"testimonies__Img1 testimonies__Txt1"
-		"testimonies__Img1 testimonies__Sign1"
-		"testimonies__Txt3 testimonies__Img3"
-		"testimonies__Sign3 testimonies__Img3";
-	max-width: 320px;
-	align-items: start;
-	justify-items: center;
-	// margin-top: 76px;
-	// margin-bottom: 76px;
-}
-
-.testimonies__Img1 {
-	grid-area: testimonies__Img1;
-}
-
-.testimonies__Img2 {
-	grid-area: testimonies__Img2;
-}
-
-.testimonies__Img3 {
-	grid-area: testimonies__Img3;
-}
-
-.testimonies__Txt1 {
-	grid-area: testimonies__Txt1;
-}
-
-.testimonies__Txt2 {
-	grid-area: testimonies__Txt2;
-}
-
-.testimonies__Txt3 {
-	grid-area: testimonies__Txt3;
-}
-
-.testimonies__Sign1 {
-	grid-area: testimonies__Sign1;
-}
-
-.testimonies__Sign2 {
-	grid-area: testimonies__Sign2;
-}
-
-.testimonies__Sign3 {
-	grid-area: testimonies__Sign3;
-}
-
-.testimonies__Txt1,
-.testimonies__Txt2,
-.testimonies__Txt3 {
-	text-align: left;
-	font-family: "Times New Roman", serif;
-	font-style: italic;
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 20px;
-	color: $darkGreen;
-	max-width: 136px;
-	opacity: 0.75;
-}
-
-.testimonies__Sign1,
-.testimonies__Sign2,
-.testimonies__Sign3 {
-	margin: -20px 30px 0 0;
-	font-family: "Roboto Condensed", sans-serif;
-	font-weight: 600;
-	font-size: 14px;
-	opacity: 0.4;
-	justify-self: end;
-}
-
-.fili,
-.bilbo {
-	max-width: 136px;
-}
-
-.testimonies__Txt1 {
-	padding-top: 24px;
-}
-
-.testimonies__Txt3 {
-	padding-top: 20px;
-	text-align: right;
-	max-width: 130px;
-}
-
-.testimonies__Sign3 {
-	padding-top: 10px;
-	margin-right: 12px;
-}
-
-.testimonies__Img2,
-.testimonies__Txt2,
-.testimonies__Sign2 {
-	display: none;
-}
-
-
-
-
-
-
-
-
-
-// ================================================================================
-
-// Changes for Attractions, Promos and Restaurant
-.sectionA_content {
-	background-color: transparent;
-}
-
-
-
-
-
-/* ------------ MAIN Section A :: RESTAURANT PAGE ------------- */
+/* --- MAIN Section A :: RESTAURANT PAGE --- */
 //Logo restaurant
 .logo_theGreenDragon {
 	max-width: 260px;
@@ -348,253 +71,37 @@
 	margin-bottom: 18px;
 }
 
-//Section A Tolkien phrase
+//Section A Tolkien quote
 .tolkienPhrase {
 	margin: 48px;
 	max-width: 300px;
 	margin: auto;
-}
 
-.sectionA__tolkien {
-	display: block;
-	font-family: 'Tangerine', serif;
-	font-size: 3rem;
-	line-height: 2.5rem;
-	text-align: center;
-	color: $darkGold;
-	margin: 52px auto 12px auto;
-}
-
-.sectionA__tolkien__sign {
-	font-family: "Roboto Condensed", sans-serif;
-	font-weight: 600;
-	font-size: 14px;
-	opacity: 0.4;
-	text-align: end;
-	margin-right: 40px;
-	margin-bottom: 40px;
-}
-
-
-
-
-
-//Section E restaurant menu
-.accordion {
-	margin: 48px auto;
-	font-family: 'Roboto condensed', serif;
-	font-size: 15px;
-	text-align: left;
-	color: $darkGray;
-	font-weight: 400;
-	max-width: 768px;
-
-	button {
-		font-size: 20px;
-		font-weight: 600;
-	}
-
-	h2 {
-		opacity: 0.6;
-	}
-
-	img {
-		max-width: 100%;
-	}
-}
-
-
-
-
-.grid__imgs--menu{
-	max-width: 1000px;
-	display: none;
-}
-
-.imgs__menu {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 8px 8px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "menu_01 menu_02 menu_03"
-	  "menu_04 menu_05 menu_06";
-
-	  img {
-		width: 100%;
-	  }
-  }
-  
-  .menu_01 { grid-area: menu_01; }
-  
-  .menu_02 { grid-area: menu_02; }
-  
-  .menu_03 { grid-area: menu_03; }
-  
-  .menu_04 { grid-area: menu_04; }
-  
-  .menu_05 { grid-area: menu_05; }
-  
-  .menu_06 { grid-area: menu_06; }
-  
-
-
-
-.sectionF__reservations,
-.restaurantAdress {
-	@extend .accordion;
-	text-align: center;
-	max-width: 280px;
-}
-
-.video__restaurant {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-}
-
-.video__restaurant iframe,
-.video__restaurant object,
-.video__restaurant embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-
-
-.sectionA__h2_content {
-	color: $darkGold;
-	padding-top: 16px;
-}
-
-.sectionA__p1_content,
-.sectionA__p2_content {
-	color: $darkGreen;
-
-	&::first-letter,
-	&::first-letter {
-		color: $darkGold;
-	}
-}
-
-
-
-
-/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
-// Attraction's cards with BS
-.sectionB__cards {
-	max-width: 1000px;
-	margin: auto;
-	padding-top: 64px;
-	padding-bottom: 108px;
-}
-
-.attraction--card {
-	font-family: 'Roboto condensed', serif;
-
-	// Header: type of attraction
-	.card-header {
-		font-size: 15px;
-		padding: 0.16rem;
-		background-image: $golden--gradient;
-		color: $white;
-
-	}
-
-	// Image: Descriptive of attraction
-	.card-title {
-		font-weight: 900;
-		text-align: left;
-		color: $darkGreen;
-		opacity: 0.65;
-	}
-
-	// Body's texts: Name and description of attraction
-	.card-text {
-		text-align: left;
-		font-size: 15px;
-		color: $darkGreen;
-		opacity: 0.85;
-	}
-
-	// Footer: Price of attraction
-	.text-body {
-		font-weight: 700;
-		color: $lead !important;
+	// Tolkien quote
+	.sectionA__tolkien {
 		display: block;
-	}
-}
-
-// Footer: Buttons to buy and more info
-.btn__cards {
-	display: block;
-	padding: 0.3rem 1rem;
-	font-family: 'Roboto condensed', serif;
-	text-align: center;
-	font-size: 1rem;
-	color: $white;
-	text-decoration: none;
-	background-color: #000;
-	background-image: $golden--gradient;
-	border-radius: 8px;
-	filter: $lightShadow;
-
-	&:hover {
-		filter: $mediumShadow;
-	}
-
-
-
-
-
-
-
-
-	// Footer: Tertiary buttons
-	.btn-tertiary {
-		font-size: 0.85rem;
-		font-weight: 600;
-		opacity: 0.65;
+		font-family: $tangerine;
+		font-size: 3rem;
+		line-height: 2.5rem;
+		text-align: center;
 		color: $darkGold;
+		margin: 52px auto 12px auto;
+	}
 
-		&:hover {
-			text-decoration: underline;
-		}
+	// Tolkien name
+	.sectionA__tolkien__sign {
+		font-family: $s--serif;
+		font-weight: 600;
+		font-size: 14px;
+		opacity: 0.4;
+		text-align: end;
+		margin-right: 40px;
+		margin-bottom: 40px;
 	}
 }
 
 
-
-
-/* ------------ MAIN Section B :: PROMOS PAGE ------------- */
-// Promo's cards with BS
-// Last moment in Promos
-.sectionC__lastMoment {
-	max-width: 768px;
-	margin: auto;
-
-	&:hover {
-		filter: $darkShadow;
-		transform: scale(1.009);
-	}
-}
-
-.btn__cards--tight {
-	max-width: 256px;
-	margin: auto;
-}
-
-
-
-
-/* ------------ MAIN Section A :: CONTACT PAGE ------------- */
-// Contact form
+/* --- MAIN Section A :: CONTACT PAGE ==> --- */
 .sectionA__contact {
 	max-width: 100%;
 	display: flex;
@@ -603,7 +110,7 @@
 	img {
 		display: none;
 	}
-	
+
 	div {
 		width: 100%;
 		margin-top: 24px;
@@ -630,5 +137,437 @@
 
 	.form-check-label {
 		opacity: 0.8;
+	}
+}
+
+
+
+
+//=========================================================
+/* --- MAIN Section B :: INDEX PAGE ==> Welcome and activities available --- */
+.sectionB {
+	padding-top: 56px;
+	padding-bottom: 56px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h3 {
+		font-family: $aniron;
+		font-size: 24px;
+		color: $darkGreen;
+		opacity: 0.9;
+	}
+
+	h4 {
+		font-family: $aniron;
+		font-size: 15px;
+		color: $darkGreen;
+		opacity: 0.7;
+	}
+
+	p {
+		font-family: $s--serif;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: $darkGreen;
+		opacity: 0.8;
+	}
+
+	// Icons and texts for activities in the park
+	&__icons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"icon_1a icon_1a icon_2a icon_2a icon_3a icon_3a"
+		"icon_1b icon_1b icon_2b icon_2b icon_3b icon_3b"
+		"icon_4a icon_4a icon_4a icon_5a icon_5a icon_5a"
+		"icon_4b icon_4b icon_4b icon_5b icon_5b icon_5b";
+	justify-items: center;
+	max-width: 300px;
+
+	.icon_1a {
+		grid-area: icon_1a;
+		padding: 0 25px;
+	}
+
+	.icon_1b {
+		grid-area: icon_1b;
+		padding: 0 25px;
+	}
+
+	.icon_2a {
+		grid-area: icon_2a;
+		padding: 0 25px;
+	}
+
+	.icon_2b {
+		grid-area: icon_2b;
+		padding: 0 25px;
+	}
+
+	.icon_3a {
+		grid-area: icon_3a;
+		padding: 0 25px;
+	}
+
+	.icon_3b {
+		grid-area: icon_3b;
+		padding: 0 25px;
+	}
+
+	.icon_4a {
+		grid-area: icon_4a;
+		padding: 0 25px;
+		justify-self: end;
+		max-width: 115px;
+	}
+
+	.icon_4b {
+		grid-area: icon_4b;
+		padding-left: 34px;
+		justify-self: end;
+		max-width: 155px;
+		text-align: center;
+	}
+
+	.icon_5a {
+		grid-area: icon_5a;
+		padding: 0 8px;
+		justify-self: start;
+	}
+
+	.icon_5b {
+		grid-area: icon_5b;
+		padding-right: 64px;
+		justify-self: start;
+		max-width: 155px;
+		text-align: center;
+	}
+
+	.icon_1b,
+	.icon_2b,
+	.icon_3b,
+	.icon_4b,
+	.icon_5b {
+		font-family: $s--serif;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+}
+
+
+/* --- MAIN Section B :: ATTRACTION PAGE ==> Attraction's cards with BS --- */
+.sectionB__cards {
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 64px;
+	padding-bottom: 108px;
+
+	.attraction--card {
+		font-family: $s--serif;
+
+		// Header: type of attraction
+		.card-header {
+			font-size: 15px;
+			padding: 0.16rem;
+			background-color: $green;
+			color: $white;
+		}
+
+		// Image: Descriptive of attraction
+		.card-title {
+			font-weight: 900;
+			text-align: left;
+			color: $darkGreen;
+			opacity: 0.65;
+		}
+
+		// Body's texts: Name and description of attraction
+		.card-text {
+			text-align: left;
+			font-size: 15px;
+			color: $darkGreen;
+			opacity: 0.85;
+		}
+
+		// Footer: Price of attraction
+		.text-body {
+			font-weight: 700;
+			color: $lead !important;
+			display: block;
+		}
+	}
+}
+
+
+/* --- MAIN Section B :: PROMOS PAGE ==> Promo's cards with BS --- */
+// Last moment card
+.sectionC__lastMoment {
+	max-width: 768px;
+	margin: auto;
+
+	&:hover {
+		filter: $darkShadow;
+		transform: scale(1.009);
+	}
+}
+
+
+
+
+//=========================================================
+/* --- Section C - INDEX PAGE - Carousel --- */
+.sectionC__carousel {
+	background-color: $darkGreen;
+
+	.carousel__imgs--mobile1,
+	.carousel__imgs--mobile2,
+	.carousel__imgs--mobile3 {
+		max-height: 568px;
+		max-width: 768px;
+		margin: auto;
+	}
+
+	.carousel__imgs--desktop1,
+	.carousel__imgs--desktop2,
+	.carousel__imgs--desktop3 {
+		max-height: 568px;
+		max-width: 1920px;
+		margin: auto;
+	}
+
+	.sectionC__carousel--desktop {
+		display: none;
+	}
+}
+
+
+
+
+//=========================================================
+/* --- Section D - INDEX PAGE - Testimonies --- */
+.sectionD {
+	background-color: $white;
+	padding: 36px 0;
+
+
+	// testimonies grid
+	.testimonies {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1.6fr 0.0fr 1.6fr 0.0fr;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"testimonies__Img1 testimonies__Txt1"
+			"testimonies__Img1 testimonies__Sign1"
+			"testimonies__Txt3 testimonies__Img3"
+			"testimonies__Sign3 testimonies__Img3";
+		max-width: 320px;
+		align-items: start;
+		justify-items: center;
+	
+		.testimonies__Img1 {
+			grid-area: testimonies__Img1;
+		}
+	
+		.testimonies__Img2 {
+			grid-area: testimonies__Img2;
+		}
+	
+		.testimonies__Img3 {
+			grid-area: testimonies__Img3;
+		}
+	
+		.testimonies__Txt1 {
+			grid-area: testimonies__Txt1;
+		}
+	
+		.testimonies__Txt2 {
+			grid-area: testimonies__Txt2;
+		}
+	
+		.testimonies__Txt3 {
+			grid-area: testimonies__Txt3;
+		}
+	
+		.testimonies__Sign1 {
+			grid-area: testimonies__Sign1;
+		}
+	
+		.testimonies__Sign2 {
+			grid-area: testimonies__Sign2;
+		}
+	
+		.testimonies__Sign3 {
+			grid-area: testimonies__Sign3;
+		}
+	
+		.testimonies__Txt1,
+		.testimonies__Txt2,
+		.testimonies__Txt3 {
+			text-align: left;
+			font-family: $serif;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 20px;
+			color: $darkGreen;
+			max-width: 136px;
+			opacity: 0.75;
+		}
+	
+		.testimonies__Sign1,
+		.testimonies__Sign2,
+		.testimonies__Sign3 {
+			margin: -20px 30px 0 0;
+			font-family: $s--serif;
+			font-weight: 600;
+			font-size: 14px;
+			opacity: 0.4;
+			justify-self: end;
+		}
+	
+		.fili,
+		.bilbo {
+			max-width: 136px;
+		}
+	
+		.testimonies__Txt1 {
+			padding-top: 24px;
+		}
+	
+		.testimonies__Txt3 {
+			padding-top: 20px;
+			text-align: right;
+			max-width: 130px;
+		}
+	
+		.testimonies__Sign3 {
+			padding-top: 10px;
+			margin-right: 12px;
+		}
+	
+		.testimonies__Img2,
+		.testimonies__Txt2,
+		.testimonies__Sign2 {
+			display: none;
+		}
+	}
+}
+
+
+
+
+//=========================================================
+/* --- Section D - RESTAURANT PAGE - Menu, events and festivals --- */
+.accordion {
+	margin: 48px auto;
+	font-family: $s--serif;
+	font-size: 15px;
+	text-align: left;
+	color: $darkGray;
+	font-weight: 400;
+	max-width: 768px;
+
+	button {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	h2 {
+		opacity: 0.6;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+
+// Grid imgs with food
+.grid__imgs--menu {
+	max-width: 1000px;
+	display: none;
+
+	.imgs__menu {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 8px 8px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"menu_01 menu_02 menu_03"
+			"menu_04 menu_05 menu_06";
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.menu_01 {
+		grid-area: menu_01;
+	}
+
+	.menu_02 {
+		grid-area: menu_02;
+	}
+
+	.menu_03 {
+		grid-area: menu_03;
+	}
+
+	.menu_04 {
+		grid-area: menu_04;
+	}
+
+	.menu_05 {
+		grid-area: menu_05;
+	}
+
+	.menu_06 {
+		grid-area: menu_06;
+	}
+}
+
+
+
+
+//=========================================================
+/* --- Section F y H - RESTAURANT PAGE - reservations and Section H adress --- */
+.sectionF__reservations,
+.sectionH__restaurantAdress {
+	@extend .accordion;
+	text-align: center;
+	margin-top: 96px;
+	margin-bottom: 96px;
+	max-width: 90vw;
+}
+
+
+
+
+//=========================================================
+/* --- Section G - RESTAURANT PAGE - Video --- */
+.video__restaurant {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }

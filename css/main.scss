@@ -1,9 +1,13 @@
 @import './utilities/_00_reset';
 @import './utilities/_01_allStyles';
-@import './utilities/02_fonts';
+@import './utilities/_02_fonts';
+
+// Secciones
 @import './sections/_10_header';
 @import './sections/_20_mainContainer';
 @import './sections/_30_footer';
+
+// Media queries
 @import './mediaQueries/_439-576';
 @import './mediaQueries/_577-768';
 @import './mediaQueries/_769-992';
@@ -11,6 +15,19 @@
 
 
 
+
+
+
+/* -----------------------
+   Estilos Generales
+--------------------------*/
+// Indicación para activar JS de no tenerlo y poder ver el contenido aún si él
+.no-script-message {
+  background: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 1em;
+}
 
 body {
 	text-align: center;
@@ -21,25 +38,82 @@ body {
 
 
 
-// ---- Floating button with "go up" action and a conditional value ---
-#btn__arrowUp {
-	display: none;
-	margin: 24px 0 48px 0;
-	max-width: 100vw;
-	position: fixed;
-	z-index: 10000;
-	bottom: 65px;
-	right: 0;
-	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
-	transform: translateX(56px);
-	transition: 2s;
-	
-	&:hover {
-		transform: scale(1.05);
-		transition: all 200ms ease-in-out 0ms;
-		transform: translateY(-7px);
-	}
+/* ------------ Strokes ------------- */
+.carrousel__UpperStroke {
+	position: relative;
+	z-index: 2000;
+	margin-top: -4px;
+	margin-bottom: 2px;
+	height: 2px;
+	background: $stroke--gradient;
 }
+
+.carrousel__DownStroke {
+	position: relative;
+	z-index: 200;
+	margin-top: 2px;
+	margin-bottom: -4px;
+	height: 2px;
+	background: $stroke--gradient;
+}
+
+
+
+
+
+/* ----------------------
+   Botón "Ir arriba"
+-------------------------*/
+// #btn__arrowUp {
+// 	display: none;
+// 	margin: 24px 0 48px 0;
+// 	max-width: 100vw;
+// 	position: fixed;
+// 	z-index: 10000;
+// 	bottom: 65px;
+// 	right: 0;
+// 	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
+// 	transform: translateX(56px);
+// 	transition: all 200ms ease-in-out 0ms;
+
+// 	&:hover {
+// 		transform: translateY(-7px) scale(1.05);
+// 	}
+// }
+
+
+
+
+
+
+// body {
+// 	text-align: center;
+// 	position: relative;
+// 	background-image: linear-gradient(-45deg, #2B2B2B 0%, #C8C8C8 35%, #E2E2E2 53%, #ABABAB 69%, #5B5B5B 100%);
+// }
+
+
+
+
+// // ---- Floating button with "go up" action and a conditional value ---
+// #btn__arrowUp {
+// 	display: none;
+// 	margin: 24px 0 48px 0;
+// 	max-width: 100vw;
+// 	position: fixed;
+// 	z-index: 10000;
+// 	bottom: 65px;
+// 	right: 0;
+// 	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
+// 	transform: translateX(56px);
+// 	transition: 2s;
+	
+// 	&:hover {
+// 		transform: scale(1.05);
+// 		transition: all 200ms ease-in-out 0ms;
+// 		transform: translateY(-7px);
+// 	}
+// }
 
 
 

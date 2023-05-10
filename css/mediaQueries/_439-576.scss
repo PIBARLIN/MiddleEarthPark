@@ -1,17 +1,18 @@
 @media only screen and (min-width: 439px) and (max-width: 576px) {
 
-    // ------------ HEADER ---------------
-    // --- HEADER - navbar ---
+    /* ------------ HEADER SECTION --------------- */
+    //=========================================================
+    /* --- HEADER Section :: Navbar --- */
     .logoME {
         width: 120%;
     }
 
-    // --- HEADER - hero ---
+    /* --- HEADER Section :: Hero --- */
     .hero__p1 {
         max-width: 336px;
     }
 
-    // --- HEADER - btn_primary ---
+    /* --- HEADER Section :: btn_primary --- */
     .hero__btn--primary {
         margin-top: 49px;
     }
@@ -19,19 +20,20 @@
 
 
 
-    // ------------ MAIN ---------------
-    // --- MAIN - SectionB ---
+    //=========================================================
+    /* --- MAIN Section B --- */
     .sectionB p {
         max-width: 340px;
     }
-}
 
 
 
 
 
-// ---------- MAIN RESTAURANT ------------
-// Section H reservations and adress
-.sectionF__reservations, .restaurantAdress {
-	max-width: 400px;
+    //=========================================================
+    /* --- MAIN Section F and H :: RESTAURANT PAGE ==> Reservations and adressIntro --- */
+    .sectionF__reservations,
+    .sectionH__restaurantAdress {
+        max-width: 400px;
+    }
 }
