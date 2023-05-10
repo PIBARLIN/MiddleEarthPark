@@ -6,6 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!--- SEO - Palabras claves -->
+	<meta name="keywords"
+		content="atracciones, parque temático, caballeros, princesas, espectáculos, entretenimiento, diversión, adrenalina, medieval">
+
+	<!--- SEO - Description -->
+	<meta name="description"
+		content="Descubre las mejores atracciones medievales en nuestro parque temático. Vive emocionantes aventuras de caballeros, conoce a nuestras hermosas princesas y disfruta de espectáculos únicos llenos de diversión y adrenalina">
+
+	<!-- Indica que carga los estilos y scripts previo al renderizado -->
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" as="style"
+		onload="this.rel='stylesheet'">
+
 	<!-- favicon -->
 	<link rel="shortcut icon" href="../imgs/fav_ME.svg">
 
@@ -13,6 +25,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/main.css">
+
+	<!-- Indicación para activar JS de no tenerlo y poder ver el contenido aún si él -->
+	<noscript>
+		<div class="no-script-message">
+			<p>Para ver el contenido de esta página, debes activar JavaScript en tu navegador.</p>
+		</div>
+	</noscript>
+
 	<title>Atracciones | Middle Earth Park</title>
 </head>
 
@@ -22,7 +42,7 @@
 <body>
 
 	<!--===== HEADER SECTION ==========================================================================================================-->
-	<header class="header header_content attractions">
+	<header class="header header--content attractions">
 
 
 		<div id="arriba" class="container-fluid">
@@ -72,7 +92,7 @@
 				<p class="hero__p1">Descubre nuestras atracciones que te transportarán al medioevo. </p>
 				<p class="hero__p2">¡Vive la aventura medieval que deseas!</p>
 				<div class="hero__btn--primary invisible">
-					<button class="hero__btn">Comprá tus boletos ahora</button>
+					<button class="btn--primary">Comprá tus boletos ahora</button>
 					<img class="hero__firuletes" src="../imgs/firuletes.svg" alt="firuletes">
 				</div>
 
@@ -88,16 +108,16 @@
 	<main>
 
 		<!-- - - Section A - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<section class="sectionA sectionA_content container-fluid">
-			<h2 class="sectionA__h2 sectionA__h2_content">¡Vive la aventura de tu vida!</h2>
+		<section class="sectionA sectionA--content container-fluid">
+			<h2 class="sectionA__h2 sectionA__h2--content">¡Vive la aventura de tu vida!</h2>
 			<div>
-				<p class="sectionA__p1 sectionA__p1_content">Si buscas emociones fuertes y quieres vivir una experiencia
+				<p class="sectionA__p1 sectionA__p1--content">Si buscas emociones fuertes y quieres vivir una experiencia
 					única, en nuestro
 					parque encontrarás las mejores atracciones para disfrutar en familia o con amigos. Desde montañas
 					rusas de alta velocidad hasta atracciones acuáticas refrescantes, tenemos todo lo que necesitas para
 					una aventura inolvidable.
 				</p>
-				<p class="sectionA__p2 sectionA__p2_content">Atrevete a subirte a nuestras atracciones más extremas, ¿o
+				<p class="sectionA__p2 sectionA__p2--content">Atrevete a subirte a nuestras atracciones más extremas, ¿o
 					tal vez
 					prefieres relajarte en una atracción tranquila? Sea cual sea tu estilo, ¡en nuestro parque de
 					atracciones lo encontrarás! ¡Te esperamos para que disfrutes de una experiencia emocionante y
@@ -110,7 +130,7 @@
 
 
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="carrousel__UpperStroke"></div>
+		<div class="upperStroke"></div>
 
 
 
@@ -141,7 +161,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -169,7 +189,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -195,7 +215,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -221,7 +241,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -248,7 +268,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -275,7 +295,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -302,7 +322,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -329,7 +349,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -357,7 +377,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -385,7 +405,7 @@
 						<!-- Footer: Buttons to buy and more info -->
 						<div class="card-body text-center">
 							<a href="#" class="btn__cards">Comprar</a>
-							<a href="#" class="btn btn-tertiary">Ver más</a>
+							<a href="#" class="btn btn--tertiary">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -399,7 +419,7 @@
 
 
 	<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-	<div class="carrousel__UpperStroke"></div>
+	<div class="upperStroke"></div>
 
 
 
@@ -418,7 +438,7 @@
 
 		<!-- - - Section Maps - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<section class="footer__map">
-			<div class="footer__content container-fluid">
+			<div class="footer--content container-fluid">
 
 				<!-- - - Icons with activities - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<div class="footer__map__icons_a">
@@ -448,7 +468,7 @@
 
 
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="footer__centeredYStroke"></div>
+		<div class="centeredStroke"></div>
 
 
 

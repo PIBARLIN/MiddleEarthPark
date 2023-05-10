@@ -4,7 +4,30 @@
   padding: 0;
 }
 
-.btn_primary {
+.upperStroke {
+  position: relative;
+  z-index: 2000;
+  margin-top: -4px;
+  margin-bottom: 2px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+}
+
+.downStroke {
+  position: relative;
+  z-index: 200;
+  margin-top: 2px;
+  margin-bottom: -4px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+}
+
+.footer--centeredStroke {
+  height: 2px;
+  background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+}
+
+.btn--primary {
   font-family: "Roboto condensed", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -20,12 +43,12 @@
   z-index: 10;
   transition: all 200ms ease-in-out 0ms;
 }
-.btn_primary:hover {
+.btn--primary:hover {
   background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
   color: #0D1105;
 }
 
-.btn_secondary {
+.btn--secondary {
   font-family: "Roboto Condensed";
   font-weight: 500;
   font-size: 16px;
@@ -40,9 +63,55 @@
   border-radius: 24px;
   transition: all 200ms ease-in-out 0ms;
 }
-.btn_secondary:hover {
+.btn--secondary:hover {
   background: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
   filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
+}
+
+.btn--tertiary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.65;
+  color: #0D1105;
+}
+.btn--tertiary:hover {
+  text-decoration: underline;
+}
+
+.btn__cards {
+  display: block;
+  padding: 0.3rem 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: #fbfbfb;
+  text-decoration: none;
+  background-color: #242D14;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.35));
+}
+.btn__cards:hover {
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
+}
+.btn__cards--tight {
+  max-width: 256px;
+  margin: auto;
+}
+
+#btn__arrowUp {
+  display: none;
+  margin: 24px 0 48px 0;
+  max-width: 100vw;
+  position: fixed;
+  z-index: 10000;
+  bottom: 65px;
+  right: 0;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
+  transform: translateX(56px);
+  transition: all 200ms ease-in-out 0ms;
+}
+#btn__arrowUp:hover {
+  transform: translateY(-7px) scale(1.05);
 }
 
 @font-face {
@@ -54,8 +123,9 @@
   src: url("../fonts/Trajan Pro.ttf");
   src: url("../fonts/TrajanPro-Bold.otf");
 }
-/* ------------ HEADER SECTION --------------- */
-/* --- HEADER - Global values --- */
+/* ==================================================
+				HEADER SECTION
+===================================================*/
 .header {
   background-color: #0D1105;
   background-repeat: no-repeat;
@@ -66,6 +136,7 @@
   position: relative;
 }
 
+/* --- Imgs for background of the header section --- */
 .home {
   background-image: url("../imgs/header_mobile_home_01.png");
 }
@@ -75,7 +146,7 @@
 }
 
 .promos {
-  background-image: url("../imgs/header_mobile_promos_02.png");
+  background-image: url("../imgs/header_mobile_promos_01.png");
 }
 
 .food {
@@ -86,27 +157,28 @@
   background-image: url("../imgs/header_mobile_contact_01.png");
 }
 
+.header--content {
+  background-color: transparent;
+}
+
 .navbar {
   padding-top: 20px;
   --bs-navbar-toggler-padding-y: 0.15rem;
   --bs-navbar-toggler-padding-x: 0.35rem;
   filter: drop-shadow(0 0 3px rgb(13, 17, 5));
+  /* --- HEADER :: Navbar toggler --- */
+  /* --- HEADER :: Navbar items --- */
 }
-
 .navbar-brand:hover {
   opacity: 0.7;
 }
-
 .navbar-nav {
   --bs-nav-link-padding-x: 0.2rem;
   --bs-nav-link-padding-y: 0.3rem;
 }
-
-/* --- BS HEADER - navbar toggler --- */
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.6);
 }
-
 .navbar a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
@@ -115,18 +187,18 @@
 .navbar a:visited {
   color: #fbfbfb;
 }
-
 .navbar-dark {
   --bs-navbar-active-color: #fbfbfbb4;
 }
 
-/* --- HEADER - Hero --- */
-/* --- HEADER - Hero Title --- */
+/* --- HEADER :: Hero title --- */
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  /* --- HEADER :: Hero copy --- */
+  /* --- HEADER :: Hero CTA --- */
 }
 .hero h1 {
   position: relative;
@@ -141,10 +213,7 @@
   margin-top: 198px;
   filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
-
-/* --- HEADER - Hero Copy --- */
-.hero__p1,
-.hero__p2 {
+.hero__p1, .hero__p2 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -154,12 +223,9 @@
   max-width: 380px;
   filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
-
 .hero__p2 {
   display: none;
 }
-
-/* --- HEADER - Hero CTA --- */
 .hero__btn--primary {
   text-decoration: none;
   margin-top: 25px;
@@ -173,17 +239,14 @@
 .hero__btn--primary div:hover {
   filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
 }
-
 .hero__btnFiruletes {
   z-index: 1;
   margin-top: -55px;
 }
 
-.header_content {
-  background-color: transparent;
-}
-
-/* ------------ MAIN --------------- */
+/* ==================================================
+					MAIN SECTION
+===================================================*/
 /* --- MAIN - SectionA - Intro --- */
 .sectionA {
   position: relative;
@@ -193,294 +256,41 @@
   background-color: #0D1105;
   padding-bottom: 40px;
 }
-
 .sectionA__h2 {
   font-family: "Trajan Pro", "Times New Roman", serif;
   font-size: 24px;
   color: #CE9468;
   padding-top: 88px;
 }
-
-.sectionA__p1,
-.sectionA__p2 {
+.sectionA__p1, .sectionA__p2 {
   padding-top: 24px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", serif;
   font-weight: 400;
   font-size: 16px;
   color: #AEB5AE;
   text-align: left;
   max-width: 80vw;
 }
-.sectionA__p1::first-letter, .sectionA__p1::first-letter,
-.sectionA__p2::first-letter,
-.sectionA__p2::first-letter {
+.sectionA__p1::first-letter, .sectionA__p1::first-letter, .sectionA__p2::first-letter, .sectionA__p2::first-letter {
   initial-letter: 2;
   padding-right: 2px;
   color: #CE9468;
 }
-
-/* --- MAIN - SectionB --- */
-.sectionB {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sectionB h3 {
-  font-family: "Aniron";
-  font-size: 24px;
-  color: #0D1105;
-  opacity: 0.9;
-}
-.sectionB h4 {
-  font-family: "Aniron";
-  font-size: 15px;
-  color: #0D1105;
-  opacity: 0.7;
-}
-.sectionB p {
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  color: #0D1105;
-  opacity: 0.8;
-}
-
-.sectionB__icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "icon_1a icon_1a icon_2a icon_2a icon_3a icon_3a" "icon_1b icon_1b icon_2b icon_2b icon_3b icon_3b" "icon_4a icon_4a icon_4a icon_5a icon_5a icon_5a" "icon_4b icon_4b icon_4b icon_5b icon_5b icon_5b";
-  justify-items: center;
-  max-width: 300px;
-}
-
-.icon_1a {
-  grid-area: icon_1a;
-  padding: 0 25px;
-}
-
-.icon_1b {
-  grid-area: icon_1b;
-  padding: 0 25px;
-}
-
-.icon_2a {
-  grid-area: icon_2a;
-  padding: 0 25px;
-}
-
-.icon_2b {
-  grid-area: icon_2b;
-  padding: 0 25px;
-}
-
-.icon_3a {
-  grid-area: icon_3a;
-  padding: 0 25px;
-}
-
-.icon_3b {
-  grid-area: icon_3b;
-  padding: 0 25px;
-}
-
-.icon_4a {
-  grid-area: icon_4a;
-  padding: 0 25px;
-  justify-self: end;
-  max-width: 115px;
-}
-
-.icon_4b {
-  grid-area: icon_4b;
-  padding-left: 34px;
-  justify-self: end;
-  max-width: 155px;
-  text-align: center;
-}
-
-.icon_5a {
-  grid-area: icon_5a;
-  padding: 0 8px;
-  justify-self: start;
-}
-
-.icon_5b {
-  grid-area: icon_5b;
-  padding-right: 64px;
-  justify-self: start;
-  max-width: 155px;
-  text-align: center;
-}
-
-.icon_1b,
-.icon_2b,
-.icon_3b,
-.icon_4b,
-.icon_5b {
-  font-family: "Roboto condensed", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-/* ------------ Strokes ------------- */
-.carrousel__UpperStroke {
-  position: relative;
-  z-index: 2000;
-  margin-top: -4px;
-  margin-bottom: 2px;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
-}
-
-.carrousel__DownStroke {
-  position: relative;
-  z-index: 200;
-  margin-top: 2px;
-  margin-bottom: -4px;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
-}
-
-/* --- MAIN - SectionC --- */
-.sectionC__carousel {
-  background-color: #0D1105;
-}
-
-.carousel__imgs--mobile1,
-.carousel__imgs--mobile2,
-.carousel__imgs--mobile3 {
-  max-height: 568px;
-  max-width: 768px;
-  margin: auto;
-}
-
-.carousel__imgs--desktop1,
-.carousel__imgs--desktop2,
-.carousel__imgs--desktop3 {
-  max-height: 568px;
-  max-width: 1920px;
-  margin: auto;
-}
-
-.sectionC__carousel--desktop {
-  display: none;
-}
-
-/* --- MAIN - SectionD --- */
-.sectionD {
-  background-color: #fbfbfb;
-  padding: 36px 0;
-}
-
-.testimonies {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.6fr 0fr 1.6fr 0fr;
-  grid-auto-flow: row;
-  grid-template-areas: "testimonies__Img1 testimonies__Txt1" "testimonies__Img1 testimonies__Sign1" "testimonies__Txt3 testimonies__Img3" "testimonies__Sign3 testimonies__Img3";
-  max-width: 320px;
-  align-items: start;
-  justify-items: center;
-}
-
-.testimonies__Img1 {
-  grid-area: testimonies__Img1;
-}
-
-.testimonies__Img2 {
-  grid-area: testimonies__Img2;
-}
-
-.testimonies__Img3 {
-  grid-area: testimonies__Img3;
-}
-
-.testimonies__Txt1 {
-  grid-area: testimonies__Txt1;
-}
-
-.testimonies__Txt2 {
-  grid-area: testimonies__Txt2;
-}
-
-.testimonies__Txt3 {
-  grid-area: testimonies__Txt3;
-}
-
-.testimonies__Sign1 {
-  grid-area: testimonies__Sign1;
-}
-
-.testimonies__Sign2 {
-  grid-area: testimonies__Sign2;
-}
-
-.testimonies__Sign3 {
-  grid-area: testimonies__Sign3;
-}
-
-.testimonies__Txt1,
-.testimonies__Txt2,
-.testimonies__Txt3 {
-  text-align: left;
-  font-family: "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  color: #0D1105;
-  max-width: 136px;
-  opacity: 0.75;
-}
-
-.testimonies__Sign1,
-.testimonies__Sign2,
-.testimonies__Sign3 {
-  margin: -20px 30px 0 0;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  opacity: 0.4;
-  justify-self: end;
-}
-
-.fili,
-.bilbo {
-  max-width: 136px;
-}
-
-.testimonies__Txt1 {
-  padding-top: 24px;
-}
-
-.testimonies__Txt3 {
-  padding-top: 20px;
-  text-align: right;
-  max-width: 130px;
-}
-
-.testimonies__Sign3 {
-  padding-top: 10px;
-  margin-right: 12px;
-}
-
-.testimonies__Img2,
-.testimonies__Txt2,
-.testimonies__Sign2 {
-  display: none;
-}
-
-.sectionA_content {
+.sectionA--content {
   background-color: transparent;
 }
+.sectionA__h2--content {
+  color: #412814;
+  padding-top: 16px;
+}
+.sectionA__p1--content, .sectionA__p2--content {
+  color: #0D1105;
+}
+.sectionA__p1--content::first-letter, .sectionA__p1--content::first-letter, .sectionA__p2--content::first-letter, .sectionA__p2--content::first-letter {
+  color: #412814;
+}
 
-/* ------------ MAIN Section A :: RESTAURANT PAGE ------------- */
+/* --- MAIN - SectionA :: RESTAURANT PAGE --- */
 .logo_theGreenDragon {
   max-width: 260px;
   margin-top: 48px;
@@ -492,18 +302,16 @@
   max-width: 300px;
   margin: auto;
 }
-
-.sectionA__tolkien {
+.tolkienPhrase .sectionA__tolkien {
   display: block;
-  font-family: "Tangerine", serif;
+  font-family: "Tangerine", "Times New Roman", serif;
   font-size: 3rem;
   line-height: 2.5rem;
   text-align: center;
   color: #412814;
   margin: 52px auto 12px auto;
 }
-
-.sectionA__tolkien__sign {
+.tolkienPhrase .sectionA__tolkien__sign {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -511,186 +319,6 @@
   text-align: end;
   margin-right: 40px;
   margin-bottom: 40px;
-}
-
-.accordion, .sectionF__reservations,
-.restaurantAdress {
-  margin: 48px auto;
-  font-family: "Roboto condensed", serif;
-  font-size: 15px;
-  text-align: left;
-  color: #464646;
-  font-weight: 400;
-  max-width: 768px;
-}
-.accordion button, .sectionF__reservations button,
-.restaurantAdress button {
-  font-size: 20px;
-  font-weight: 600;
-}
-.accordion h2, .sectionF__reservations h2,
-.restaurantAdress h2 {
-  opacity: 0.6;
-}
-.accordion img, .sectionF__reservations img,
-.restaurantAdress img {
-  max-width: 100%;
-}
-
-.grid__imgs--menu {
-  max-width: 1000px;
-  display: none;
-}
-
-.imgs__menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 8px 8px;
-  grid-auto-flow: row;
-  grid-template-areas: "menu_01 menu_02 menu_03" "menu_04 menu_05 menu_06";
-}
-.imgs__menu img {
-  width: 100%;
-}
-
-.menu_01 {
-  grid-area: menu_01;
-}
-
-.menu_02 {
-  grid-area: menu_02;
-}
-
-.menu_03 {
-  grid-area: menu_03;
-}
-
-.menu_04 {
-  grid-area: menu_04;
-}
-
-.menu_05 {
-  grid-area: menu_05;
-}
-
-.menu_06 {
-  grid-area: menu_06;
-}
-
-.sectionF__reservations,
-.restaurantAdress {
-  text-align: center;
-  max-width: 280px;
-}
-
-.video__restaurant {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.video__restaurant iframe,
-.video__restaurant object,
-.video__restaurant embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.sectionA__h2_content {
-  color: #412814;
-  padding-top: 16px;
-}
-
-.sectionA__p1_content,
-.sectionA__p2_content {
-  color: #0D1105;
-}
-.sectionA__p1_content::first-letter, .sectionA__p1_content::first-letter,
-.sectionA__p2_content::first-letter,
-.sectionA__p2_content::first-letter {
-  color: #412814;
-}
-
-/* ------------ MAIN Section B :: ATRACTIONS PAGE ------------- */
-.sectionB__cards {
-  max-width: 1000px;
-  margin: auto;
-  padding-top: 64px;
-  padding-bottom: 108px;
-}
-
-.attraction--card {
-  font-family: "Roboto condensed", serif;
-}
-.attraction--card .card-header {
-  font-size: 15px;
-  padding: 0.16rem;
-  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  color: #fbfbfb;
-}
-.attraction--card .card-title {
-  font-weight: 900;
-  text-align: left;
-  color: #0D1105;
-  opacity: 0.65;
-}
-.attraction--card .card-text {
-  text-align: left;
-  font-size: 15px;
-  color: #0D1105;
-  opacity: 0.85;
-}
-.attraction--card .text-body {
-  font-weight: 700;
-  color: #7C7C7C !important;
-  display: block;
-}
-
-.btn__cards {
-  display: block;
-  padding: 0.3rem 1rem;
-  font-family: "Roboto condensed", serif;
-  text-align: center;
-  font-size: 1rem;
-  color: #fbfbfb;
-  text-decoration: none;
-  background-color: #000;
-  background-image: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
-  border-radius: 8px;
-  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.35));
-}
-.btn__cards:hover {
-  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
-}
-.btn__cards .btn-tertiary {
-  font-size: 0.85rem;
-  font-weight: 600;
-  opacity: 0.65;
-  color: #412814;
-}
-.btn__cards .btn-tertiary:hover {
-  text-decoration: underline;
-}
-
-/* ------------ MAIN Section B :: PROMOS PAGE ------------- */
-.sectionC__lastMoment {
-  max-width: 768px;
-  margin: auto;
-}
-.sectionC__lastMoment:hover {
-  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
-  transform: scale(1.009);
-}
-
-.btn__cards--tight {
-  max-width: 256px;
-  margin: auto;
 }
 
 /* ------------ MAIN Section A :: CONTACT PAGE ------------- */
@@ -725,25 +353,349 @@
   opacity: 0.8;
 }
 
-/* --- FOOTER - Section_map --- */
+/* --- MAIN - Section B :: INDEX PAGE - Activities in the park --- */
+.sectionB {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionB h3 {
+  font-family: "Aniron", "Times New Roman", serif;
+  font-size: 24px;
+  color: #0D1105;
+  opacity: 0.9;
+}
+.sectionB h4 {
+  font-family: "Aniron", "Times New Roman", serif;
+  font-size: 15px;
+  color: #0D1105;
+  opacity: 0.7;
+}
+.sectionB__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "icon_1a icon_1a icon_2a icon_2a icon_3a icon_3a" "icon_1b icon_1b icon_2b icon_2b icon_3b icon_3b" "icon_4a icon_4a icon_4a icon_5a icon_5a icon_5a" "icon_4b icon_4b icon_4b icon_5b icon_5b icon_5b";
+  justify-items: center;
+  max-width: 300px;
+}
+.sectionB__icons .icon_1a {
+  grid-area: icon_1a;
+  padding: 0 25px;
+}
+.sectionB__icons .icon_1b {
+  grid-area: icon_1b;
+  padding: 0 25px;
+}
+.sectionB__icons .icon_2a {
+  grid-area: icon_2a;
+  padding: 0 25px;
+}
+.sectionB__icons .icon_2b {
+  grid-area: icon_2b;
+  padding: 0 25px;
+}
+.sectionB__icons .icon_3a {
+  grid-area: icon_3a;
+  padding: 0 25px;
+}
+.sectionB__icons .icon_3b {
+  grid-area: icon_3b;
+  padding: 0 25px;
+}
+.sectionB__icons .icon_4a {
+  grid-area: icon_4a;
+  padding: 0 25px;
+  justify-self: end;
+  max-width: 115px;
+}
+.sectionB__icons .icon_4b {
+  grid-area: icon_4b;
+  padding-left: 34px;
+  justify-self: end;
+  max-width: 155px;
+  text-align: center;
+}
+.sectionB__icons .icon_5a {
+  grid-area: icon_5a;
+  padding: 0 8px;
+  justify-self: start;
+}
+.sectionB__icons .icon_5b {
+  grid-area: icon_5b;
+  padding-right: 64px;
+  justify-self: start;
+  max-width: 155px;
+  text-align: center;
+}
+.sectionB__icons .icon_1b,
+.sectionB__icons .icon_2b,
+.sectionB__icons .icon_3b,
+.sectionB__icons .icon_4b,
+.sectionB__icons .icon_5b {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.sectionB p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #0D1105;
+  opacity: 0.8;
+}
+
+/* --- MAIN - Section B :: ATTRACTION PAGE - Cards with BS --- */
+.sectionB__cards {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 64px;
+  padding-bottom: 108px;
+}
+.sectionB__cards .attraction--card {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.sectionB__cards .attraction--card .card-header {
+  font-size: 15px;
+  padding: 0.16rem;
+  background-color: #242D14;
+  color: #fbfbfb;
+}
+.sectionB__cards .attraction--card .card-title {
+  font-weight: 900;
+  text-align: left;
+  color: #0D1105;
+  opacity: 0.65;
+}
+.sectionB__cards .attraction--card .card-text {
+  text-align: left;
+  font-size: 15px;
+  color: #0D1105;
+  opacity: 0.85;
+}
+.sectionB__cards .attraction--card .text-body {
+  font-weight: 700;
+  color: #7C7C7C !important;
+  display: block;
+}
+
+/* --- MAIN - Section B :: PROMOS PAGE - Cards with BS --- */
+.sectionC__lastMoment {
+  max-width: 768px;
+  margin: auto;
+}
+.sectionC__lastMoment:hover {
+  filter: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
+  transform: scale(1.009);
+}
+
+.sectionC__carousel {
+  background-color: #0D1105;
+  /* --- MAIN - Section C :: INDEX PAGE - Images for screens max w 768 --- */
+  /* --- MAIN - Section C :: INDEX PAGE - Images for screens min w 768 --- */
+  /* --- MAIN - Section C :: INDEX PAGE - Desktop carousel hidden at max w 768  --- */
+}
+.sectionC__carousel .carousel__imgs--mobile1,
+.sectionC__carousel .carousel__imgs--mobile2,
+.sectionC__carousel .carousel__imgs--mobile3 {
+  max-height: 568px;
+  max-width: 768px;
+  margin: auto;
+}
+.sectionC__carousel .carousel__imgs--desktop1,
+.sectionC__carousel .carousel__imgs--desktop2,
+.sectionC__carousel .carousel__imgs--desktop3 {
+  max-height: 568px;
+  max-width: 1920px;
+  margin: auto;
+}
+.sectionC__carousel--desktop {
+  display: none;
+}
+
+/* --- MAIN - Section D :: INDEX PAGE - Testimonies --- */
+.sectionD {
+  background-color: #fbfbfb;
+  padding: 36px 0;
+}
+.sectionD .testimonies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.6fr 0fr 1.6fr 0fr;
+  grid-auto-flow: row;
+  grid-template-areas: "testimonies__Img1 testimonies__Txt1" "testimonies__Img1 testimonies__Sign1" "testimonies__Txt3 testimonies__Img3" "testimonies__Sign3 testimonies__Img3";
+  max-width: 320px;
+  align-items: start;
+  justify-items: center;
+}
+.sectionD .testimonies__Img1 {
+  grid-area: testimonies__Img1;
+}
+.sectionD .testimonies__Img2 {
+  grid-area: testimonies__Img2;
+}
+.sectionD .testimonies__Img3 {
+  grid-area: testimonies__Img3;
+}
+.sectionD .testimonies__Txt1 {
+  grid-area: testimonies__Txt1;
+}
+.sectionD .testimonies__Txt2 {
+  grid-area: testimonies__Txt2;
+}
+.sectionD .testimonies__Txt3 {
+  grid-area: testimonies__Txt3;
+}
+.sectionD .testimonies__Sign1 {
+  grid-area: testimonies__Sign1;
+}
+.sectionD .testimonies__Sign2 {
+  grid-area: testimonies__Sign2;
+}
+.sectionD .testimonies__Sign3 {
+  grid-area: testimonies__Sign3;
+}
+.sectionD .testimonies__Txt1, .sectionD .testimonies__Txt2, .sectionD .testimonies__Txt3 {
+  text-align: left;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #0D1105;
+  max-width: 136px;
+  opacity: 0.75;
+}
+.sectionD .testimonies__Sign1, .sectionD .testimonies__Sign2, .sectionD .testimonies__Sign3 {
+  margin: -20px 30px 0 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.4;
+  justify-self: end;
+}
+.sectionD .testimonies .fili,
+.sectionD .testimonies .bilbo {
+  max-width: 136px;
+}
+.sectionD .testimonies__Txt1 {
+  padding-top: 24px;
+}
+.sectionD .testimonies__Txt3 {
+  padding-top: 20px;
+  text-align: right;
+  max-width: 130px;
+}
+.sectionD .testimonies__Sign3 {
+  padding-top: 10px;
+  margin-right: 12px;
+}
+.sectionD .testimonies__Img2, .sectionD .testimonies__Txt2, .sectionD .testimonies__Sign2 {
+  display: none;
+}
+
+/* --- MAIN - Section E :: RESTAURANT PAGE - Menu and images --- */
+.accordion, .sectionF__reservations,
+.sectionH__restaurantAdress {
+  margin: 48px auto;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  color: #464646;
+  font-weight: 400;
+  max-width: 768px;
+}
+.accordion button, .sectionF__reservations button,
+.sectionH__restaurantAdress button {
+  font-size: 20px;
+  font-weight: 600;
+}
+.accordion h2, .sectionF__reservations h2,
+.sectionH__restaurantAdress h2 {
+  opacity: 0.6;
+}
+.accordion img, .sectionF__reservations img,
+.sectionH__restaurantAdress img {
+  max-width: 100%;
+}
+
+.grid__imgs--menu {
+  max-width: 1000px;
+  display: none;
+}
+.grid__imgs--menu .imgs__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas: "menu_01 menu_02 menu_03" "menu_04 menu_05 menu_06";
+}
+.grid__imgs--menu .imgs__menu img {
+  width: 100%;
+}
+.grid__imgs--menu .imgs__menu .menu_01 {
+  grid-area: menu_01;
+}
+.grid__imgs--menu .imgs__menu .menu_02 {
+  grid-area: menu_02;
+}
+.grid__imgs--menu .imgs__menu .menu_03 {
+  grid-area: menu_03;
+}
+.grid__imgs--menu .imgs__menu .menu_04 {
+  grid-area: menu_04;
+}
+.grid__imgs--menu .imgs__menu .menu_05 {
+  grid-area: menu_05;
+}
+.grid__imgs--menu .imgs__menu .menu_06 {
+  grid-area: menu_06;
+}
+
+/* --- MAIN - Section F and G :: RESTAURANT PAGE - Reservations and Adress --- */
+.sectionF__reservations,
+.sectionH__restaurantAdress {
+  text-align: center;
+  max-width: 280px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+/* --- MAIN - Section G :: RESTAURANT PAGE - Video --- */
+.video__restaurant {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video__restaurant iframe,
+.video__restaurant object,
+.video__restaurant embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==================================================
+					FOOTER SECTION
+===================================================*/
 .footer {
   background-color: #0D1105;
 }
-
 .footer__map {
   background-image: url("../imgs/img_footerMapTablets.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.footer__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 340px;
-}
-
 .footer__map__icons_a {
   display: flex;
   flex-direction: row;
@@ -758,10 +710,12 @@
   opacity: 0.85;
   cursor: pointer;
 }
-
 .footer__map__icons_b {
   display: flex;
   flex-direction: column;
+}
+.footer__map__icons_b #here {
+  height: 50px;
 }
 .footer__map__icons_b p {
   font-family: "Roboto Condensed", sans-serif;
@@ -770,16 +724,10 @@
   color: #fbfbfb;
   filter: drop-shadow(0 0 3px rgb(13, 17, 5));
 }
-
-#here {
-  height: 50px;
-}
-
-#map_p2 {
+.footer__map__icons_b #map_p2 {
   font-size: 16px;
   line-height: 19px;
 }
-
 .footer__map__icons_c {
   display: flex;
   flex-direction: row;
@@ -795,12 +743,13 @@
   opacity: 0.85;
   cursor: pointer;
 }
-
-.footer__centeredYStroke {
-  height: 2px;
-  background: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
+.footer--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 340px;
 }
-
 .footer__info {
   display: grid;
   align-items: center;
@@ -814,129 +763,90 @@
   margin-bottom: 85px;
 }
 .footer__info p {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   text-align: left;
   color: #CE9468;
 }
-
 .footer__info__logo {
   grid-area: logo;
   margin-top: -20px;
 }
-
 .footer__info__iconHere {
   grid-area: iconHere;
 }
-
 .footer__info__iconTime {
   grid-area: iconTime;
 }
-
 .footer__info__iconMail {
   grid-area: iconMail;
 }
-
 .footer__info__iconPhone {
   grid-area: iconPhone;
 }
-
 .footer__info__adress {
   grid-area: adress;
 }
-
 .footer__info__time {
   grid-area: time;
 }
-
 .footer__info__mail {
   grid-area: mail;
 }
-
 .footer__info__phone {
   grid-area: phone;
 }
-
 .footer__info__linkServicios {
   grid-area: linkServicios;
 }
-
 .footer__info__linkSeguridad {
   grid-area: linkSeguridad;
 }
-
 .footer__info__linkLegales {
   grid-area: linkLegales;
 }
-
 .footer__info__linkFAQs {
   grid-area: linkFAQs;
 }
-
 .footer__info__linkBlog {
   grid-area: linkBlog;
 }
-
 .footer__info__linkTrabajo {
   grid-area: linkTrabajo;
 }
-
 .footer__info__socialMedia {
   grid-area: socialMedia;
 }
 .footer__info__socialMedia img {
   padding-right: 24px;
 }
-
-.footer__info__logo,
-.footer__info__iconHere,
-.footer__info__iconTime,
-.footer__info__iconMail,
-.footer__info__iconPhone,
-.footer__info__adress,
-.footer__info__mail,
-.footer__info__phone,
-.footer__info__time {
+.footer__info__logo, .footer__info__iconHere, .footer__info__iconTime, .footer__info__iconMail, .footer__info__iconPhone, .footer__info__adress, .footer__info__mail, .footer__info__phone, .footer__info__time {
   display: none;
 }
-
 .footer__info__socialMedia .footer__info__logo {
   margin-top: -12px;
 }
-
-.footer__info__iconHere,
-.footer__info__iconTime,
-.footer__info__iconMail,
-.footer__info__iconPhone {
+.footer__info__iconHere, .footer__info__iconTime, .footer__info__iconMail, .footer__info__iconPhone {
   margin-top: -4px;
 }
-
-.footer__info__linkServicios:hover,
-.footer__info__linkSeguridad:hover,
-.footer__info__linkLegales:hover,
-.footer__info__linkFAQs:hover,
-.footer__info__linkBlog:hover,
-.footer__info__linkTrabajo:hover {
+.footer__info__linkServicios:hover, .footer__info__linkSeguridad:hover, .footer__info__linkLegales:hover, .footer__info__linkFAQs:hover, .footer__info__linkBlog:hover, .footer__info__linkTrabajo:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-
 .footer__info__socialMedia img:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-
 .footer__info__final {
   padding-bottom: 1px;
 }
 .footer__info__final p {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   color: #CE9468;
   margin-top: -36px;
   opacity: 0.5;
 }
-
 .footer__info__final .footer__info__stroke_final {
   position: relative;
   height: 2px;
@@ -946,19 +856,17 @@
   max-width: 1280px;
   margin: auto;
 }
-
 .footer__info__mask {
   position: relative;
   background-color: #0D1105;
   height: 50px;
   z-index: 10;
   margin: -50px auto;
-  width: 99vw;
+  max-width: 1000px;
 }
-
 .footer__info__shade {
   position: relative;
-  background: radial-gradient(50% 50% at 50% 50%, #F7C9A5 0%, rgba(247, 201, 165, 0) 100%);
+  background-image: radial-gradient(50% 50% at 50% 50%, #F7C9A5 0%, rgba(247, 201, 165, 0) 100%);
   height: 48px;
   max-width: 1000px;
   margin: 24px auto;
@@ -966,6 +874,9 @@
 }
 
 @media only screen and (min-width: 439px) and (max-width: 576px) {
+  /* ==================================================
+  HEADER SECTION
+  ===================================================*/
   .logoME {
     width: 120%;
   }
@@ -975,15 +886,21 @@
   .hero__btn--primary {
     margin-top: 49px;
   }
+  /* ==================================================
+  	MAIN SECTION
+  ===================================================*/
   .sectionB p {
     max-width: 340px;
   }
+  .sectionF__reservations,
+  .sectionH__restaurantAdress {
+    max-width: 400px;
+  }
 }
-.sectionF__reservations, .restaurantAdress {
-  max-width: 400px;
-}
-
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* ==================================================
+  HEADER SECTION
+  ===================================================*/
   .logoME {
     width: 120%;
   }
@@ -999,6 +916,9 @@
     font-size: 20px;
     line-height: 23px;
   }
+  /* ==================================================
+  	MAIN SECTION
+  ===================================================*/
   .sectionA__h2 {
     padding-top: 68px;
     max-width: 445px;
@@ -1006,7 +926,19 @@
   .sectionB p {
     max-width: 340px;
   }
-  .footer__content {
+  .logo_theGreenDragon {
+    max-width: 300px;
+  }
+  .sectionE__carousel--menu {
+    display: none;
+  }
+  .grid__imgs--menu {
+    display: block;
+  }
+  /* ==================================================
+  	FOOTER SECTION
+  ===================================================*/
+  .footer--content {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1022,17 +954,11 @@
     margin-right: 0px;
     margin-left: 0px;
   }
-  .logo_theGreenDragon {
-    max-width: 300px;
-  }
-  .sectionE__carousel--menu {
-    display: none;
-  }
-  .grid__imgs--menu {
-    display: block;
-  }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* ==================================================
+  HEADER SECTION
+  ===================================================*/
   .home {
     background-image: url("../imgs/header_desktop_home_01.png");
   }
@@ -1040,7 +966,7 @@
     background-image: url("../imgs/header_desktop_attractions_01.png");
   }
   .promos {
-    background-image: url("../imgs/header_desktop_promos_02.png");
+    background-image: url("../imgs/header_desktop_promos_01.png");
   }
   .food {
     background-image: url("../imgs/header_desktop_food_02.png");
@@ -1065,6 +991,9 @@
   .hero__btn--primary {
     margin-top: 56px;
   }
+  /* ==================================================
+  	MAIN SECTION
+  ===================================================*/
   .sectionA div {
     -moz-columns: 2;
          columns: 2;
@@ -1073,67 +1002,6 @@
   .sectionA__h2 {
     padding-top: 68px;
     max-width: 445px;
-  }
-  .sectionB p {
-    max-width: 340px;
-  }
-  /* --- MAIN - SectionC --- */
-  .sectionC__carousel--mobile {
-    display: none;
-  }
-  .sectionC__carousel--desktop {
-    display: block;
-  }
-  .carousel__inner {
-    display: none;
-  }
-  .footer__map {
-    background-image: url("../imgs/img_footerMap.jpg");
-  }
-  .footer__content {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .footer__map__icons_a,
-  .footer__map__icons_c {
-    flex-direction: column;
-    min-width: 0;
-  }
-  .footer__map__icons_a img,
-  .footer__map__icons_c img {
-    margin-bottom: 8px;
-    margin-top: 8px;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  #here {
-    height: 58px;
-  }
-  .footer__info__logo,
-  .footer__info__iconHere,
-  .footer__info__iconTime,
-  .footer__info__iconMail,
-  .footer__info__iconPhone,
-  .footer__info__adress,
-  .footer__info__mail,
-  .footer__info__phone,
-  .footer__info__time {
-    display: block;
-  }
-  .footer__info {
-    display: grid;
-    grid-template-columns: 2fr 30px 2.5fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    grid-template-areas: "logo iconHere adress linkServicios linkSeguridad" "logo iconTime time linkLegales linkFAQs" "logo iconMail mail linkBlog linkTrabajo" "logo iconPhone phone socialMedia socialMedia";
-    align-items: start;
-    max-width: 90vw;
-  }
-  .footer__info__socialMedia img {
-    padding-right: 24px;
-  }
-  .logo_theGreenDragon {
-    max-width: 300px;
   }
   .logo_theGreenDragon {
     max-width: 300px;
@@ -1145,7 +1013,7 @@
     display: block;
   }
   .sectionF__reservations,
-  .restaurantAdress {
+  .sectionH__restaurantAdress {
     max-width: 90vw;
   }
   .sectionA__contact {
@@ -1159,8 +1027,61 @@
     margin-top: 48px;
     margin-right: 12px;
   }
+  .sectionB p {
+    max-width: 340px;
+  }
+  .sectionC__carousel--mobile {
+    display: none;
+  }
+  .sectionC__carousel--desktop {
+    display: block;
+  }
+  .carousel__inner {
+    display: none;
+  }
+  /* ==================================================
+  	FOOTER SECTION
+  ===================================================*/
+  .footer__map {
+    background-image: url("../imgs/img_footerMap.jpg");
+  }
+  .footer__map__icons_a, .footer__map__icons_c {
+    flex-direction: column;
+    min-width: 0;
+  }
+  .footer__map__icons_a img, .footer__map__icons_c img {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .footer__map #here {
+    height: 58px;
+  }
+  .footer--content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__info {
+    display: grid;
+    grid-template-columns: 2fr 30px 2.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "logo iconHere adress linkServicios linkSeguridad" "logo iconTime time linkLegales linkFAQs" "logo iconMail mail linkBlog linkTrabajo" "logo iconPhone phone socialMedia socialMedia";
+    align-items: start;
+    max-width: 90vw;
+  }
+  .footer__info__logo, .footer__info__iconHere, .footer__info__iconTime, .footer__info__iconMail, .footer__info__iconPhone, .footer__info__adress, .footer__info__mail, .footer__info__phone, .footer__info__time {
+    display: block;
+  }
+  .footer__info__socialMedia img {
+    padding-right: 24px;
+  }
 }
 @media only screen and (min-width: 993px) {
+  /* ==================================================
+  HEADER SECTION
+  ===================================================*/
   .home {
     background-image: url("../imgs/header_desktop_home_01.png");
   }
@@ -1168,7 +1089,7 @@
     background-image: url("../imgs/header_desktop_attractions_01.png");
   }
   .promos {
-    background-image: url("../imgs/header_desktop_promos_02.png");
+    background-image: url("../imgs/header_desktop_promos_01.png");
   }
   .food {
     background-image: url("../imgs/header_desktop_food_02.png");
@@ -1189,8 +1110,7 @@
     max-width: 790px;
     margin-top: 219px;
   }
-  .hero__p1,
-  .hero__p2 {
+  .hero__p1, .hero__p2 {
     font-size: 24px;
     line-height: 18px;
     margin-top: 25px;
@@ -1203,6 +1123,9 @@
   .hero__btn--primary {
     margin-top: 67px;
   }
+  /* ==================================================
+  	MAIN SECTION
+  ===================================================*/
   .sectionA div {
     -moz-columns: 2;
          columns: 2;
@@ -1215,9 +1138,22 @@
     line-height: 43px;
     max-width: 650px;
   }
-  .sectionA__p1,
-  .sectionA__p2 {
+  .sectionA__p1, .sectionA__p2 {
     font-size: 17px;
+  }
+  .logo_theGreenDragon {
+    max-width: 300px;
+  }
+  .sectionA__contact {
+    max-width: 1000px;
+    margin-top: 48px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .sectionA__contact img {
+    display: block;
+    margin-top: 48px;
+    margin-right: 12px;
   }
   .sectionB p {
     max-width: 340px;
@@ -1237,38 +1173,36 @@
     justify-items: center;
     margin-top: 25px;
   }
-  .icon_4a {
+  .sectionB .icon_4a {
     grid-area: icon_4a;
     padding: 0 25px;
   }
-  .icon_4b {
+  .sectionB .icon_4b {
     grid-area: icon_4b;
     padding: 0 25px;
   }
-  .icon_5a {
+  .sectionB .icon_5a {
     grid-area: icon_5a;
     padding: 0 25px;
   }
-  .icon_5b {
+  .sectionB .icon_5b {
     grid-area: icon_5b;
     padding: 0 25px;
   }
-  .sectionB__icons img:hover {
+  .sectionB .sectionB__icons img:hover {
     opacity: 0.7;
   }
-  .btn_secondary {
+  .sectionB .btn_secondary {
     margin-top: 18px;
     width: 232px;
   }
-  /* --- MAIN - SectionC --- */
   .sectionC__carousel--mobile {
     display: none;
   }
   .sectionC__carousel--desktop {
     display: block;
   }
-  /* --- MAIN - SectionD --- */
-  .testimonies {
+  .sectionD .testimonies {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
     gap: 0 20px;
@@ -1278,62 +1212,56 @@
     margin-top: 140px;
     margin-bottom: 0px;
   }
-  .fili,
-  .bilbo {
+  .sectionD .testimonies .fili,
+  .sectionD .testimonies .bilbo {
     max-width: 100%;
   }
-  .testimonies__Img2,
-  .testimonies__Txt2,
-  .testimonies__Sign2 {
+  .sectionD .testimonies__Img2, .sectionD .testimonies__Txt2, .sectionD .testimonies__Sign2 {
     display: block;
   }
-  .testimonies__Txt1,
-  .testimonies__Txt2,
-  .testimonies__Txt3 {
+  .sectionD .testimonies__Txt1, .sectionD .testimonies__Txt2, .sectionD .testimonies__Txt3 {
     max-width: 180px;
     font-size: 18px;
     font-weight: 600;
     opacity: 0.6;
     color: #0D1105;
   }
-  .testimonies__Img1,
-  .testimonies__Img2,
-  .testimonies__Img3 {
+  .sectionD .testimonies__Img1, .sectionD .testimonies__Img2, .sectionD .testimonies__Img3 {
     align-self: baseline;
   }
+  .sectionE__carousel--menu {
+    display: none;
+  }
+  .grid__imgs--menu {
+    display: block;
+  }
+  .sectionF__reservations,
+  .sectionH__restaurantAdress {
+    max-width: 90vw;
+  }
+  /* ==================================================
+  	FOOTER SECTION
+  ===================================================*/
   .footer__map {
     background-image: url("../imgs/img_footerMap.jpg");
   }
-  .footer__content {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1024px;
-  }
-  .footer__map__icons_a,
-  .footer__map__icons_c {
+  .footer__map__icons_a, .footer__map__icons_c {
     flex-direction: column;
     min-width: 0;
   }
-  .footer__map__icons_a img,
-  .footer__map__icons_c img {
+  .footer__map__icons_a img, .footer__map__icons_c img {
     margin-bottom: 8px;
     margin-top: 8px;
     margin-right: 0px;
     margin-left: 0px;
   }
-  #here {
-    height: 72px;
+  .footer__map #here {
+    height: 58px;
   }
-  .footer__info__logo,
-  .footer__info__iconHere,
-  .footer__info__iconTime,
-  .footer__info__iconMail,
-  .footer__info__iconPhone,
-  .footer__info__adress,
-  .footer__info__mail,
-  .footer__info__phone,
-  .footer__info__time {
-    display: block;
+  .footer--content {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
   }
   .footer__info {
     display: grid;
@@ -1342,33 +1270,13 @@
     grid-auto-flow: row;
     grid-template-areas: "logo iconHere adress linkServicios linkSeguridad" "logo iconTime time linkLegales linkFAQs" "logo iconMail mail linkBlog linkTrabajo" "logo iconPhone phone socialMedia socialMedia";
     align-items: start;
-    max-width: 795px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 85px;
+    max-width: 1000px;
+  }
+  .footer__info__logo, .footer__info__iconHere, .footer__info__iconTime, .footer__info__iconMail, .footer__info__iconPhone, .footer__info__adress, .footer__info__mail, .footer__info__phone, .footer__info__time {
+    display: block;
   }
   .footer__info__socialMedia img {
     padding-right: 24px;
-  }
-  .sectionA__contact {
-    max-width: 1000px;
-    margin-top: 48px;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .sectionA__contact img {
-    display: block;
-    margin-top: 48px;
-    margin-right: 12px;
-  }
-  .logo_theGreenDragon {
-    max-width: 300px;
-  }
-  .sectionE__carousel--menu {
-    display: none;
-  }
-  .grid__imgs--menu {
-    display: block;
   }
 }
 body {

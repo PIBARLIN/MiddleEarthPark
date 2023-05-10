@@ -1,4 +1,14 @@
-// ---------COLORS---------------------
+// ========== FONTS ==================================
+$s--serif: "Roboto Condensed", sans-serif;
+$serif: "Times New Roman", serif;
+$trajan: "Trajan Pro", "Times New Roman", serif;
+$aniron: "Aniron", "Times New Roman", serif;
+$tangerine: "Tangerine", "Times New Roman", serif;
+
+
+
+
+// ========== COLORS ==================================
 $white: #fbfbfb;
 $lightGray: #B8BAB8;
 $lead: #7C7C7C;
@@ -15,22 +25,16 @@ $darkGold: #412814;
 
 
 
-// ---------GRADIENTS------------------
+// ========== GRADIENTES ==================================
 $golden--gradient: linear-gradient(90.93deg, #C48351 0.05%, #DDA67A 37.11%, #A0612F 100.15%);
 $goldenOpposite--gradient: linear-gradient(90.93deg, #C48351 20.05%, #DDA67A 57.11%, #A0612F 120.15%);
 $goldenBtn--gradient: linear-gradient(92.15deg, #C48452 5.16%, #F7C9A5 64.69%, #A26331 98.09%);
-
-
-
-
-// ---------STROKES--------------------
 $stroke--gradient: linear-gradient(90deg, rgba(247, 201, 165, 0) 18%, #A66736 36%, #DDA67B 50%, #A66736 64%, rgba(247, 201, 165, 0) 82%);
 
 
 
 
-// ---------SHADOWS--------------------
-// Drop Shadows
+// ========== SHADOWS ==================================
 $lightShadow: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.35));
 $mediumShadow: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.55));
 $darkShadow: drop-shadow(0px 4px 8px rgba(13, 17, 5, 0.85));
@@ -39,37 +43,50 @@ $textShadow: drop-shadow(0 0 3px rgba(13, 17, 5, 1));
 
 
 
+// ========== STROKES ==================================
+// Top strokes
+@mixin stroke--Upper {
+	position: relative;
+	z-index: 2000;
+	margin-top: -4px;
+	margin-bottom: 2px;
+	height: 2px;
+	background: $stroke--gradient;
+}
 
-// ---------- ARROW UP --------------
-// ---- Floating button with "go up" action and a conditional value ---
-// @mixin btn--arrowUp-styles {
-// 	display: none;
-// 	margin: 24px 0 48px 0;
-// 	max-width: 100vw;
-// 	position: fixed;
-// 	z-index: 10000;
-// 	bottom: 65px;
-// 	right: 0;
-// 	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
-// 	transform: translateX(56px);
-// 	transition: 2s;
+.upperStroke {
+	@include stroke--Upper;
+}
 
-// 	&:hover {
-// 		transform: scale(1.05);
-// 		transition: all 200ms ease-in-out 0ms;
-// 		transform: translateY(-7px);
-// 	}
-// }
+// Bottom strokes
+@mixin stroke--Down {
+	position: relative;
+	z-index: 200;
+	margin-top: 2px;
+	margin-bottom: -4px;
+	height: 2px;
+	background: $stroke--gradient;
+}
+
+.downStroke {
+	@include stroke--Down;
+}
+
+// Middle strokes
+@mixin stroke--Centered {
+	height: 2px;
+	background: $stroke--gradient;
+}
+
+.footer--centeredStroke {
+	@include stroke--Centered;
+}
 
 
-// #btn_arrowUp {
-// 	@include btn--arrowUp-styles;
-// }
 
 
-
-// ---------BUTTONS--------------------
-// Primary button
+// ========== BUTTONS ==================================
+// ---------- Primary buttons --------------------------
 @mixin btn--Primary-styles {
 	font-family: "Roboto condensed", sans-serif;
 	font-weight: 700;
@@ -92,12 +109,12 @@ $textShadow: drop-shadow(0 0 3px rgba(13, 17, 5, 1));
 	}
 }
 
-.btn_primary {
+.btn--primary {
 	@include btn--Primary-styles;
 }
 
 
-// Secondary button
+// ---------- Secondary buttons --------------------------
 @mixin btn--Secondary-styles {
 	font-family: 'Roboto Condensed';
 	font-weight: 500;
@@ -119,87 +136,72 @@ $textShadow: drop-shadow(0 0 3px rgba(13, 17, 5, 1));
 	}
 }
 
-.btn_secondary {
+.btn--secondary {
 	@include btn--Secondary-styles;
 }
 
 
-// // Tertiary button
-// @mixin btn__Tertiary--styles {
-// 	display: block;
-// 	padding: 0.3rem 1rem;
-// 	font-family: 'Roboto condensed', serif;
-// 	text-align: center;
-// 	font-size: 1rem;
-// 	color: $white;
-// 	text-decoration: none;
-// 	filter: $textShadow;
-// 	background-color: #000;
-// 	background-image: $golden--gradient;
-// 	border-radius: 8px;
-// 	filter: $lightShadow;
 
-// 	&:hover {
-// 		filter: $mediumShadow;
+// ---------- Tertiary buttons --------------------------
+@mixin btn--Tertiary-styles {
+	font-size: 0.85rem;
+	font-weight: 600;
+	opacity: 0.65;
+	color: $darkGreen;
 
-// 	}
-// }
+	&:hover {
+		text-decoration: underline;
+	}
+}
 
-// .btn__cards{
-// 	@include btn--Secondary-styles;
-// }
+.btn--tertiary {
+	@include btn--Tertiary-styles;
+}
 
 
+// ---------- Cards buttons --------------------------
+.btn__cards {
+	display: block;
+	padding: 0.3rem 1rem;
+	font-family: $s--serif;
+	text-align: center;
+	font-size: 1rem;
+	color: $white;
+	text-decoration: none;
+	background-color: $green;
+	border-radius: 8px;
+	filter: $lightShadow;
+
+	&:hover {
+		filter: $mediumShadow;
+	}
+
+	&--tight {
+		max-width: 256px;
+		margin: auto;
+	}
+}
 
 
-// // ------------ ATRACTIONS CARDS --------------
-// @mixin card__attraction--styles {
-// 	// Header: type of attraction
-// 	.card-header {
-// 		font-size: 15px;
-// 		padding: 0.16rem;
-// 		background-image: $golden--gradient;
-// 		color: $white;
-// 		opacity: 0.85;
-// 	}
 
-// 	// Image: Descriptive of attraction
-// 	.card-title {
-// 		font-weight: 900;
-// 		text-align: left;
-// 		color: $darkGreen;
-// 		opacity: 0.65;
-// 	}
+// ---------- "Ir arriba" buttons --------------------------
+@mixin btn--arrowUp-styles {
+	display: none;
+	margin: 24px 0 48px 0;
+	max-width: 100vw;
+	position: fixed;
+	z-index: 10000;
+	bottom: 65px;
+	right: 0;
+	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85));
+	transform: translateX(56px);
+	transition: all 200ms ease-in-out 0ms;
 
-// 	// Body's texts: Name and description of attraction
-// 	.card-text {
-// 		text-align: left;
-// 		font-size: 15px;
-// 		color: $darkGreen;
-// 		opacity: 0.85;
-// 	}
+	&:hover {
+		transform: translateY(-7px) scale(1.05);
+	}
+}
 
-// 	// Footer: Price of attraction
-// 	.text-body {
-// 		font-weight: 700;
-// 		color: $lead !important;
-// 	}
-
-// 	// Footer: Buttons to buy and more info
-
-// 	// Footer: Tertiary buttons
-// 	.btn-tertiary {
-// 		font-size: 0.85rem;
-// 		font-weight: 600;
-// 		opacity: 0.65;
-// 		color: $darkGold;
-
-// 		&:hover {
-// 			text-decoration: underline;
-// 		}
-// 	}
-// }
-
-// .attraction--card {
-// 	@include btn__Tertiary--styles;
-// }
+#btn__arrowUp {
+	@include btn--arrowUp-styles;
+}

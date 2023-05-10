@@ -6,18 +6,37 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!--- SEO - Palabras claves -->
+	<meta name="keywords"
+		content="parque temático, atracciones medievales, entretenimiento familiar, diversión, historia, cultura, caballeros, princesas, magia">
+
+	<!--- SEO - Description -->
+	<meta name="description"
+		content="Bienvenidos al parque temático medieval, donde la diversión y la historia se unen para ofrecer una experiencia única. Disfruta de atracciones medievales, conoce a caballeros y princesas, sumérgete en la cultura de la época y vive momentos mágicos en familia">
+
+	<!-- Indica que carga los estilos y scripts previo al renderizado -->
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" as="style"
+		onload="this.rel='stylesheet'">
+
 	<!-- favicon -->
 	<link rel="shortcut icon" href="imgs/fav_ME.svg">
 
 	<!-- bootstrap connection -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+	<!-- CSS Stylesheet -->
 	<link rel="stylesheet" href="css/main.css">
 
+	<!-- Indicación para activar JS de no tenerlo y poder ver el contenido aún si él -->
+	<noscript>
+		<div class="no-script-message">
+			<p>Para ver el contenido de esta página, debes activar JavaScript en tu navegador.</p>
+		</div>
+	</noscript>
 
 	<title>Inicio | Middle Earth Park</title>
 </head>
-
 
 
 
@@ -74,7 +93,7 @@
 				<p class="hero__p2">Explora lugares mágicos y vive emocionantes aventuras.</p>
 				<a href="./pages/atracciones.html" class="hero__btn--primary">
 					<div>
-						<button class="btn_primary">Comprá tus boletos ahora</button>
+						<button class="btn--primary">Comprá tus boletos ahora</button>
 						<img class="hero__btnFiruletes" src="./imgs/firuletes.svg" alt="firuletes">
 					</div>
 				</a>
@@ -126,7 +145,7 @@
 			</div>
 			<p>¡Comprá tus boletos ahora y vive la aventura de hacer realidad tus sueños de la Edad Media!</p>
 			<a href="./pages/promociones.html">
-				<button class="btn_secondary">Ver promociones</button>
+				<button class="btn--secondary">Ver promociones</button>
 			</a>
 		</section>
 
@@ -134,7 +153,7 @@
 
 
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="carrousel__UpperStroke"></div>
+		<div class="upperStroke"></div>
 
 
 
@@ -218,7 +237,7 @@
 
 
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="carrousel__DownStroke"></div>
+		<div class="downStroke"></div>
 
 
 
@@ -270,7 +289,7 @@
 
 
 	<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-	<div class="carrousel__UpperStroke"></div>
+	<div class="upperStroke"></div>
 
 
 
@@ -283,13 +302,13 @@
 
 
 
-	
+
 	<!--===== FOOTER SECTION ==========================================================================================================-->
 	<footer class="footer">
 
 		<!-- - - Section Maps - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<section class="footer__map">
-			<div class="footer__content container-fluid">
+			<div class="footer--content container-fluid">
 
 				<!-- - - Icons with activities - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<div class="footer__map__icons_a">
@@ -319,7 +338,7 @@
 
 
 		<!-- - - Stroke - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div class="footer__centeredYStroke"></div>
+		<div class="centeredStroke"></div>
 
 
 
@@ -389,12 +408,12 @@
 
 
 
-	
+
 	<!-- bootstrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
 	</script>
-	
+
 	<!-- link to the script for the button arrowUP (go to the top of the page) -->
 	<script src="./js/arrow-up.js"></script>
 </body>
